@@ -1,0 +1,91 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "東京",
+      "coordinates": [
+        139.0,
+        35.0
+      ],
+      "schematic": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "1",
+      "name": "S1",
+      "coordinates": [
+        139.0,
+        35.018088088993395
+      ],
+      "schematic": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "2",
+      "name": "S2",
+      "coordinates": [
+        139.08773083641836,
+        35.0
+      ],
+      "schematic": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": "3",
+      "name": "S3",
+      "coordinates": [
+        139.08773083641836,
+        35.018088088993395
+      ],
+      "schematic": [
+        8,
+        2
+      ]
+    },
+    {
+      "id": "4",
+      "name": "S4",
+      "coordinates": [
+        139.2193270910459,
+        35.18088088993398
+      ],
+      "schematic": [
+        20,
+        20
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "0",
+      "target": "1",
+      "distance": 5,
+      "lines": [
+        "a"
+      ]
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "distance": 5,
+      "lines": [
+        "a"
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "a",
+      "name": "a",
+      "color": "#e23d28"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "東京",
+      "coordinates": [
+        139.0,
+        35.0
+      ],
+      "schematic": [
+        0,
+        0.0
+      ]
+    },
+    {
+      "id": "1",
+      "name": "S1",
+      "coordinates": [
+        139.0,
+        35.00090440444967
+      ],
+      "schematic": [
+        0,
+        0.1
+      ]
+    },
+    {
+      "id": "2",
+      "name": "S2",
+      "coordinates": [
+        139.0,
+        35.00180880889934
+      ],
+      "schematic": [
+        0,
+        0.2
+      ]
+    },
+    {
+      "id": "3",
+      "name": "S3",
+      "coordinates": [
+        139.0,
+        35.00271321334901
+      ],
+      "schematic": [
+        0,
+        0.30000000000000004
+      ]
+    },
+    {
+      "id": "4",
+      "name": "S4",
+      "coordinates": [
+        139.0,
+        35.00361761779868
+      ],
+      "schematic": [
+        0,
+        0.4
+      ]
+    },
+    {
+      "id": "5",
+      "name": "S5",
+      "coordinates": [
+        139.0,
+        35.00452202224835
+      ],
+      "schematic": [
+        0,
+        0.5
+      ]
+    },
+    {
+      "id": "6",
+      "name": "S6",
+      "coordinates": [
+        139.0,
+        35.00542642669802
+      ],
+      "schematic": [
+        0,
+        0.6000000000000001
+      ]
+    },
+    {
+      "id": "7",
+      "name": "S7",
+      "coordinates": [
+        139.0,
+        35.006330831147686
+      ],
+      "schematic": [
+        0,
+        0.7000000000000001
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "0",
+      "target": "1",
+      "distance": 5,
+      "lines": [
+        "a"
+      ]
+    },
+    {
+      "source": "1",
+      "target": "2",
+      "distance": 5,
+      "lines": [
+        "a"
+      ]
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "distance": 5,
+      "lines": [
+        "a"
+      ]
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "distance": 5,
+      "lines": [
+        "a"
+      ]
+    },
+    {
+      "source": "4",
+      "target": "5",
+      "distance": 5,
+      "lines": [
+        "a"
+      ]
+    },
+    {
+      "source": "5",
+      "target": "6",
+      "distance": 5,
+      "lines": [
+        "a"
+      ]
+    },
+    {
+      "source": "6",
+      "target": "7",
+      "distance": 5,
+      "lines": [
+        "a"
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "a",
+      "name": "a",
+      "color": "#e23d28"
+    }
+  ]
+}

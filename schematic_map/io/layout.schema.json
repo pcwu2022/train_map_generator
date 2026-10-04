@@ -1,0 +1,356 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Schematic transit layout v0.1",
+  "type": "object",
+  "required": [
+    "meta",
+    "transform",
+    "nodes",
+    "edges",
+    "lines",
+    "metrics",
+    "render",
+    "label_style",
+    "web"
+  ],
+  "$defs": {
+    "point": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "items": false,
+      "minItems": 2
+    },
+    "strings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "version",
+        "seed",
+        "units",
+        "bounds",
+        "y_axis",
+        "feasible"
+      ],
+      "properties": {
+        "version": {
+          "const": "0.1"
+        },
+        "seed": {
+          "type": "integer"
+        },
+        "units": {
+          "const": "grid_units"
+        },
+        "y_axis": {
+          "const": "up"
+        },
+        "feasible": {
+          "type": "boolean"
+        },
+        "bounds": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      }
+    },
+    "transform": {
+      "type": "object",
+      "required": [
+        "rotation_deg",
+        "aspect",
+        "origin_lonlat"
+      ],
+      "properties": {
+        "rotation_deg": {
+          "type": "number"
+        },
+        "aspect": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "origin_lonlat": {
+          "$ref": "#/$defs/point"
+        }
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "coordinates",
+          "schematic",
+          "lines",
+          "degree",
+          "kind",
+          "marker",
+          "label"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "coordinates": {
+            "$ref": "#/$defs/point"
+          },
+          "schematic": {
+            "$ref": "#/$defs/point"
+          },
+          "lines": {
+            "$ref": "#/$defs/strings"
+          },
+          "degree": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8
+          },
+          "kind": {
+            "enum": [
+              "terminal",
+              "through",
+              "junction"
+            ]
+          },
+          "marker": {
+            "enum": [
+              "dot",
+              "interchange"
+            ]
+          },
+          "label": {
+            "type": "object",
+            "required": [
+              "anchor",
+              "offset",
+              "rotation_deg"
+            ],
+            "properties": {
+              "anchor": {
+                "enum": [
+                  "east",
+                  "west",
+                  "north",
+                  "south",
+                  "northeast",
+                  "northwest",
+                  "southeast",
+                  "southwest"
+                ]
+              },
+              "offset": {
+                "$ref": "#/$defs/point"
+              },
+              "rotation_deg": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source",
+          "target",
+          "lines",
+          "line_offsets",
+          "path",
+          "length"
+        ],
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "lines": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/strings"
+              },
+              {
+                "minItems": 1
+              }
+            ]
+          },
+          "line_offsets": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            }
+          },
+          "path": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/point"
+            },
+            "minItems": 2,
+            "maxItems": 4
+          },
+          "length": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "lines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "color"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          }
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "required": [
+        "hard_violations",
+        "violation_report",
+        "crossings",
+        "runtime_s",
+        "bends_total",
+        "bends_per_edge_mean",
+        "angle_dev_mean",
+        "angle_dev_max",
+        "edge_len_cv",
+        "collinearity_dev_mean",
+        "geo_direction_dev_mean",
+        "geo_displacement_rms",
+        "circular_order_violations",
+        "label_overlaps",
+        "min_station_distance"
+      ],
+      "properties": {
+        "hard_violations": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "crossings": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "runtime_s": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "bends_total": {
+          "type": "number",
+          "minimum": 0
+        },
+        "bends_per_edge_mean": {
+          "type": "number",
+          "minimum": 0
+        },
+        "angle_dev_mean": {
+          "type": "number",
+          "minimum": 0
+        },
+        "angle_dev_max": {
+          "type": "number",
+          "minimum": 0
+        },
+        "edge_len_cv": {
+          "type": "number",
+          "minimum": 0
+        },
+        "collinearity_dev_mean": {
+          "type": "number",
+          "minimum": 0
+        },
+        "geo_direction_dev_mean": {
+          "type": "number",
+          "minimum": 0
+        },
+        "geo_displacement_rms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "circular_order_violations": {
+          "type": "number",
+          "minimum": 0
+        },
+        "label_overlaps": {
+          "type": "number",
+          "minimum": 0
+        },
+        "min_station_distance": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "hard_violations_by_constraint": {
+          "type": "object"
+        },
+        "violation_report": {
+          "type": "object"
+        },
+        "energy_terms": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "render": {
+      "type": "object"
+    },
+    "label_style": {
+      "type": "object"
+    },
+    "web": {
+      "type": "object"
+    },
+    "svg": {
+      "type": "string"
+    }
+  }
+}

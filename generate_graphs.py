@@ -4,16 +4,20 @@
 import argparse
 import hashlib
 import json
+import math
+import warnings
 from decimal import Decimal
 from pathlib import Path
 
 
-def build_graph(geo, topology):
+def build_graph(geo, topology, *, distance_tolerance_km=0.0):
     """Return an undirected NetworkX node-link graph with an `edges` key.
 
     Shared edges list all their line IDs; colors are stored only on lines.
     Coordinates retain the input order: [longitude, latitude].
     """
+    if not math.isfinite(distance_tolerance_km) or distance_tolerance_km < 0:
+        raise ValueError("Distance tolerance must be finite and nonnegative")
     segments = topology["segments"]
     used_colors = {
         segment["color"].lower()
@@ -55,7 +59,7 @@ def build_graph(geo, topology):
             source, target = first["id"], second["id"]
             key = tuple(sorted((source, target)))
             # Decimal avoids artifacts such as 27.700000000000003.
-            distance = float(Decimal(str(second["km"])) - Decimal(str(first["km"])))
+            distance = float(abs(Decimal(str(second["km"])) - Decimal(str(first["km"]))))
             if key not in edges:
                 edges[key] = {
                     "source": source,
@@ -63,8 +67,14 @@ def build_graph(geo, topology):
                     "distance": distance,
                     "lines": [],
                 }
-            elif abs(edges[key]["distance"]) != abs(distance):
-                raise ValueError(f"Conflicting distances for edge {source}--{target}")
+            elif edges[key]["distance"] != distance:
+                discrepancy = abs(Decimal(str(edges[key]["distance"])) - Decimal(str(distance)))
+                if discrepancy > Decimal(str(distance_tolerance_km)):
+                    raise ValueError(f"Conflicting distances for edge {source}--{target}: "
+                                     f"{edges[key]['distance']} vs {distance} km")
+                warnings.warn(f"Shared edge {source}--{target}: retaining "
+                              f"{edges[key]['distance']} km instead of {distance} km "
+                              f"(within {distance_tolerance_km} km tolerance)", stacklevel=2)
             if line_id not in edges[key]["lines"]:
                 edges[key]["lines"].append(line_id)
 
@@ -84,7 +94,11 @@ def main():
     parser.add_argument("--geo-dir", type=Path, default=data_dir / "geo_raw")
     parser.add_argument("--topology-dir", type=Path, default=data_dir / "topology_raw")
     parser.add_argument("--output-dir", type=Path, default=data_dir / "graphs")
+    parser.add_argument("--distance-tolerance-km", type=float, default=0.0,
+                        help="Allow shared-edge rounding differences; keep first distance (default: strict)")
     args = parser.parse_args()
+    if not math.isfinite(args.distance_tolerance_km) or args.distance_tolerance_km < 0:
+        parser.error("--distance-tolerance-km must be finite and nonnegative")
     for directory in (args.geo_dir, args.topology_dir):
         if not directory.is_dir():
             parser.error(f"Input directory does not exist: {directory}")
@@ -97,7 +111,7 @@ def main():
     for name in sorted(geo_files.keys() & topology_files.keys()):
         geo = json.loads(geo_files[name].read_text(encoding="utf-8"))
         topology = json.loads(topology_files[name].read_text(encoding="utf-8"))
-        graph = build_graph(geo, topology)
+        graph = build_graph(geo, topology, distance_tolerance_km=args.distance_tolerance_km)
         output = args.output_dir / name
         output.write_text(json.dumps(graph, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"Wrote {output}: {len(graph['nodes'])} nodes, {len(graph['edges'])} edges")
