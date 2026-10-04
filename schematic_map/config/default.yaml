@@ -10,7 +10,7 @@ transform:
   lambda_s: 1.0
   refine_iterations: 20
   optimize_transform: false
-init: {mode: geo, stress_iterations: 40, anchor_weight: 0.05}
+init: {mode: skeleton, stress_iterations: 40, anchor_weight: 0.05}
 routing:
   diagonal_tolerance_deg: 15
   min_segment: 0.8
@@ -81,3 +81,16 @@ render:
 web: {min_zoom: 0.2, max_zoom: 12, label_zoom: 1.2, wheel_sensitivity: 0.001}
 line_geometry: {turn_threshold_deg: 45, long_run_stations: 3}
 reference: {enabled: true, simplify_tolerance_km: 5.0, low_pass_alpha: 0.5, low_pass_iterations: 4}
+skeleton:
+  enabled: true
+  max_segments: 4
+  spacing_factor: 1.5
+  max_initial_scale: 4.0
+  corridor_spacing_factor: 1.2
+  corridor_weight: 1000000
+  routing_passes: 3
+  candidates_per_ports: 3
+  exact_octilinear: true
+  four_segment_samples: [0.25, 0.5, 0.75]
+  loop_aspect: 1.0
+  terms: [H1_min_spacing, H3_bend_angle, H4_segment_direction, H5_node_clearance, H6_ports, H7_circular_order, S1_crossings, S3_angle, S6_direction, S11_line_turns, S12_zigzag, S13_min_run, S14_relative_order]

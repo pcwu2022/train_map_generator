@@ -16,6 +16,8 @@ class Graph:
     geo: np.ndarray
     origin: list
     topology_reference: object = None
+    topology_orders: object = None
+    skeleton: bool = False
 
 
 def build_graph(data, config):

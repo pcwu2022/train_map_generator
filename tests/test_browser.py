@@ -48,7 +48,8 @@ def test_pan_zoom_events_and_lod(browser_page):
     page.evaluate("""() => {window.mapEvents=[];for(const type of ['station-click','line-hover'])document.querySelector('transit-map').addEventListener(type,e=>mapEvents.push({type,id:e.detail.id}));}""")
     host.locator('.transit-station').first.click()
     assert page.evaluate('mapEvents.some(e=>e.type==="station-click")')
-    host.locator('.transit-line').first.hover(force=True)
+    point=host.locator('.transit-line').first.evaluate('el => {const p=el.getPointAtLength(el.getTotalLength()/2).matrixTransform(el.getScreenCTM());return {x:p.x,y:p.y}}')
+    page.mouse.move(point['x'],point['y'])
     assert page.evaluate('mapEvents.some(e=>e.type==="line-hover")')
     assert host.locator('.muted').count()>0
     width=lambda:page.evaluate("document.querySelector('transit-map').shadowRoot.querySelector('svg').viewBox.baseVal.width")

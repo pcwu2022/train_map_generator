@@ -19,3 +19,11 @@
 | jre_shinkansen | 0 → 0 | 0 → 0 | 36 → 35 | 69 → 44 |
 | jre | 11 → 82 | 28 → 244 | 1421 → 1222 | 1770 → 1920 |
 | jrw | 4 → 18 | 8 → 62 | 978 → 745 | 1209 → 1082 |
+
+## D — key-node skeleton and corridor routing
+
+| Fixture | Hard before → after | Crossings before → after | Zigzags before → after | Bends before → after |
+|---|---:|---:|---:|---:|
+| jre_shinkansen | 0 → 0 | 0 → 0 | 36 → 1 | 69 → 7 |
+| jre | 11 → 20 | 28 → 52 | 1421 → 65 | 1770 → 258 |
+| jrw | 4 → 3 | 8 → 16 | 978 → 33 | 1209 → 122 |

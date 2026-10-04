@@ -37,9 +37,10 @@ class Layout:
         angles,clearance_penalty = [],0.
         for ei,path in enumerate(self.routes):
             u,v = g.endpoints[ei]
-            if lengths[ei]<c['grid']['d_min']-EPS:
-                hard['H1_min_spacing'].append({'edge':ei,'length':float(lengths[ei])}); spacing_penalty += (c['grid']['d_min']-lengths[ei])/c['grid']['d_min']
-            if bends[ei]>2: hard['H2_bend_limit'].append({'edge':ei})
+            minimum_length=g.edges[ei].get('min_path_length',c['grid']['d_min']) if g.skeleton else c['grid']['d_min']
+            if lengths[ei]<minimum_length-EPS:
+                hard['H1_min_spacing'].append({'edge':ei,'length':float(lengths[ei])}); spacing_penalty += (minimum_length-lengths[ei])/minimum_length
+            if bends[ei]>(c['skeleton']['max_segments']-1 if g.skeleton else 2): hard['H2_bend_limit'].append({'edge':ei})
             vectors = np.diff(path,axis=0)
             for a,b in zip(vectors,vectors[1:]):
                 turn = angle_difference(bearing(a),bearing(b))
@@ -70,7 +71,8 @@ class Layout:
                     if port(a)==port(b) or separation<45-EPS:
                         hard['H6_ports'].append({'node':g.nodes[node]['id'],'edges':[edge,other]})
             order=[e for e,d in sorted(tangents,key=lambda item:(bearing(item[1]),item[0]))]
-            if not cyclic_equal(circular_order(g,g.topology_reference if g.topology_reference is not None else self.anchor,node),order): hard['H7_circular_order'].append({'node':g.nodes[node]['id']})
+            expected=g.topology_orders[node] if g.topology_orders is not None else circular_order(g,g.topology_reference if g.topology_reference is not None else self.anchor,node)
+            if not cyclic_equal(expected,order): hard['H7_circular_order'].append({'node':g.nodes[node]['id']})
             for line in g.nodes[node]['lines']:
                 incident=[d for edge,d in tangents if line in g.edges[edge]['lines']]
                 if len(incident)==2: collinear.append(180-angle_difference(bearing(incident[0]),bearing(incident[1])))

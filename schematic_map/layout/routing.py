@@ -4,7 +4,7 @@ from .spatial import SpatialGrid
 from itertools import product
 import numpy as np
 from .geometry import (DIRECTIONS, EPS, direction_deviation, path_length, port,
-                       angle_difference, bearing, point_segment_distances, cross, diagonal_soft_deviation,
+                       angle_difference, bearing, point_segment_distances, cross, diagonal_soft_deviation, segment_distance,
                        cyclic_equal, circular_order, node_tangents, proper_crossing)
 
 
@@ -15,18 +15,19 @@ class Router:
         self.rank_cache = OrderedDict()
         self.pairs = [(a,b) for a,b in product(range(8),repeat=2) if min((a-b)%8,(b-a)%8) in (1,2)]
         self.triples = [(a,b,c) for a,b in self.pairs for c in range(8) if min((b-c)%8,(c-b)%8) in (1,2)]
-        self.orders = [circular_order(graph,graph.topology_reference if graph.topology_reference is not None else anchor,i) for i in range(len(graph.nodes))]
+        self.orders = graph.topology_orders if graph.topology_orders is not None else [circular_order(graph,graph.topology_reference if graph.topology_reference is not None else anchor,i) for i in range(len(graph.nodes))]
         # Precompute inverse direction matrices; solving tiny systems repeatedly is expensive.
         self.inverses = {(a,b):np.linalg.inv(np.column_stack((DIRECTIONS[a],DIRECTIONS[b]))) for a,b in self.pairs}
 
-    def candidates(self, delta, full=False):
-        key = (round(float(delta[0]),8),round(float(delta[1]),8),full)
+    def candidates(self, delta, full=False, min_length=None):
+        key = (round(float(delta[0]),8),round(float(delta[1]),8),full,min_length)
         if key in self.cache:
             self.cache.move_to_end(key); return self.cache[key]
         cfg = self.config['routing']; minimum = cfg['min_segment']
         result = []
         origin = np.zeros(2)
-        if np.linalg.norm(delta)>=minimum and direction_deviation(delta,cfg['diagonal_tolerance_deg'])==0:
+        exact=(not self.graph.skeleton or not self.config['skeleton']['exact_octilinear'] or abs((bearing(delta)+22.5)%45-22.5)<EPS)
+        if exact and np.linalg.norm(delta)>=minimum and direction_deviation(delta,cfg['diagonal_tolerance_deg'])==0:
             result.append(np.array([origin,delta]))
         for a,b in self.pairs:
             lengths = self.inverses[a,b] @ delta
@@ -34,7 +35,7 @@ class Router:
                 result.append(np.array([origin,lengths[0]*DIRECTIONS[a],delta]))
         samples = cfg['final_samples'] if full else cfg['samples']
         # Sample first segment; solve the other two. This parameterization also covers d1=d3.
-        radius = max(np.linalg.norm(delta),minimum*3)
+        radius = max(np.linalg.norm(delta),minimum*3,min_length or 0)
         for a,b,c in self.triples:
             inverse = self.inverses[b,c]
             # Feasible interval for first length from positivity of the solved remaining lengths.
@@ -51,8 +52,27 @@ class Router:
                 second,third = initial+slope*first
                 if min(second,third)<minimum-EPS: continue
                 result.append(np.array([origin,first*DIRECTIONS[a],first*DIRECTIONS[a]+second*DIRECTIONS[b],delta]))
+        if self.graph.skeleton:
+            for a,b,c in self.triples:
+                for d in range(8):
+                    if (c,d) not in self.inverses:continue
+                    inverse=self.inverses[c,d]
+                    for first_fraction,second_fraction in product(self.config['skeleton']['four_segment_samples'],repeat=2):
+                        first=max(minimum,radius*first_fraction);second=max(minimum,radius*second_fraction)
+                        third,fourth=inverse @ (delta-first*DIRECTIONS[a]-second*DIRECTIONS[b])
+                        if min(third,fourth)<minimum-EPS:continue
+                        one=first*DIRECTIONS[a];two=one+second*DIRECTIONS[b];three=two+third*DIRECTIONS[c]
+                        result.append(np.array([origin,one,two,three,delta]))
         # Canonical ties favour shorter routes; preserve deterministic enumeration.
         result.sort(key=lambda p:(len(p),path_length(p), port(p[1]-p[0])%2))
+        if self.graph.skeleton:
+            quota=self.config['skeleton']['candidates_per_ports'];counts={};selected=[]
+            for path in result:
+                if min_length is not None and path_length(path)<min_length-EPS:continue
+                group=(len(path),port(path[1]-path[0]),port(path[-2]-path[-1]))
+                if counts.get(group,0)>=quota:continue
+                counts[group]=counts.get(group,0)+1;selected.append(path)
+            result=selected
         if not result: result = [np.array([origin,delta])]  # An explicitly scored infeasible fallback.
         self.cache[key] = result
         if len(self.cache)>cfg['cache_size']: self.cache.popitem(last=False)
@@ -64,6 +84,7 @@ class Router:
         def weight(name): return terms[name]['weight'] if terms[name]['enabled'] else 0
         length = path_length(path); bends = len(path)-2
         result = weight('S2_edge_length')*((length-self.targets[edge])/self.targets[edge])**2
+        result += weight('S11_line_turns')*bends*len(graph.edges[edge]['lines'])
         result += weight('S4_bends')*min(1,bends)+(terms['S4_bends']['second_bend'] if terms['S4_bends']['enabled'] and bends>1 else 0)
         if terms['S3_angle'].get('exact_diagonal',False):
             result+=weight('S3_angle')*sum(diagonal_soft_deviation(d,cfg['routing']['diagonal_tolerance_deg']) for d in np.diff(path,axis=0))
@@ -93,7 +114,8 @@ class Router:
             if len(known)==len(graph.adjacency[node]):
                 order = [e for e,d in sorted(known,key=lambda item:(bearing(item[1]),item[0]))]
                 result += weight('H7_circular_order')*(not cyclic_equal(self.orders[node],order))
-        nearby_edges=self.edge_index.query([*path.min(axis=0),*path.max(axis=0)]) if hasattr(self,'edge_index') else range(len(routes))
+        padding=cfg['grid']['d_min']*cfg['skeleton']['corridor_spacing_factor'] if graph.skeleton else 0
+        nearby_edges=self.edge_index.query([*(path.min(axis=0)-padding),*(path.max(axis=0)+padding)]) if hasattr(self,'edge_index') else range(len(routes))
         obstacles=[(a,b,other) for other in nearby_edges if other!=edge and routes[other] is not None for a,b in zip(routes[other],routes[other][1:])]
         if obstacles:
             a=np.array([item[0] for item in obstacles]); b=np.array([item[1] for item in obstacles]); hits=set()
@@ -102,6 +124,21 @@ class Router:
                 second=cross(b-a,start-a)*cross(b-a,end-a)
                 hits.update(obstacles[i][2] for i in np.flatnonzero((first < -EPS) & (second < -EPS)))
             result+=weight('S1_crossings')*len(hits)
+        if graph.skeleton and obstacles:
+            owners=np.array([item[2] for item in obstacles],dtype=int)
+            valid=np.array([not (set(graph.endpoints[edge]) & set(graph.endpoints[other])) for other in owners])
+            starts,ends=a[valid],b[valid];owners=owners[valid]
+            nearest=np.full(len(graph.edges),np.inf)
+            vectors=ends-starts;denominators=np.maximum(np.sum(vectors*vectors,axis=1),EPS**2)
+            for start,end in zip(path,path[1:]):
+                t=np.clip(np.sum((start-starts)*vectors,axis=1)/denominators,0,1)
+                first=np.linalg.norm(start-starts-t[:,None]*vectors,axis=1)
+                t=np.clip(np.sum((end-starts)*vectors,axis=1)/denominators,0,1)
+                second=np.linalg.norm(end-starts-t[:,None]*vectors,axis=1)
+                distances=np.minimum(np.minimum(first,second),np.minimum(point_segment_distances(starts,start,end),point_segment_distances(ends,start,end)))
+                hits=(cross(end-start,starts-start)*cross(end-start,ends-start)<-EPS)&(cross(vectors,start-starts)*cross(vectors,end-starts)<-EPS)
+                distances[hits]=0;np.minimum.at(nearest,owners,distances)
+            result+=cfg['skeleton']['corridor_weight']*float(np.maximum(0,(padding-nearest)/padding).sum())
         # Cartographic tie-break: an axis segment at a key node.
         preference = 0
         for node,vec in ((u,path[1]-path[0]),(v,path[-2]-path[-1])):
@@ -111,13 +148,17 @@ class Router:
 
     def best(self, edge, positions, routes, full=False):
         u,v = self.graph.endpoints[edge]
-        candidates = self.candidates(positions[v]-positions[u],full)
+        candidates = self.candidates(positions[v]-positions[u],full,self.graph.edges[edge]['min_path_length'] if self.graph.skeleton else None)
+        if self.graph.skeleton:
+            required=self.graph.edges[edge]['min_path_length']
+            candidates=[path for path in candidates if path_length(path)>=required-EPS] or candidates[-1:]
         terms = self.config['terms']
         def lower(path):
             bends = len(path)-2
             value = terms['S2_edge_length']['weight']*((path_length(path)-self.targets[edge])/self.targets[edge])**2 if terms['S2_edge_length']['enabled'] else 0.
             if terms['S4_bends']['enabled']:
                 value += terms['S4_bends']['weight']*min(bends,1)+(terms['S4_bends']['second_bend'] if bends>1 else 0)
+            if terms['S11_line_turns']['enabled']:value+=terms['S11_line_turns']['weight']*bends*len(self.graph.edges[edge]['lines'])
             return value
         rank_key=(round(float(positions[v,0]-positions[u,0]),8),round(float(positions[v,1]-positions[u,1]),8),float(self.targets[edge]),full)
         ranked=self.rank_cache.get(rank_key)

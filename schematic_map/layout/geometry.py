@@ -108,3 +108,8 @@ def diagonal_soft_deviation(vector,tolerance):
     if np.linalg.norm(vector)<EPS or min(angle,90-angle)<EPS or tolerance<=0:return 0.
     deviation=abs(angle-45)
     return deviation/tolerance if deviation<=tolerance+EPS else 0.
+
+
+def segment_distance(a,b,c,d):
+    if proper_crossing(a,b,c,d):return 0.
+    return min(float(point_segment_distances(np.array([a,b]),c,d).min()),float(point_segment_distances(np.array([c,d]),a,b).min()))

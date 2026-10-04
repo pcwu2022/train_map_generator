@@ -22,8 +22,8 @@ def load_config(path=None, overrides=None):
     config = merge(config, overrides or {})
     if config['grid']['d_min'] <= 0 or config['grid']['pitch_fine'] <= 0:
         raise ValueError('Grid spacing and pitch must be positive')
-    if config['init']['mode'] not in ('geo', 'hint'):
-        raise ValueError('init.mode must be geo or hint')
+    if config['init']['mode'] not in ('geo', 'hint', 'skeleton'):
+        raise ValueError('init.mode must be geo, hint or skeleton')
     if config['anneal']['restarts'] < 1:
         raise ValueError('anneal.restarts must be positive')
     if config['transform']['optimize_transform']:
@@ -62,4 +62,8 @@ def load_config(path=None, overrides=None):
         raise ValueError('Invalid reference smoothing parameters')
     if config['terms']['S14_relative_order']['k']<1:
         raise ValueError('Relative-order k must be positive')
+    if config['skeleton']['max_segments']!=4 or config['skeleton']['spacing_factor']<1:
+        raise ValueError('Skeleton requires four-segment routing and spacing factor >= 1')
+    if config['skeleton']['loop_aspect']<=0:
+        raise ValueError('Skeleton loop aspect must be positive')
     return config

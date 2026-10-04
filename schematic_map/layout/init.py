@@ -30,7 +30,7 @@ def initial_layout(graph, anchor, targets, config):
         if any('schematic' not in n for n in graph.nodes):
             raise ValueError('init.mode=hint requires schematic hints for every node')
         points = np.array([n['schematic'] for n in graph.nodes], dtype=float).reshape((-1,2))
-    else:
+    elif config['init']['mode']=='geo':
         for component in graph.components:
             n = len(component)
             if n < 2: continue

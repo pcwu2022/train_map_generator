@@ -32,7 +32,11 @@ def generate_layout(data,config=None,record_runtime=False,progress=None):
         subgraph=build_graph(subdata,config)
         subgraph.geo=graph.geo[component]; subgraph.origin=graph.origin
         subgraph.topology_reference=graph.topology_reference[component]
-        sublayout=optimize(subgraph,positions[component],anchor[component],targets[edge_ids],config)
+        if config['init']['mode']=='skeleton' and config['skeleton']['enabled']:
+            from .layout.skeleton import skeleton_layout
+            sublayout=skeleton_layout(subgraph,positions[component],anchor[component],targets[edge_ids],config)
+        else:
+            sublayout=optimize(subgraph,positions[component],anchor[component],targets[edge_ids],config)
         sublayout=refine(sublayout)
         positions[component]=sublayout.positions
         _,label_boxes,_=place_labels(subgraph,sublayout.positions,sublayout.routes,config)
