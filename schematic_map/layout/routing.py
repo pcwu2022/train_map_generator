@@ -15,7 +15,7 @@ class Router:
         self.rank_cache = OrderedDict()
         self.pairs = [(a,b) for a,b in product(range(8),repeat=2) if min((a-b)%8,(b-a)%8) in (1,2)]
         self.triples = [(a,b,c) for a,b in self.pairs for c in range(8) if min((b-c)%8,(c-b)%8) in (1,2)]
-        self.orders = [circular_order(graph,anchor,i) for i in range(len(graph.nodes))]
+        self.orders = [circular_order(graph,graph.topology_reference if graph.topology_reference is not None else anchor,i) for i in range(len(graph.nodes))]
         # Precompute inverse direction matrices; solving tiny systems repeatedly is expensive.
         self.inverses = {(a,b):np.linalg.inv(np.column_stack((DIRECTIONS[a],DIRECTIONS[b]))) for a,b in self.pairs}
 

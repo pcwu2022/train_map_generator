@@ -70,7 +70,7 @@ class Layout:
                     if port(a)==port(b) or separation<45-EPS:
                         hard['H6_ports'].append({'node':g.nodes[node]['id'],'edges':[edge,other]})
             order=[e for e,d in sorted(tangents,key=lambda item:(bearing(item[1]),item[0]))]
-            if not cyclic_equal(circular_order(g,self.anchor,node),order): hard['H7_circular_order'].append({'node':g.nodes[node]['id']})
+            if not cyclic_equal(circular_order(g,g.topology_reference if g.topology_reference is not None else self.anchor,node),order): hard['H7_circular_order'].append({'node':g.nodes[node]['id']})
             for line in g.nodes[node]['lines']:
                 incident=[d for edge,d in tangents if line in g.edges[edge]['lines']]
                 if len(incident)==2: collinear.append(180-angle_difference(bearing(incident[0]),bearing(incident[1])))

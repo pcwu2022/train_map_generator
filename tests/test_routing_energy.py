@@ -53,6 +53,8 @@ def test_every_term_hand_computed(fixtures,fast_config):
 
 @pytest.mark.parametrize('name', ['H1_min_spacing','H2_bend_limit','H3_bend_angle','H4_segment_direction','H5_node_clearance','H6_ports','H7_circular_order','S1_crossings','S3_angle','S4_bends','S5_collinearity','S6_direction','S7_displacement','S8_chain_spacing','S9_compactness'])
 def test_term_detects_violation(name,fixtures,fast_config):
+    fast_config['terms']['S6_direction'].update(chain_only=False,tolerance_deg=22.5)
+    fast_config['terms']['S7_displacement']['key_only']=False
     layout=make_layout(fixtures,fast_config,'grid' if name in ('H6_ports','H7_circular_order') else 'straight')
     if name=='H1_min_spacing': layout.positions[1]=layout.positions[0]+[0,.5]
     elif name=='H2_bend_limit': layout.routes[0]=np.array([[0,0],[1,0],[2,1],[2,2],[0,2]])

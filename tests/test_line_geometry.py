@@ -51,3 +51,29 @@ def test_linear_station_turn_and_diagonal_preference():
     terms={term.name:term for term in configured_terms(layout.config)}
     assert terms['S3_angle'].full(layout)==pytest.approx(5/15)
     assert layout.facts()['hard']['H4_segment_direction']==[]
+
+
+def test_key_only_anchor_and_chain_direction():
+    layout=layout_for([(0,0),(1,0),(2,0)])
+    terms={term.name:term for term in configured_terms(layout.config)}
+    layout.positions[1]+=[0,2]
+    assert terms['S6_direction'].full(layout)==0
+    assert terms['S7_displacement'].full(layout)==0
+    layout.positions[2]=[0,2]
+    assert terms['S6_direction'].full(layout)==1  # 90 minus 45, normalized by 45.
+    assert terms['S7_displacement'].full(layout)==2
+
+
+def test_relative_order_hand_computed():
+    from schematic_map.layout.energy.soft import RelativeOrder
+    layout=layout_for([(0,0),(1,1),(2,2)])
+    layout.positions[[0,2]]=layout.positions[[2,0]]
+    assert RelativeOrder(5,{'k':1}).full(layout)==2
+
+
+def test_smoothing_preserves_keys_and_removes_noise():
+    from schematic_map.layout.reference import smooth_reference
+    layout=layout_for([(0,0),(1,.2),(2,-.2),(3,0)])
+    before=layout.graph.geo.copy();after=smooth_reference(layout.graph,layout.config)
+    assert np.allclose(after[[0,-1]],before[[0,-1]])
+    assert np.max(np.abs(after[1:-1,1]))<np.max(np.abs(before[1:-1,1]))

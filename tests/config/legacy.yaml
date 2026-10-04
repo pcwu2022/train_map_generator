@@ -81,10 +81,12 @@ terms:
     enabled: true
     weight: 8
   S6_direction:
+    chain_only: false
     enabled: true
     weight: 10
     tolerance_deg: 22.5
   S7_displacement:
+    key_only: false
     enabled: true
     weight: 0.5
   S8_chain_spacing:
@@ -157,3 +159,4 @@ web:
 line_geometry:
   turn_threshold_deg: 45
   long_run_stations: 3
+reference: {enabled: false}

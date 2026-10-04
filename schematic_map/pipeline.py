@@ -5,7 +5,7 @@ import numpy as np
 from .config import load_config
 from .io.validate import validate_graph
 from .graph.build import build_graph
-from .layout.transform import find_transform,target_lengths
+from .layout.transform import find_transform,target_lengths,apply_transform
 from .layout.init import initial_layout
 from .layout.anneal import optimize
 from .layout.refine import refine
@@ -18,7 +18,9 @@ from .metrics import measure
 def generate_layout(data,config=None,record_runtime=False,progress=None):
     started=time.perf_counter(); config=load_config(overrides=config)
     validate_graph(data); graph=build_graph(data,config)
-    anchor,transform=find_transform(graph,config); targets=target_lengths(graph,config)
+    anchor,transform=find_transform(graph,config)
+    graph.topology_reference=apply_transform(graph.geo,transform['rotation_deg'],transform['aspect'])
+    targets=target_lengths(graph,config)
     positions=initial_layout(graph,anchor,targets,config); routes=[None]*len(graph.edges)
     component_label_boxes=[]
     # Optimize each component separately; neither obstacles nor annealing cross components.
@@ -29,6 +31,7 @@ def generate_layout(data,config=None,record_runtime=False,progress=None):
         subdata={'nodes':[deepcopy(graph.nodes[i]) for i in component], 'edges':[deepcopy(graph.edges[i]) for i in edge_ids],'lines':graph.lines}
         subgraph=build_graph(subdata,config)
         subgraph.geo=graph.geo[component]; subgraph.origin=graph.origin
+        subgraph.topology_reference=graph.topology_reference[component]
         sublayout=optimize(subgraph,positions[component],anchor[component],targets[edge_ids],config)
         sublayout=refine(sublayout)
         positions[component]=sublayout.positions

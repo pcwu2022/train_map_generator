@@ -1,5 +1,6 @@
 import math
 import numpy as np
+from .reference import smooth_reference
 
 
 def apply_transform(points, theta, aspect):
@@ -39,7 +40,7 @@ def find_transform(graph, config):
     for _ in range(2):
         theta = golden(lambda t:score(t,aspect), max(-cfg['theta_max_deg'],theta-cfg['theta_step_deg']), min(cfg['theta_max_deg'],theta+cfg['theta_step_deg']),cfg['refine_iterations'])
         aspect = golden(lambda s:score(theta,s), max(cfg['aspect_range'][0],aspect-cfg['aspect_step']),min(cfg['aspect_range'][1],aspect+cfg['aspect_step']),cfg['refine_iterations'])
-    anchor = apply_transform(graph.geo, theta, aspect)
+    anchor = apply_transform(smooth_reference(graph,config), theta, aspect)
     targets = target_lengths(graph, config)
     # Independent scale per component prevents distant isolated components shrinking a network.
     for component in graph.components:

@@ -15,6 +15,7 @@ class Graph:
     chains: list
     geo: np.ndarray
     origin: list
+    topology_reference: object = None
 
 
 def build_graph(data, config):

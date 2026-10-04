@@ -58,4 +58,8 @@ def load_config(path=None, overrides=None):
         raise ValueError('Line turn threshold must be in (0, 180]')
     if config['terms']['S12_zigzag']['zigzag_window']<=0 or config['terms']['S13_min_run']['run_min']<=0:
         raise ValueError('Zigzag window and minimum run must be positive')
+    if config['reference']['simplify_tolerance_km']<0 or not 0<=config['reference']['low_pass_alpha']<=1 or config['reference']['low_pass_iterations']<0:
+        raise ValueError('Invalid reference smoothing parameters')
+    if config['terms']['S14_relative_order']['k']<1:
+        raise ValueError('Relative-order k must be positive')
     return config

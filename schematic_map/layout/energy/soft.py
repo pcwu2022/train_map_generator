@@ -49,6 +49,9 @@ class Collinearity(SoftTerm):
 class Direction(SoftTerm):
     name='S6_direction'
     def full(self,layout):
+        if self.parameters.get('chain_only',False):
+            from ..reference import chain_direction_cost
+            return chain_direction_cost(layout,self.parameters['tolerance_deg'])
         return float(np.sum(np.maximum(0,np.array(layout.facts()['geo_deviations'])-self.parameters['tolerance_deg'])**2))
 
 
@@ -56,7 +59,14 @@ class Direction(SoftTerm):
 class Displacement(SoftTerm):
     name='S7_displacement'
     def full(self,layout):
-        d=layout.facts()['displacement']; return float(np.mean(np.sum(d*d,axis=1))) if len(d) else 0.
+        if self.parameters.get('key_only',False):
+            from ..reference import key_nodes
+            keys=key_nodes(layout.graph)
+            if not keys:return 0.
+            p,a=layout.positions[keys],layout.anchor[keys]
+            d=(p-p.mean(axis=0))-(a-a.mean(axis=0))
+        else:d=layout.facts()['displacement']
+        return float(np.mean(np.sum(d*d,axis=1))) if len(d) else 0.
 
 
 @register
@@ -98,3 +108,11 @@ class MinimumRun(SoftTerm):
         minimum=self.parameters['run_min']
         return sum(((minimum-run['length'])/minimum)**2 for run in line_statistics(layout)['runs']
                    if run['length']<minimum and not run['terminal'])
+
+
+@register
+class RelativeOrder(SoftTerm):
+    name='S14_relative_order'
+    def full(self,layout):
+        from ..reference import relative_order_cost
+        return relative_order_cost(layout,self.parameters['k'])
