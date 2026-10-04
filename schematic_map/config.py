@@ -66,4 +66,41 @@ def load_config(path=None, overrides=None):
         raise ValueError('Skeleton requires four-segment routing and spacing factor >= 1')
     if config['skeleton']['loop_aspect']<=0:
         raise ValueError('Skeleton loop aspect must be positive')
+    if len(config['anneal']['move_weights'])!=6 or len(config['anneal']['rotation_weights'])!=2:
+        raise ValueError('Expected six translation weights and two rotation weights')
+    if config['primary_axis']['weight']<0 or config['primary_axis']['max_error_deg']<=0 or config['primary_axis']['min_anisotropy']<1:
+        raise ValueError('Invalid primary-axis parameters')
+    points=config['primary_axis']['quadrature_points'];weights=config['primary_axis']['quadrature_weights']
+    if len(points)!=len(weights) or not points or any(not 0<=point<=1 for point in points) or any(weight<0 for weight in weights) or sum(weights)<=0:
+        raise ValueError('Invalid primary-axis quadrature')
+    for name,values in (
+        ('refine.step_scales',config['refine']['step_scales']),
+        ('labels.offset_scales',config['labels']['offset_scales']),
+    ):
+        if not values or any(not isinstance(value,(int,float)) or not math.isfinite(value) or value<=0 for value in values):
+            raise ValueError(f'{name} must contain positive finite values')
+    for name,value in (
+        ('refine.smooth_neighbors',config['refine']['smooth_neighbors']),
+        ('reference.low_pass_iterations',config['reference']['low_pass_iterations']),
+        ('S14_relative_order.k',config['terms']['S14_relative_order']['k']),
+        ('skeleton.candidates_per_ports',config['skeleton']['candidates_per_ports']),
+        ('line_geometry.long_run_stations',config['line_geometry']['long_run_stations']),
+    ):
+        if not isinstance(value,int) or value<0 or (value==0 and name!='reference.low_pass_iterations'):
+            raise ValueError(f'{name} must be a valid integer count')
+    for name,value in (
+        ('routing.min_segment',config['routing']['min_segment']),
+        ('transform.primary_prominence',config['transform']['primary_prominence']),
+        ('skeleton.max_initial_scale',config['skeleton']['max_initial_scale']),
+        ('skeleton.corridor_spacing_factor',config['skeleton']['corridor_spacing_factor']),
+        ('skeleton.corridor_weight',config['skeleton']['corridor_weight']),
+    ):
+        if not isinstance(value,(int,float)) or not math.isfinite(value) or value<=0:
+            raise ValueError(f'{name} must be positive and finite')
+    all_moves=config['anneal']['move_weights']+(config['anneal']['rotation_weights'] if config['anneal']['rotation_moves'] else [])
+    if any(value<0 or not math.isfinite(value) for value in all_moves) or sum(all_moves)<=0:
+        raise ValueError('Move weights must be nonnegative with a positive total')
+    for name,value in config['acceptance'].items():
+        if not isinstance(value,(int,float)) or not math.isfinite(value) or not 0<=value<=1:
+            raise ValueError(f'acceptance.{name} must lie in [0, 1]')
     return config

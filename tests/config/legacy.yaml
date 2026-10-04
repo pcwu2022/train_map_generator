@@ -99,14 +99,15 @@ terms:
   S12_zigzag:
     enabled: false
     weight: 12
-    zigzag_window: 3.0
   S13_min_run:
     enabled: false
     weight: 5
-    run_min: 1.5
   S9_compactness:
     enabled: true
     weight: 0.1
+  S14_relative_order:
+    enabled: false
+    weight: 5
 anneal:
   restarts: 1
   workers: 1
@@ -130,7 +131,8 @@ anneal:
   - 1
   - 2
 refine:
-  step_scales: [1]
+  step_scales:
+  - 1
   star_orders: false
   smoothness: false
   sweeps: 1
@@ -140,7 +142,8 @@ components:
 labels:
   font_size: 0.38
   offset: 0.5
-  offset_scales: [1.0]
+  offset_scales:
+  - 1.0
   distance_weight: 0.1
   padding: 0.06
   overlap_weight: 1000
@@ -167,5 +170,7 @@ web:
 line_geometry:
   turn_threshold_deg: 45
   long_run_stations: 3
-reference: {enabled: false}
-primary_axis: {enabled: false}
+reference:
+  enabled: false
+primary_axis:
+  enabled: false

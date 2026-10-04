@@ -185,15 +185,19 @@ All terms are pluggable (§11). Default weights are guidance only.
 | ID | Term | Definition | Default w |
 |---|---|---|---|
 | S1 | Crossings | Count of proper crossings between edge paths (excluding shared endpoints). Very steep; a planar result is the target. Allowed only if the data forces it. | 1000 per crossing |
-| S2 | Edge-length uniformity | For each edge: `((len − L_target)/L_target)²`, with `L_target = max(d_min, a + b·ln(1 + d_geo/d0))`. Defaults: `a=1.0`, `b=0.6`, `d0=5 km`. Compresses long rural edges and expands dense urban ones, but keeps monotonic order. | 5 |
-| S3 | Angle deviation | Zero-penalty inside the allowed set of H4; grows quadratically outside it. Used when hard barriers are relaxed or while scoring candidates. | 20 |
+| S2 | Edge-length uniformity | For each edge: `((len − L_target)/L_target)²`, with `L_target = max(d_min, a + b·ln(1 + d_geo/d0))`. Defaults: `a=1.0`, `b=0.3`, `d0=5 km`. Compresses long rural edges and expands dense urban ones, but keeps monotonic order. | 5 |
+| S3 | Angle deviation | Squared outside-zone deviation plus linear diagonal `dev/tolerance` inside H4’s feasibility zone. Axes and exact diagonals cost zero. | 2 |
 | S4 | Bend count | Penalty per bend (2-bend edges cost more than proportionally). | 3 per bend, 8 for the second |
-| S5 | Collinearity | For each line and each consecutive station triple (A, B, C) on it where B is `through` for that line: `(180° − angle_at_B)²` using the **path tangents** at B, not the node-to-node chord. | 8 |
-| S6 | Relative direction | For each edge: angle between the geographic bearing (after transform T) and the schematic chord bearing. Zero within 22.5°, quadratic beyond. Preserves "what lies north-east of what". | 10 |
-| S7 | Geographic displacement | Mean squared distance between schematic position and transformed geographic position after centering and scaling. Weak, to keep the map loosely anchored. | 0.5 |
-| S8 | Edge-length vs. stations on chain | Within a chain, penalize variance of edge lengths, so stations appear evenly spaced. | 3 |
+| S5 | Collinearity | For each station/line with two incident edges, `abs(180° − tangent_separation)/45°`. Uses outward routed tangents. | 2 |
+| S6 | Relative direction | Smoothed open-chain key-to-key chord deviation: `max(0, delta − 45°)/45°`. No through-station or closed-chain chord costs. | 10 |
+| S7 | Geographic displacement | Mean squared centered displacement at key nodes only. | 0.05 |
+| S8 | Edge-length vs. stations on chain | Sum of population variances of routed edge lengths divided by their chain mean. | 10 |
 | S9 | Total length / compactness | Weak term on layout bounding-box area, to prevent runaway expansion. | 0.1 |
 | S10 | Label clearance | Computed in Stage 5 only (not during node optimization). | — |
+| S11 | Line turns | Count changes ≥45° along concatenated routed lines, including station turns and loop seams. | 6 |
+| S12 | Zigzags | Count consecutive opposite-sign thresholded turns separated by less than 3 units of arc length. | 12 |
+| S13 | Minimum straight run | Sum `((1.5 − run)/1.5)²` for runs shorter than 1.5, excluding terminal-ending runs. | 5 |
+| S14 | Relative order | Optional count of flipped x/y orders among deduplicated k-nearest geographic key pairs; k=4. | 5; disabled |
 
 ---
 
@@ -217,24 +221,54 @@ load → validate → preprocess → [per component]
 
 ### Stage 1 — Global rotation θ and aspect s
 
+Simplify each projected geographic chain (RDP, 5 km tolerance), resample at its
+original arc fractions, and low-pass smooth four times with alpha 0.5. Preserve
+all key endpoints. `reference.enabled` can disable smoothing.
+
 Transform `T(p) = S(s) · R(θ) · (p − centroid)`.
 
-- Search θ ∈ [−θ_max, θ_max] (default θ_max = 30°) in 1° steps, s ∈ [0.7, 1.4] in 0.05 steps (separate stretch along the rotated y axis).
-- Objective: `Σ_e len_e · dist_to_nearest_octilinear(bearing_e(T))² + λ_θ·θ² + λ_s·(ln s)²`, with edge weight `len_e`.
-- Intent: if the main line runs at 15° from vertical, θ cancels it so that line becomes vertical. The regularizers keep the map loosely geographic.
-- Refine with a local golden-section search around the best grid cell.
-- Store θ, s in the output `transform`.
-- The final optimization (Stage 3) may adjust θ and s as 2 extra variables (optional, behind the config flag `optimize_transform`), but S6/S7 must always reference the **current** T.
+- Search θ in ±45° at 1° increments and aspect in [0.7, 1.4] at 0.05 increments.
+- Use smoothed open-chain chord bearings, weighted by smoothed chain length
+  times prominence (2 for flagged primary lines or the line with most stations,
+  otherwise 1). `transform.chain_bearings: false` restores edge bearings.
+- Objective: weighted squared nearest-octilinear angular deviations,
+  `lambda_theta × theta² + lambda_s × ln(aspect)²`; angles here are radians.
+  Defaults: `lambda_theta=0.0001`, `lambda_s=1`.
+- Add the length-weighted PCA primary-line rotation-to-y candidate. Choose the
+  largest flagged primary line, else the line with most stations, ID tie-break.
+  Eligible primaries are flagged or originally within 45° of vertical.
+  Eligible candidates must align within 5°, and also pay the configured
+  squared primary-axis objective (default weight 50 times primary length).
+  Flagged PCA candidates may exceed the ordinary rotation limit.
+- Refine the grid result locally by golden-section search; store θ, aspect,
+  primary ID and eligibility in `transform`.
+- Scale each connected component independently into grid units using the median
+  positive reference edge length and median target length.
+- Joint transform annealing remains unimplemented; `optimize_transform: true`
+  raises an explicit configuration error.
 
-Then scale to grid units so that the median chain edge ≈ `L_target(median d_geo)`.
+All numeric thresholds and switches live in `config/default.yaml`. Degenerate
+or isotropic primary covariance has no usable PCA axis.
 
-### Stage 2 — Initial layout
+### Stage 2 — Skeleton initialization and station expansion
 
-1. Start from `T(geo)` scaled to grid units.
-2. Run **stress majorization** (SMACOF) with target distances = `L_target` along graph shortest paths, and a weak anchor to `T(geo)`.
-3. Resolve overlaps to satisfy H1 (push apart iteratively).
-4. Snap to grid with pitch `g` (default 0.25 grid units). Keep snapping modest so H4 tolerance has room.
-5. Alternative: `init.mode = "hint"` uses `nodes[].schematic`.
+Default `init.mode: skeleton` builds keys (terminals, junctions and interchanges)
+and one coarse edge per maximal chain. Internal parallel edges are retained.
+Route each chain with at most four octilinear segments and length at least
+`n_edges × d_min × spacing_factor` (default factor 1.5). Optimize coarse
+H1/H3–H7, S1/S3/S6 and S11–S14; the configured skeleton term list controls
+which enabled terms participate. H7 retains the original geographic incident
+edge order at keys. Internal routing also penalizes closely overlapping
+unrelated chain corridors. Closed chains are expanded using a loop route.
+
+Expand each coarse chain by placing through stations at equal arc-length
+spacing. Slice that route at stations into final edge paths, discard redundant
+collinear vertices, and refine the full graph. Final H2 remains two bends per
+edge; the internal four-segment allowance never relaxes the output constraints.
+
+`init.mode: geo` keeps the flat geographic/stress pipeline with overlap
+resolution and fine-grid snapping; `hint` starts from supplied schematic
+coordinates. `skeleton.enabled: false` bypasses the coarse optimization.
 
 ### Stage 3 — Optimize node positions
 
@@ -247,7 +281,14 @@ Algorithm: **simulated annealing** over grid-snapped node positions (multi-resol
   3. shift a branch (the subtree hanging off a junction) by a vector;
   4. snap a through-node onto the line between its two neighbours (collinearity move);
   5. reflect a short branch about its junction axis (try, accept only if H7 holds);
-  6. re-space a chain's nodes evenly between its endpoints.
+  6. re-space a chain's nodes evenly between its endpoints;
+  7. rotate an entire chain by ±45°;
+  8. rotate a junction branch by ±45°.
+- `anneal.rotation_moves` enables the last two move types. `multistart` alternates
+  preserved skeleton and geographic starts; at least two restarts are needed.
+- Archive/restart selection defaults to lexicographic `(hard violation count,
+  crossings, zigzags, energy)`. Annealing acceptance still uses the weighted
+  energy. `feasibility_priority` and `zigzag_priority` control this safeguard.
 - Cost evaluation is **incremental**: on moving node v, re-route only the incident edges, re-evaluate only terms touching v, its neighbours, and (via a spatial grid index) nearby nodes/edges for H1, H5, S1.
 - Schedule: T0 so that ~60% of uphill moves are accepted, geometric cooling (×0.995–0.999 per sweep), stop when no improvement in N sweeps or when a fixed budget is hit. Run `R` restarts (default 8, in parallel) and keep the best.
 - Finish with a **greedy descent** (accept only improving moves) at the fine grid.
@@ -256,7 +297,9 @@ Algorithm: **simulated annealing** over grid-snapped node positions (multi-resol
 ### Stage 4 — Final routing and refinement
 
 - Re-route every edge with the full candidate set (more samples for 3-segment routes).
-- Local search that jointly tries (node move + re-route) for nodes involved in remaining violations or crossings.
+- Local search tries incident-star routing orders and node moves at configured
+  fine-grid step scales for hard violations, crossings and nearby zigzags.
+  Acceptance improves the archive rank; hard constraints are always measured.
 - Verify all hard constraints; produce a violation report (also in `metrics`).
 
 ### Stage 5 — Bundle order and labels
@@ -318,6 +361,13 @@ Both outputs must be generated from the JSON only.
 | `circular_order_violations` | 0 |
 | `label_overlaps` | 0 |
 | `runtime_s` | report |
+| `turns_per_line` | minimize; includes station turns |
+| `zigzag_count` | 0 on single-line and Shinkansen fixtures |
+| `mean_straight_run` | report, grid units |
+| `long_run_fraction_per_line` | ≥0.8 of length in runs spanning ≥3 stations, outside dense cores |
+| `primary_axis_angle_error_deg` | ≤5° when primary eligible; null for isotropic/degenerate PCA |
+| `key_node_spearman` (x, y) | ≥0.6 against transformed, unpacked geography |
+| `key_node_spearman_by_component` | report component-local correlations to diagnose packing |
 
 ---
 
@@ -334,7 +384,11 @@ schematic_map/
   geo/           projection.py
   layout/
     transform.py        # Stage 1
-    init.py             # Stage 2
+    init.py             # Flat Stage 2
+    skeleton.py         # Coarse keys/chains and arc-length expansion
+    reference.py        # Smoothed geographic chains
+    line_geometry.py    # Line turns, zigzags and straight runs
+    primary.py          # Primary-line selection and PCA measurements
     anneal.py           # Stage 3
     moves.py
     routing.py          # §7 candidates
@@ -372,8 +426,8 @@ transform: {theta_max_deg: 30, aspect_range: [0.7, 1.4], lambda_theta: 0.01, lam
 terms:
   H1_min_spacing: {enabled: true}
   S1_crossings: {enabled: true, weight: 1000}
-  S2_edge_length: {enabled: true, weight: 5, a: 1.0, b: 0.6, d0_km: 5}
-  S5_collinearity: {enabled: true, weight: 8}
+  S2_edge_length: {enabled: true, weight: 5, a: 1.0, b: 0.3, d0_km: 5}
+  S5_collinearity: {enabled: true, weight: 2, linear: true}
 anneal: {restarts: 8, cooling: 0.997, max_sweeps: 5000}
 ```
 
@@ -426,3 +480,21 @@ Visual regression: render PNGs and compare using a perceptual diff with toleranc
 - Whether lines with different geographic positions but the same shared track should be bundled when the input lists them as separate edges (current rule: input is non-multigraph; bundle = one edge with several `lines`).
 - Treatment of very long edges (e.g. Shinkansen between distant cities): a "break" or compressed-edge symbol may be desired (not in v0.1).
 - Target output canvas sizes and font choices for the PNG.
+## Smoothing implementation and validation notes
+
+The exact implemented formulas, weighting conventions, label objective and
+Stage 1 objective are documented in [CONSTRAINTS.md](CONSTRAINTS.md). The node
+energy is the sum of all enabled weighted H/S terms. S10 is separate label
+placement. Disabled hard terms still appear in final verification.
+
+Every new term has a hand-computed unit test. Seeded restarts and stable tie
+breaking preserve reproducibility; `runtime_s` is null unless requested.
+
+The acceptance criteria are quality targets, not a claim that finite-weight
+annealing proves feasibility. The staged results and remaining failures are in
+[reports/smoothing-progress.md](reports/smoothing-progress.md). Current supplied
+large fixtures are JRE and JRW, not identified Tokyo-only or whole-Japan inputs.
+The comparison runner stores JSON, PNG and exact configuration under
+`output/comparisons/<stage>/`; its bounded budgets differ from default search
+budgets. Measurement-only stages retain the saved geometry and PNGs and record
+that provenance explicitly.

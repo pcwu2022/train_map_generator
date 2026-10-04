@@ -111,3 +111,4 @@ primary_axis:
   allow_out_of_range_flagged: true
   quadrature_points: [0.21132486540518713, 0.7886751345948129]
   quadrature_weights: [0.5, 0.5]
+acceptance: {min_long_run_fraction: 0.8, min_key_spearman: 0.6}

@@ -263,3 +263,12 @@ clearance, H6 port separation, and H7 circular order. Both CLIs correctly exit 2
 while preserving JSON, SVG, PNG, and viewer files for diagnosis. Full violation
 records are in each `layout.json`. The test report is saved to
 `output/large-network-test-report.json`.
+
+## Layout algorithm and constraints
+
+The default engine smooths geographic chains, aligns the primary line, routes a
+key-station skeleton, then spaces through stations along its routes and refines
+the full graph. See [ALGORITHM.md](ALGORITHM.md) for a brief explanation and
+[CONSTRAINTS.md](CONSTRAINTS.md) for every constraint and the final cost function.
+Staged fixture results and remaining quality failures are recorded in
+[reports/smoothing-progress.md](reports/smoothing-progress.md).
