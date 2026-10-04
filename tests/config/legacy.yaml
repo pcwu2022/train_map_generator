@@ -1,0 +1,155 @@
+seed: 42
+grid:
+  d_min: 1.0
+  pitch_coarse: 1.0
+  pitch_fine: 0.25
+  overlap_iterations: 20
+projection:
+  km_per_lon_degree: 111.32
+  km_per_lat_degree: 110.57
+  duplicate_epsilon_km: 0.001
+transform:
+  theta_max_deg: 30
+  theta_step_deg: 1
+  aspect_range:
+  - 0.7
+  - 1.4
+  aspect_step: 0.05
+  lambda_theta: 0.01
+  lambda_s: 1.0
+  refine_iterations: 20
+  optimize_transform: false
+init:
+  mode: geo
+  stress_iterations: 5
+  anchor_weight: 0.05
+routing:
+  diagonal_tolerance_deg: 15
+  min_segment: 0.3
+  clearance: 0.35
+  samples:
+  - 0.5
+  final_samples:
+  - 0.25
+  - 0.5
+  - 0.75
+  passes: 1
+  cache_size: 8192
+  spatial_cell_size: 2.0
+  intersection_block_size: 256
+terms:
+  H1_min_spacing:
+    enabled: true
+    weight: 1000000
+  H2_bend_limit:
+    enabled: true
+    weight: 1000000
+  H3_bend_angle:
+    enabled: true
+    weight: 1000000
+  H4_segment_direction:
+    enabled: true
+    weight: 1000000
+  H5_node_clearance:
+    enabled: true
+    weight: 1000000
+  H6_ports:
+    enabled: true
+    weight: 1000000
+  H7_circular_order:
+    enabled: true
+    weight: 1000000
+  S1_crossings:
+    enabled: true
+    weight: 1000
+  S2_edge_length:
+    enabled: true
+    weight: 5
+    a: 1.0
+    b: 0.6
+    d0_km: 5
+  S3_angle:
+    enabled: true
+    weight: 20
+  S4_bends:
+    enabled: true
+    weight: 3
+    second_bend: 8
+  S5_collinearity:
+    enabled: true
+    weight: 8
+  S6_direction:
+    enabled: true
+    weight: 10
+    tolerance_deg: 22.5
+  S7_displacement:
+    enabled: true
+    weight: 0.5
+  S8_chain_spacing:
+    enabled: true
+    weight: 3
+  S11_line_turns:
+    enabled: false
+    weight: 6
+  S12_zigzag:
+    enabled: false
+    weight: 12
+    zigzag_window: 3.0
+  S13_min_run:
+    enabled: false
+    weight: 5
+    run_min: 1.5
+  S9_compactness:
+    enabled: true
+    weight: 0.1
+anneal:
+  restarts: 1
+  workers: 1
+  max_sweeps: 1
+  max_moves: 25
+  patience: 4
+  cooling: 0.997
+  uphill_acceptance: 0.6
+  calibration_moves: 2
+  max_step: 2
+  greedy_sweeps: 0
+  move_weights:
+  - 4
+  - 2
+  - 1
+  - 2
+  - 1
+  - 2
+refine:
+  sweeps: 1
+  max_trials: 16
+components:
+  margin: 3.0
+labels:
+  font_size: 0.38
+  offset: 0.5
+  padding: 0.06
+  overlap_weight: 1000
+  local_passes: 1
+  rotate_diagonal: false
+render:
+  pixels_per_unit: 12
+  padding: 1.0
+  line_width: 0.1
+  bundle_gap: 0.035
+  marker_radius: 0.14
+  interchange_radius: 0.22
+  corner_radius: 0.3
+  miter_limit: 3
+  background: '#ffffff'
+  outline_low_contrast: true
+  contrast_threshold: 3.0
+  dpi: 96
+web:
+  min_zoom: 0.2
+  max_zoom: 12
+  label_zoom: 1.2
+  wheel_sensitivity: 0.001
+line_geometry:
+  turn_threshold_deg: 45
+  long_run_stations: 3

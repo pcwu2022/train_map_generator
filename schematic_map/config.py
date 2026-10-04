@@ -54,4 +54,8 @@ def load_config(path=None, overrides=None):
     for value in (config['anneal']['max_moves'],config['refine']['max_trials']):
         if value is not None and (not isinstance(value,int) or value<0):
             raise ValueError('Move and refinement budgets must be nonnegative integers or null')
+    if not 0<config['line_geometry']['turn_threshold_deg']<=180:
+        raise ValueError('Line turn threshold must be in (0, 180]')
+    if config['terms']['S12_zigzag']['zigzag_window']<=0 or config['terms']['S13_min_run']['run_min']<=0:
+        raise ValueError('Zigzag window and minimum run must be positive')
     return config

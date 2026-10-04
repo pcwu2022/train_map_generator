@@ -37,6 +37,9 @@ terms:
   S6_direction: {enabled: true, weight: 10, tolerance_deg: 22.5}
   S7_displacement: {enabled: true, weight: 0.5}
   S8_chain_spacing: {enabled: true, weight: 3}
+  S11_line_turns: {enabled: true, weight: 6}
+  S12_zigzag: {enabled: true, weight: 12, zigzag_window: 3.0}
+  S13_min_run: {enabled: true, weight: 5, run_min: 1.5}
   S9_compactness: {enabled: true, weight: 0.1}
 anneal:
   restarts: 8
@@ -73,3 +76,4 @@ render:
   contrast_threshold: 3.0
   dpi: 96
 web: {min_zoom: 0.2, max_zoom: 12, label_zoom: 1.2, wheel_sensitivity: 0.001}
+line_geometry: {turn_threshold_deg: 45, long_run_stations: 3}

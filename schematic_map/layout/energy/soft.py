@@ -61,3 +61,32 @@ class ChainSpacing(SoftTerm):
 class Compactness(SoftTerm):
     name='S9_compactness'
     def full(self,layout): return layout.facts()['area']
+
+
+def line_statistics(layout):
+    from ..line_geometry import line_facts
+    facts=layout.facts()
+    if 'line_geometry' not in facts:
+        facts['line_geometry']=line_facts(layout.graph,layout.routes,layout.config)
+    return facts['line_geometry']
+
+
+@register
+class LineTurns(SoftTerm):
+    name='S11_line_turns'
+    def full(self,layout):return float(sum(line_statistics(layout)['turns_per_line'].values()))
+
+
+@register
+class Zigzag(SoftTerm):
+    name='S12_zigzag'
+    def full(self,layout):return float(line_statistics(layout)['zigzag_count'])
+
+
+@register
+class MinimumRun(SoftTerm):
+    name='S13_min_run'
+    def full(self,layout):
+        minimum=self.parameters['run_min']
+        return sum(((minimum-run['length'])/minimum)**2 for run in line_statistics(layout)['runs']
+                   if run['length']<minimum and not run['terminal'])
