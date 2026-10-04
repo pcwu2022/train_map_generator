@@ -40,3 +40,16 @@ then residual zigzags, with configurable star-order and step-scale proposals.
 | jre_shinkansen | 0 → 0 | 0 → 0 | 36 → 2 | 69 → 13 |
 | jre | 11 → 21 | 28 → 93 | 1421 → 77 | 1770 → 267 |
 | jrw | 4 → 7 | 8 → 14 | 978 → 34 | 1209 → 123 |
+
+## F — final line and geography diagnostics
+
+Geometry is unchanged from E. Metrics were recomputed from saved routes and
+the original graph; PNGs were copied unchanged. Baseline diagnostics were
+backfilled using the same metric definitions. JSON and provenance are stored
+under `output/comparisons/F/`.
+
+| Fixture | Turns before → after | Mean run before → after | Axis error ° before → after | Spearman x before → after | Spearman y before → after |
+|---|---:|---:|---:|---:|---:|
+| jre | 1861 → 623 | 1.614 → 13.859 | 18.492 → 1.418 | 0.984 → 0.923 | 0.865 → 0.877 |
+| jre_shinkansen | 69 → 15 | 2.320 → 10.462 | 36.527 → 2.758 | 0.952 → 0.998 | 0.991 → 1.000 |
+| jrw | 1233 → 303 | 1.649 → 17.747 | 74.822 → 35.962 | 0.876 → 0.860 | 0.407 → 0.437 |
