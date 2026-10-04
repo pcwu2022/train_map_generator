@@ -11,7 +11,7 @@ from pathlib import Path
 def build_graph(geo, topology):
     """Return an undirected NetworkX node-link graph with an `edges` key.
 
-    Shared edges use the first line's color and list all their line IDs.
+    Shared edges list all their line IDs; colors are stored only on lines.
     Coordinates retain the input order: [longitude, latitude].
     """
     segments = topology["segments"]
@@ -22,7 +22,6 @@ def build_graph(geo, topology):
     }
     lines = {}
     nodes = {}
-    memberships = {}
     edges = {}
 
     for segment in segments:
@@ -47,13 +46,10 @@ def build_graph(geo, topology):
                 nodes[station_id] = {
                     "id": station_id,
                     "name": station["name"],
-                    "num_lines": 0,
                     "coordinates": geo["stations"][station_id],
                 }
                 if station_id in geo.get("schematic", {}):
                     nodes[station_id]["schematic"] = geo["schematic"][station_id]
-                memberships[station_id] = set()
-            memberships[station_id].add(line_id)
 
         for first, second in zip(stations, stations[1:]):
             source, target = first["id"], second["id"]
@@ -64,7 +60,6 @@ def build_graph(geo, topology):
                 edges[key] = {
                     "source": source,
                     "target": target,
-                    "color": color,
                     "distance": distance,
                     "lines": [],
                 }
@@ -73,15 +68,10 @@ def build_graph(geo, topology):
             if line_id not in edges[key]["lines"]:
                 edges[key]["lines"].append(line_id)
 
-    for station_id, node in nodes.items():
-        node["num_lines"] = len(memberships[station_id])
-
     line_list = list(lines.values())
     return {
         "directed": False,
         "multigraph": False,
-        # NetworkX preserves graph metadata here when importing node-link data.
-        "graph": {"lines": line_list},
         "nodes": list(nodes.values()),
         "edges": list(edges.values()),
         "lines": line_list,
