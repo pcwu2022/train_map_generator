@@ -20,7 +20,13 @@ class EdgeLength(SoftTerm):
 @register
 class Angle(SoftTerm):
     name='S3_angle'
-    def full(self,layout): return float(np.sum(np.array(layout.facts()['angles'])**2))
+    def full(self,layout):
+        value=float(np.sum(np.array(layout.facts()['angles'])**2))
+        if self.parameters.get('exact_diagonal',False):
+            from ..geometry import diagonal_soft_deviation
+            tolerance=layout.config['routing']['diagonal_tolerance_deg']
+            value+=sum(diagonal_soft_deviation(vector,tolerance) for path in layout.routes for vector in np.diff(path,axis=0))
+        return value
 
 
 @register
@@ -34,7 +40,9 @@ class Bends(SoftTerm):
 @register
 class Collinearity(SoftTerm):
     name='S5_collinearity'
-    def full(self,layout): return float(np.sum(np.array(layout.facts()['collinear'])**2))
+    def full(self,layout):
+        deviations=np.array(layout.facts()['collinear'])
+        return float(np.sum(deviations/45 if self.parameters.get('linear',False) else deviations**2))
 
 
 @register

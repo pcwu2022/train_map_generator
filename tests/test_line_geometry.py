@@ -41,3 +41,13 @@ def test_short_terminal_runs_exempt_and_window_strict():
     assert facts['zigzag_count']==0
     terms={term.name:term for term in configured_terms(layout.config)}
     assert terms['S13_min_run'].full(layout)==0
+
+
+def test_linear_station_turn_and_diagonal_preference():
+    layout=layout_for([(0,0),(1,0),(1,1)])
+    terms={term.name:term for term in configured_terms(layout.config)}
+    assert terms['S5_collinearity'].full(layout)==2  # One decisive 90-degree turn.
+    layout=layout_for([(0,0),(1,np.tan(np.radians(50)))])
+    terms={term.name:term for term in configured_terms(layout.config)}
+    assert terms['S3_angle'].full(layout)==pytest.approx(5/15)
+    assert layout.facts()['hard']['H4_segment_direction']==[]

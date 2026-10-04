@@ -4,7 +4,7 @@ from .spatial import SpatialGrid
 from itertools import product
 import numpy as np
 from .geometry import (DIRECTIONS, EPS, direction_deviation, path_length, port,
-                       angle_difference, bearing, point_segment_distances, cross,
+                       angle_difference, bearing, point_segment_distances, cross, diagonal_soft_deviation,
                        cyclic_equal, circular_order, node_tangents, proper_crossing)
 
 
@@ -65,6 +65,8 @@ class Router:
         length = path_length(path); bends = len(path)-2
         result = weight('S2_edge_length')*((length-self.targets[edge])/self.targets[edge])**2
         result += weight('S4_bends')*min(1,bends)+(terms['S4_bends']['second_bend'] if terms['S4_bends']['enabled'] and bends>1 else 0)
+        if terms['S3_angle'].get('exact_diagonal',False):
+            result+=weight('S3_angle')*sum(diagonal_soft_deviation(d,cfg['routing']['diagonal_tolerance_deg']) for d in np.diff(path,axis=0))
         result += weight('H4_segment_direction')*sum(direction_deviation(d,cfg['routing']['diagonal_tolerance_deg'])>EPS for d in np.diff(path,axis=0))
         clearance = cfg['routing']['clearance']+max(0,len(graph.edges[edge]['lines'])-1)*(cfg['render']['line_width']+cfg['render']['bundle_gap'])/2
         lower=path.min(axis=0)-clearance; upper=path.max(axis=0)+clearance
@@ -85,7 +87,8 @@ class Router:
                 for line in common:
                     incident = [e for _,e in graph.adjacency[node] if line in graph.edges[e]['lines']]
                     if len(incident)==2:
-                        result += weight('S5_collinearity')*(180-angle_difference(bearing(own),bearing(out)))**2
+                        deviation=180-angle_difference(bearing(own),bearing(out))
+                        result += weight('S5_collinearity')*(deviation/45 if terms['S5_collinearity'].get('linear',False) else deviation**2)
                 known.append((other,out))
             if len(known)==len(graph.adjacency[node]):
                 order = [e for e,d in sorted(known,key=lambda item:(bearing(item[1]),item[0]))]

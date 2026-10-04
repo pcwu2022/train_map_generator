@@ -32,11 +32,11 @@ def place_labels(graph,positions,routes,config):
     choices=[]
     for node in graph.nodes:
         labels=[]
-        for anchor in ANCHORS:
+        for anchor,scale in ((anchor,scale) for anchor in ANCHORS for scale in config['labels']['offset_scales']):
             x,y=VECTORS[anchor]
-            labels.append({'anchor':anchor,'offset':[x*config['labels']['offset'],y*config['labels']['offset']],'rotation_deg':0})
+            labels.append({'anchor':anchor,'offset':[x*config['labels']['offset']*scale,y*config['labels']['offset']*scale],'rotation_deg':0})
             if x and y and config['labels']['rotate_diagonal']:
-                labels.append({'anchor':anchor,'offset':[x*config['labels']['offset'],y*config['labels']['offset']],'rotation_deg':45})
+                labels.append({'anchor':anchor,'offset':[x*config['labels']['offset']*scale,y*config['labels']['offset']*scale],'rotation_deg':45})
         choices.append(labels)
     selected=[None]*len(positions); boxes=[None]*len(positions)
     radii=[config['render']['interchange_radius'] if node['is_interchange'] else config['render']['marker_radius'] for node in graph.nodes]
@@ -47,7 +47,7 @@ def place_labels(graph,positions,routes,config):
     for edge,path in enumerate(routes):edge_index.put(edge,[*path.min(axis=0),*path.max(axis=0)])
     static={}
     def cost(node,label):
-        key=(node,label['anchor'],label['rotation_deg'])
+        key=(node,label['anchor'],label['rotation_deg'],tuple(label['offset']))
         if key not in static:
             box=label_box(positions[node],graph.nodes[node]['name'],label,config)
             conflicts=sum(rectangle_overlap(box,node_boxes[i])>0 for i in node_index.query(box))
@@ -55,7 +55,8 @@ def place_labels(graph,positions,routes,config):
             static[key]=(box,conflicts)
         box,conflicts=static[key]
         conflicts+=sum(rectangle_overlap(box,boxes[i])>0 for i in label_index.query(box) if i!=node)
-        return conflicts*config['labels']['overlap_weight']+ANCHORS.index(label['anchor']),box
+        distance=max(abs(value) for value in label['offset'])/config['labels']['offset']-1
+        return conflicts*config['labels']['overlap_weight']+ANCHORS.index(label['anchor'])+config['labels']['distance_weight']*distance,box
     order=sorted(range(len(positions)),key=lambda i:(not graph.nodes[i]['is_interchange'],-graph.nodes[i]['degree'],i))
     for _ in range(config['labels']['local_passes']+1):
         for i in order:

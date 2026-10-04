@@ -75,7 +75,7 @@ def test_term_detects_violation(name,fixtures,fast_config):
         'H1_min_spacing':.5, 'H2_bend_limit':1, 'H3_bend_angle':1,
         'H4_segment_direction':1, 'H5_node_clearance':1, 'H6_ports':1,
         'H7_circular_order':1, 'S1_crossings':1, 'S4_bends':1,
-        'S5_collinearity':45**2, 'S7_displacement':.64,
+        'S5_collinearity':1, 'S7_displacement':.64,
         'S8_chain_spacing':1/27, 'S9_compactness':16,
         'S3_angle':(30-np.degrees(np.arctan(1/30)))**2,
         'S6_direction':67.5**2+(np.degrees(np.arctan(.5))-22.5)**2,

@@ -13,7 +13,7 @@ transform:
 init: {mode: geo, stress_iterations: 40, anchor_weight: 0.05}
 routing:
   diagonal_tolerance_deg: 15
-  min_segment: 0.3
+  min_segment: 0.8
   clearance: 0.35
   samples: [0.25, 0.5, 0.75]
   final_samples: [0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875]
@@ -30,13 +30,13 @@ terms:
   H6_ports: {enabled: true, weight: 1000000}
   H7_circular_order: {enabled: true, weight: 1000000}
   S1_crossings: {enabled: true, weight: 1000}
-  S2_edge_length: {enabled: true, weight: 5, a: 1.0, b: 0.6, d0_km: 5}
-  S3_angle: {enabled: true, weight: 20}
+  S2_edge_length: {enabled: true, weight: 5, a: 1.0, b: 0.3, d0_km: 5}
+  S3_angle: {enabled: true, weight: 2, exact_diagonal: true}
   S4_bends: {enabled: true, weight: 3, second_bend: 8}
-  S5_collinearity: {enabled: true, weight: 8}
+  S5_collinearity: {enabled: true, weight: 2, linear: true}
   S6_direction: {enabled: true, weight: 10, tolerance_deg: 22.5}
   S7_displacement: {enabled: true, weight: 0.5}
-  S8_chain_spacing: {enabled: true, weight: 3}
+  S8_chain_spacing: {enabled: true, weight: 10}
   S11_line_turns: {enabled: true, weight: 6}
   S12_zigzag: {enabled: true, weight: 12, zigzag_window: 3.0}
   S13_min_run: {enabled: true, weight: 5, run_min: 1.5}
@@ -58,6 +58,8 @@ components: {margin: 3.0}
 labels:
   font_size: 0.38
   offset: 0.5
+  offset_scales: [1.0, 1.5, 2.0]
+  distance_weight: 0.1
   padding: 0.06
   overlap_weight: 1000
   local_passes: 3

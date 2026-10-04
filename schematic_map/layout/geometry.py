@@ -100,3 +100,11 @@ def segment_rectangle(a,b,rect):
             lo,hi = max(lo,min(first,second)),min(hi,max(first,second))
             if lo>hi: return False
     return True
+
+
+def diagonal_soft_deviation(vector,tolerance):
+    """Linear in-tolerance diagonal preference; axes and infeasible angles cost zero here."""
+    angle=bearing(vector)%90
+    if np.linalg.norm(vector)<EPS or min(angle,90-angle)<EPS or tolerance<=0:return 0.
+    deviation=abs(angle-45)
+    return deviation/tolerance if deviation<=tolerance+EPS else 0.
