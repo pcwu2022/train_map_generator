@@ -20,6 +20,8 @@ def validate_graph(data):
             raise ValueError(f'Invalid or duplicate line ID: {ident!r}')
         if not isinstance(line.get('name'), str) or (not isinstance(line.get('color'),str) or not re.fullmatch(r'#[0-9a-fA-F]{6}', line['color'])):
             raise ValueError(f'Line {ident}: name and #RRGGBB color are required')
+        if 'primary' in line and not isinstance(line['primary'],bool):
+            raise ValueError(f'Line {ident}: primary must be boolean')
         lines.add(ident)
     for node in data['nodes']:
         if not isinstance(node,dict): raise ValueError('Each node must be an object')

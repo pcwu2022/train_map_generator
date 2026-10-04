@@ -19,6 +19,7 @@ transform:
   lambda_s: 1.0
   refine_iterations: 20
   optimize_transform: false
+  chain_bearings: false
 init:
   mode: geo
   stress_iterations: 5
@@ -117,6 +118,10 @@ anneal:
   calibration_moves: 2
   max_step: 2
   greedy_sweeps: 0
+  rotation_moves: false
+  multistart: false
+  feasibility_priority: false
+  zigzag_priority: false
   move_weights:
   - 4
   - 2
@@ -125,6 +130,9 @@ anneal:
   - 1
   - 2
 refine:
+  step_scales: [1]
+  star_orders: false
+  smoothness: false
   sweeps: 1
   max_trials: 16
 components:
@@ -160,3 +168,4 @@ line_geometry:
   turn_threshold_deg: 45
   long_run_stations: 3
 reference: {enabled: false}
+primary_axis: {enabled: false}

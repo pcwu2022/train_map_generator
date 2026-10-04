@@ -78,12 +78,26 @@ class Router:
         if len(self.cache)>cfg['cache_size']: self.cache.popitem(last=False)
         return result
 
+    def internal_run_cost(self,path,edge):
+        terms=self.config['terms'];vectors=np.diff(path,axis=0)
+        turns=[(bearing(b)-bearing(a)+180)%360-180 for a,b in zip(vectors,vectors[1:])]
+        lengths=np.linalg.norm(vectors,axis=1);lines=len(self.graph.edges[edge]['lines'])
+        value=0.
+        if terms['S12_zigzag']['enabled']:
+            count=sum(a*b<0 and lengths[i+1]<terms['S12_zigzag']['zigzag_window']-EPS for i,(a,b) in enumerate(zip(turns,turns[1:])))
+            value+=terms['S12_zigzag']['weight']*count*lines
+        if terms['S13_min_run']['enabled']:
+            minimum=terms['S13_min_run']['run_min']
+            value+=terms['S13_min_run']['weight']*lines*sum(((minimum-length)/minimum)**2 for length in lengths[1:-1] if length<minimum)
+        return value
+
     def score(self, path, edge, positions, routes):
         graph,cfg = self.graph,self.config
         u,v = graph.endpoints[edge]; terms = cfg['terms']
         def weight(name): return terms[name]['weight'] if terms[name]['enabled'] else 0
         length = path_length(path); bends = len(path)-2
         result = weight('S2_edge_length')*((length-self.targets[edge])/self.targets[edge])**2
+        result += self.internal_run_cost(path,edge)
         result += weight('S11_line_turns')*bends*len(graph.edges[edge]['lines'])
         result += weight('S4_bends')*min(1,bends)+(terms['S4_bends']['second_bend'] if terms['S4_bends']['enabled'] and bends>1 else 0)
         if terms['S3_angle'].get('exact_diagonal',False):
@@ -158,6 +172,7 @@ class Router:
             value = terms['S2_edge_length']['weight']*((path_length(path)-self.targets[edge])/self.targets[edge])**2 if terms['S2_edge_length']['enabled'] else 0.
             if terms['S4_bends']['enabled']:
                 value += terms['S4_bends']['weight']*min(bends,1)+(terms['S4_bends']['second_bend'] if bends>1 else 0)
+            value+=self.internal_run_cost(path,edge)
             if terms['S11_line_turns']['enabled']:value+=terms['S11_line_turns']['weight']*bends*len(self.graph.edges[edge]['lines'])
             return value
         rank_key=(round(float(positions[v,0]-positions[u,0]),8),round(float(positions[v,1]-positions[u,1]),8),float(self.targets[edge]),full)
@@ -175,9 +190,10 @@ class Router:
             if best_score is None or score<best_score: best_path,best_score=path,score
         return best_path.copy()
 
-    def route_all(self, positions, full=False, previous=None, affected=None):
+    def route_all(self, positions, full=False, previous=None, affected=None, route_order=None):
         routes = [None]*len(self.graph.edges) if previous is None else [p.copy() for p in previous]
         indices = list(range(len(routes))) if affected is None else sorted(affected)
+        if route_order is not None:indices=list(route_order)
         if previous is not None:
             for edge in indices: routes[edge]=None
         self.node_index=SpatialGrid(self.config['routing']['spatial_cell_size'])

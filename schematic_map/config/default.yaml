@@ -2,14 +2,16 @@ seed: 42
 grid: {d_min: 1.0, pitch_coarse: 1.0, pitch_fine: 0.25, overlap_iterations: 100}
 projection: {km_per_lon_degree: 111.32, km_per_lat_degree: 110.57, duplicate_epsilon_km: 0.001}
 transform:
-  theta_max_deg: 30
+  theta_max_deg: 45
   theta_step_deg: 1
   aspect_range: [0.7, 1.4]
   aspect_step: 0.05
-  lambda_theta: 0.01
+  lambda_theta: 0.0001
   lambda_s: 1.0
   refine_iterations: 20
   optimize_transform: false
+  chain_bearings: true
+  primary_prominence: 2.0
 init: {mode: skeleton, stress_iterations: 40, anchor_weight: 0.05}
 routing:
   diagonal_tolerance_deg: 15
@@ -54,7 +56,13 @@ anneal:
   max_step: 2
   greedy_sweeps: 3
   move_weights: [4, 2, 1, 2, 1, 2]
-refine: {sweeps: 8, max_trials: null}
+  rotation_moves: true
+  rotation_weights: [1, 1]
+  rotation_angle_deg: 45
+  multistart: true
+  feasibility_priority: true
+  zigzag_priority: true
+refine: {sweeps: 8, max_trials: null, step_scales: [1, 2, 4, 8], star_orders: true, smoothness: true, smooth_neighbors: 4}
 components: {margin: 3.0}
 labels:
   font_size: 0.38
@@ -94,3 +102,12 @@ skeleton:
   four_segment_samples: [0.25, 0.5, 0.75]
   loop_aspect: 1.0
   terms: [H1_min_spacing, H3_bend_angle, H4_segment_direction, H5_node_clearance, H6_ports, H7_circular_order, S1_crossings, S3_angle, S6_direction, S11_line_turns, S12_zigzag, S13_min_run, S14_relative_order]
+primary_axis:
+  enabled: true
+  weight: 50.0
+  eligible_angle_deg: 45.0
+  max_error_deg: 5.0
+  min_anisotropy: 1.05
+  allow_out_of_range_flagged: true
+  quadrature_points: [0.21132486540518713, 0.7886751345948129]
+  quadrature_weights: [0.5, 0.5]

@@ -6,7 +6,7 @@ from schematic_map.layout.geometry import path_length
 
 
 def test_chain_stations_are_even_and_no_zigzag(fixtures,fast_config):
-    config=fast_config.copy();config['init']=dict(config['init'],mode='skeleton')
+    config=fast_config.copy();config['init']=dict(config['init'],mode='skeleton');config['anneal']=dict(config['anneal'],multistart=False)
     result=generate_layout(fixtures['straight'],config);validate_layout(result)
     points=np.array([node['schematic'] for node in result['nodes']])
     distances=np.linalg.norm(np.diff(points,axis=0),axis=1)

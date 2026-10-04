@@ -21,10 +21,21 @@ def branches(graph):
 def propose(graph, positions, rng, pitch, config, branch_list):
     result=positions.copy(); n=len(result)
     if not n: return result,[]
-    node=int(rng.integers(n)); move=int(rng.choice(6,p=np.array(config['anneal']['move_weights'])/sum(config['anneal']['move_weights'])))
+    node=int(rng.integers(n))
+    weights=config['anneal']['move_weights']+(config['anneal']['rotation_weights'] if config['anneal']['rotation_moves'] else [])
+    move=int(rng.choice(len(weights),p=np.array(weights)/sum(weights)))
     shift=rng.integers(-config['anneal']['max_step'],config['anneal']['max_step']+1,size=2)*pitch
     ids=[node]
-    if move==1 and graph.chains:
+    if move in (6,7):
+        angle=np.radians(config['anneal']['rotation_angle_deg']*rng.choice([-1,1]))
+        rotation=np.array([[np.cos(angle),-np.sin(angle)],[np.sin(angle),np.cos(angle)]])
+        if move==6 and graph.chains:
+            chain,_=graph.chains[int(rng.integers(len(graph.chains)))];ids=sorted(set(chain))
+            center=positions[ids].mean(axis=0);result[ids]=center+(positions[ids]-center) @ rotation.T
+        elif branch_list:
+            junction,_,ids=branch_list[int(rng.integers(len(branch_list)))];center=positions[junction]
+            result[ids]=center+(positions[ids]-center) @ rotation.T
+    elif move==1 and graph.chains:
         chain,_=graph.chains[int(rng.integers(len(graph.chains)))]; ids=chain[1:-1] or [node]
         result[ids]+=shift
     elif move in (2,4) and branch_list:

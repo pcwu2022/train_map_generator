@@ -35,6 +35,10 @@ def generate_layout(data,config=None,record_runtime=False,progress=None):
         if config['init']['mode']=='skeleton' and config['skeleton']['enabled']:
             from .layout.skeleton import skeleton_layout
             sublayout=skeleton_layout(subgraph,positions[component],anchor[component],targets[edge_ids],config)
+            if config['anneal']['multistart']:
+                geographic_config=deepcopy(config);geographic_config['init']['mode']='geo'
+                geographic=initial_layout(subgraph,anchor[component],targets[edge_ids],geographic_config)
+                sublayout=optimize(subgraph,sublayout.positions,anchor[component],targets[edge_ids],config,initial_routes=sublayout.routes,alternate=geographic)
         else:
             sublayout=optimize(subgraph,positions[component],anchor[component],targets[edge_ids],config)
         sublayout=refine(sublayout)

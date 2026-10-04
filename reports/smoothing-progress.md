@@ -27,3 +27,16 @@
 | jre_shinkansen | 0 → 0 | 0 → 0 | 36 → 1 | 69 → 7 |
 | jre | 11 → 20 | 28 → 52 | 1421 → 65 | 1770 → 258 |
 | jrw | 4 → 3 | 8 → 16 | 978 → 33 | 1209 → 122 |
+
+## E — primary alignment, rotation moves and geographic/skeleton restarts
+
+The same bounded smoke budgets were retained. One restart in this comparison
+exercises the skeleton start; the separate longer run uses two restarts to
+exercise both starting layouts. Refinement now targets hard failures first,
+then residual zigzags, with configurable star-order and step-scale proposals.
+
+| Fixture | Hard before → after | Crossings before → after | Zigzags before → after | Bends before → after |
+|---|---:|---:|---:|---:|
+| jre_shinkansen | 0 → 0 | 0 → 0 | 36 → 2 | 69 → 13 |
+| jre | 11 → 21 | 28 → 93 | 1421 → 77 | 1770 → 267 |
+| jrw | 4 → 7 | 8 → 14 | 978 → 34 | 1209 → 123 |
