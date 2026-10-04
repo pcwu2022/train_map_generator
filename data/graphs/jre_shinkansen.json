@@ -1,0 +1,1561 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "lines": [
+      {
+        "id": "THK_line",
+        "name": "東北新幹線",
+        "color": "#980ef2"
+      },
+      {
+        "id": "HKD_line",
+        "name": "北海道新幹線",
+        "color": "#b3a812"
+      },
+      {
+        "id": "JTS_line",
+        "name": "上越新幹線",
+        "color": "#8295ca"
+      },
+      {
+        "id": "HRK_line",
+        "name": "北陸新幹線",
+        "color": "#9338a6"
+      },
+      {
+        "id": "AKT_line",
+        "name": "秋田新幹線",
+        "color": "#2fc625"
+      },
+      {
+        "id": "YMG_line",
+        "name": "山形新幹線",
+        "color": "#b30517"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "THK01",
+      "name": "東京",
+      "num_lines": 1,
+      "coordinates": [
+        139.76694,
+        35.68083
+      ],
+      "schematic": [
+        24.0,
+        0.0
+      ]
+    },
+    {
+      "id": "THK02",
+      "name": "上野",
+      "num_lines": 1,
+      "coordinates": [
+        139.77672,
+        35.71343
+      ],
+      "schematic": [
+        24.0,
+        1.0
+      ]
+    },
+    {
+      "id": "THK03",
+      "name": "大宮",
+      "num_lines": 2,
+      "coordinates": [
+        139.62389,
+        35.90639
+      ],
+      "schematic": [
+        24.0,
+        2.0
+      ]
+    },
+    {
+      "id": "THK04",
+      "name": "小山",
+      "num_lines": 1,
+      "coordinates": [
+        139.80654,
+        36.31361
+      ],
+      "schematic": [
+        24.0,
+        3.0
+      ]
+    },
+    {
+      "id": "THK05",
+      "name": "宇都宮",
+      "num_lines": 1,
+      "coordinates": [
+        139.89833,
+        36.55861
+      ],
+      "schematic": [
+        24.0,
+        4.0
+      ]
+    },
+    {
+      "id": "THK06",
+      "name": "那須塩原",
+      "num_lines": 1,
+      "coordinates": [
+        140.02067,
+        36.93168
+      ],
+      "schematic": [
+        24.0,
+        5.0
+      ]
+    },
+    {
+      "id": "THK07",
+      "name": "新白河",
+      "num_lines": 1,
+      "coordinates": [
+        140.18877,
+        37.1232
+      ],
+      "schematic": [
+        24.0,
+        6.0
+      ]
+    },
+    {
+      "id": "THK08",
+      "name": "郡山",
+      "num_lines": 1,
+      "coordinates": [
+        140.38833,
+        37.39778
+      ],
+      "schematic": [
+        24.0,
+        7.0
+      ]
+    },
+    {
+      "id": "THK09",
+      "name": "福島",
+      "num_lines": 2,
+      "coordinates": [
+        140.45861,
+        37.75444
+      ],
+      "schematic": [
+        24.0,
+        8.0
+      ]
+    },
+    {
+      "id": "THK10",
+      "name": "白石蔵王",
+      "num_lines": 1,
+      "coordinates": [
+        140.6326,
+        37.99468
+      ],
+      "schematic": [
+        24.0,
+        9.048
+      ]
+    },
+    {
+      "id": "THK11",
+      "name": "仙台",
+      "num_lines": 1,
+      "coordinates": [
+        140.88194,
+        38.26028
+      ],
+      "schematic": [
+        24.0,
+        10.095
+      ]
+    },
+    {
+      "id": "THK12",
+      "name": "古川",
+      "num_lines": 1,
+      "coordinates": [
+        140.96772,
+        38.57058
+      ],
+      "schematic": [
+        24.0,
+        11.143
+      ]
+    },
+    {
+      "id": "THK13",
+      "name": "くりこま高原",
+      "num_lines": 1,
+      "coordinates": [
+        141.07158,
+        38.74873
+      ],
+      "schematic": [
+        24.0,
+        12.191
+      ]
+    },
+    {
+      "id": "THK14",
+      "name": "一ノ関",
+      "num_lines": 1,
+      "coordinates": [
+        141.13923,
+        38.92605
+      ],
+      "schematic": [
+        24.0,
+        13.238
+      ]
+    },
+    {
+      "id": "THK15",
+      "name": "水沢江刺",
+      "num_lines": 1,
+      "coordinates": [
+        141.18869,
+        39.14534
+      ],
+      "schematic": [
+        24.0,
+        14.286
+      ]
+    },
+    {
+      "id": "THK16",
+      "name": "北上",
+      "num_lines": 1,
+      "coordinates": [
+        141.12235,
+        39.2822
+      ],
+      "schematic": [
+        24.0,
+        15.334
+      ]
+    },
+    {
+      "id": "THK17",
+      "name": "新花巻",
+      "num_lines": 1,
+      "coordinates": [
+        141.17399,
+        39.40733
+      ],
+      "schematic": [
+        24.0,
+        16.381
+      ]
+    },
+    {
+      "id": "THK18",
+      "name": "盛岡",
+      "num_lines": 2,
+      "coordinates": [
+        141.13638,
+        39.70144
+      ],
+      "schematic": [
+        24.0,
+        17.429
+      ]
+    },
+    {
+      "id": "THK19",
+      "name": "いわて沼宮内",
+      "num_lines": 1,
+      "coordinates": [
+        141.21765,
+        39.96083
+      ],
+      "schematic": [
+        24.0,
+        18.429
+      ]
+    },
+    {
+      "id": "THK20",
+      "name": "二戸",
+      "num_lines": 1,
+      "coordinates": [
+        141.28573,
+        40.25988
+      ],
+      "schematic": [
+        24.0,
+        19.429
+      ]
+    },
+    {
+      "id": "THK21",
+      "name": "八戸",
+      "num_lines": 1,
+      "coordinates": [
+        141.43074,
+        40.50939
+      ],
+      "schematic": [
+        24.0,
+        20.429
+      ]
+    },
+    {
+      "id": "THK22",
+      "name": "七戸十和田",
+      "num_lines": 1,
+      "coordinates": [
+        141.15456,
+        40.71973
+      ],
+      "schematic": [
+        24.0,
+        21.429
+      ]
+    },
+    {
+      "id": "THK23",
+      "name": "新青森",
+      "num_lines": 2,
+      "coordinates": [
+        140.69347,
+        40.8275
+      ],
+      "schematic": [
+        24.0,
+        22.429
+      ]
+    },
+    {
+      "id": "HKD01",
+      "name": "奥津軽いまべつ",
+      "num_lines": 1,
+      "coordinates": [
+        140.51545,
+        41.14508
+      ],
+      "schematic": [
+        24.0,
+        23.429
+      ]
+    },
+    {
+      "id": "HKD02",
+      "name": "木古内",
+      "num_lines": 1,
+      "coordinates": [
+        140.43395,
+        41.67758
+      ],
+      "schematic": [
+        24.0,
+        24.429
+      ]
+    },
+    {
+      "id": "HKD03",
+      "name": "新函館北斗",
+      "num_lines": 1,
+      "coordinates": [
+        140.64836,
+        41.90469
+      ],
+      "schematic": [
+        24.0,
+        25.429
+      ]
+    },
+    {
+      "id": "JTS01",
+      "name": "熊谷",
+      "num_lines": 1,
+      "coordinates": [
+        139.39,
+        36.13972
+      ],
+      "schematic": [
+        22.248,
+        3.5
+      ]
+    },
+    {
+      "id": "JTS02",
+      "name": "本庄早稲田",
+      "num_lines": 1,
+      "coordinates": [
+        139.1797,
+        36.21887
+      ],
+      "schematic": [
+        19.874,
+        3.5
+      ]
+    },
+    {
+      "id": "JTS03",
+      "name": "高崎",
+      "num_lines": 2,
+      "coordinates": [
+        139.01278,
+        36.32247
+      ],
+      "schematic": [
+        17.5,
+        3.5
+      ]
+    },
+    {
+      "id": "JTS04",
+      "name": "上毛高原",
+      "num_lines": 1,
+      "coordinates": [
+        138.9775,
+        36.69333
+      ],
+      "schematic": [
+        17.5,
+        4.5
+      ]
+    },
+    {
+      "id": "JTS05",
+      "name": "越後湯沢",
+      "num_lines": 1,
+      "coordinates": [
+        138.8099,
+        36.9361
+      ],
+      "schematic": [
+        17.5,
+        5.5
+      ]
+    },
+    {
+      "id": "JTS06",
+      "name": "浦佐",
+      "num_lines": 1,
+      "coordinates": [
+        138.923,
+        37.1672
+      ],
+      "schematic": [
+        17.5,
+        6.5
+      ]
+    },
+    {
+      "id": "JTS07",
+      "name": "長岡",
+      "num_lines": 1,
+      "coordinates": [
+        138.8542,
+        37.44732
+      ],
+      "schematic": [
+        17.5,
+        7.5
+      ]
+    },
+    {
+      "id": "JTS08",
+      "name": "燕三条",
+      "num_lines": 1,
+      "coordinates": [
+        138.939,
+        37.6477
+      ],
+      "schematic": [
+        17.5,
+        8.5
+      ]
+    },
+    {
+      "id": "JTS09",
+      "name": "新潟",
+      "num_lines": 1,
+      "coordinates": [
+        139.06189,
+        37.91203
+      ],
+      "schematic": [
+        17.5,
+        9.5
+      ]
+    },
+    {
+      "id": "HRK01",
+      "name": "安中榛名",
+      "num_lines": 1,
+      "coordinates": [
+        138.84958,
+        36.36242
+      ],
+      "schematic": [
+        16.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK02",
+      "name": "軽井沢",
+      "num_lines": 1,
+      "coordinates": [
+        138.63506,
+        36.34255
+      ],
+      "schematic": [
+        15.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK03",
+      "name": "佐久平",
+      "num_lines": 1,
+      "coordinates": [
+        138.46424,
+        36.27796
+      ],
+      "schematic": [
+        14.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK04",
+      "name": "上田",
+      "num_lines": 1,
+      "coordinates": [
+        138.25,
+        36.3965
+      ],
+      "schematic": [
+        13.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK05",
+      "name": "長野",
+      "num_lines": 1,
+      "coordinates": [
+        138.18806,
+        36.64311
+      ],
+      "schematic": [
+        12.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK06",
+      "name": "飯山",
+      "num_lines": 1,
+      "coordinates": [
+        138.35889,
+        36.84519
+      ],
+      "schematic": [
+        11.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK07",
+      "name": "上越妙高",
+      "num_lines": 1,
+      "coordinates": [
+        138.248,
+        37.0813
+      ],
+      "schematic": [
+        10.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK08",
+      "name": "糸魚川",
+      "num_lines": 1,
+      "coordinates": [
+        137.8625,
+        37.04389
+      ],
+      "schematic": [
+        9.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK09",
+      "name": "黒部宇奈月温泉",
+      "num_lines": 1,
+      "coordinates": [
+        137.48114,
+        36.87403
+      ],
+      "schematic": [
+        8.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK10",
+      "name": "富山",
+      "num_lines": 1,
+      "coordinates": [
+        137.213,
+        36.7012
+      ],
+      "schematic": [
+        7.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK11",
+      "name": "新高岡",
+      "num_lines": 1,
+      "coordinates": [
+        137.0106,
+        36.7271
+      ],
+      "schematic": [
+        6.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK12",
+      "name": "金沢",
+      "num_lines": 1,
+      "coordinates": [
+        136.64776,
+        36.57827
+      ],
+      "schematic": [
+        5.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK13",
+      "name": "小松",
+      "num_lines": 1,
+      "coordinates": [
+        136.45278,
+        36.40227
+      ],
+      "schematic": [
+        4.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK14",
+      "name": "加賀温泉",
+      "num_lines": 1,
+      "coordinates": [
+        136.35054,
+        36.32025
+      ],
+      "schematic": [
+        3.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK15",
+      "name": "芦原温泉",
+      "num_lines": 1,
+      "coordinates": [
+        136.23504,
+        36.21453
+      ],
+      "schematic": [
+        2.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK16",
+      "name": "福井",
+      "num_lines": 1,
+      "coordinates": [
+        136.22332,
+        36.06213
+      ],
+      "schematic": [
+        1.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK17",
+      "name": "越前たけふ",
+      "num_lines": 1,
+      "coordinates": [
+        136.19913,
+        35.89619
+      ],
+      "schematic": [
+        0.5,
+        3.5
+      ]
+    },
+    {
+      "id": "HRK18",
+      "name": "敦賀",
+      "num_lines": 1,
+      "coordinates": [
+        136.076,
+        35.6452
+      ],
+      "schematic": [
+        0.0,
+        3.0
+      ]
+    },
+    {
+      "id": "AKT01",
+      "name": "雫石",
+      "num_lines": 1,
+      "coordinates": [
+        140.97486,
+        39.68936
+      ],
+      "schematic": [
+        23.0,
+        17.429
+      ]
+    },
+    {
+      "id": "AKT02",
+      "name": "田沢湖",
+      "num_lines": 1,
+      "coordinates": [
+        140.72242,
+        39.70028
+      ],
+      "schematic": [
+        22.0,
+        17.429
+      ]
+    },
+    {
+      "id": "AKT03",
+      "name": "角館",
+      "num_lines": 1,
+      "coordinates": [
+        140.571,
+        39.59172
+      ],
+      "schematic": [
+        21.0,
+        17.429
+      ]
+    },
+    {
+      "id": "AKT04",
+      "name": "大曲",
+      "num_lines": 1,
+      "coordinates": [
+        140.47964,
+        39.46542
+      ],
+      "schematic": [
+        20.0,
+        17.429
+      ]
+    },
+    {
+      "id": "AKT05",
+      "name": "秋田",
+      "num_lines": 1,
+      "coordinates": [
+        140.12975,
+        39.71684
+      ],
+      "schematic": [
+        19.0,
+        17.429
+      ]
+    },
+    {
+      "id": "YMG01",
+      "name": "米沢",
+      "num_lines": 1,
+      "coordinates": [
+        140.12821,
+        37.90964
+      ],
+      "schematic": [
+        23.293,
+        8.707
+      ]
+    },
+    {
+      "id": "YMG02",
+      "name": "高畠",
+      "num_lines": 1,
+      "coordinates": [
+        140.15272,
+        37.99243
+      ],
+      "schematic": [
+        22.586,
+        9.414
+      ]
+    },
+    {
+      "id": "YMG03",
+      "name": "赤湯",
+      "num_lines": 1,
+      "coordinates": [
+        140.14909,
+        38.04722
+      ],
+      "schematic": [
+        21.879,
+        10.121
+      ]
+    },
+    {
+      "id": "YMG04",
+      "name": "かみのやま温泉",
+      "num_lines": 1,
+      "coordinates": [
+        140.27865,
+        38.15224
+      ],
+      "schematic": [
+        21.172,
+        10.828
+      ]
+    },
+    {
+      "id": "YMG05",
+      "name": "山形",
+      "num_lines": 1,
+      "coordinates": [
+        140.32746,
+        38.24871
+      ],
+      "schematic": [
+        20.464,
+        11.536
+      ]
+    },
+    {
+      "id": "YMG06",
+      "name": "天童",
+      "num_lines": 1,
+      "coordinates": [
+        140.3695,
+        38.35997
+      ],
+      "schematic": [
+        19.757,
+        12.243
+      ]
+    },
+    {
+      "id": "YMG07",
+      "name": "さくらんぼ東根",
+      "num_lines": 1,
+      "coordinates": [
+        140.38089,
+        38.42856
+      ],
+      "schematic": [
+        19.05,
+        12.95
+      ]
+    },
+    {
+      "id": "YMG08",
+      "name": "村山",
+      "num_lines": 1,
+      "coordinates": [
+        140.38631,
+        38.47708
+      ],
+      "schematic": [
+        19.0,
+        13.929
+      ]
+    },
+    {
+      "id": "YMG09",
+      "name": "大石田",
+      "num_lines": 1,
+      "coordinates": [
+        140.37529,
+        38.59569
+      ],
+      "schematic": [
+        19.0,
+        14.929
+      ]
+    },
+    {
+      "id": "YMG10",
+      "name": "新庄",
+      "num_lines": 1,
+      "coordinates": [
+        140.30606,
+        38.76268
+      ],
+      "schematic": [
+        19.0,
+        15.929
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "THK01",
+      "target": "THK02",
+      "color": "#980ef2",
+      "distance": 3.6,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK02",
+      "target": "THK03",
+      "color": "#980ef2",
+      "distance": 27.7,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK03",
+      "target": "THK04",
+      "color": "#980ef2",
+      "distance": 49.0,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK04",
+      "target": "THK05",
+      "color": "#980ef2",
+      "distance": 28.7,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK05",
+      "target": "THK06",
+      "color": "#980ef2",
+      "distance": 43.4,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK06",
+      "target": "THK07",
+      "color": "#980ef2",
+      "distance": 26.0,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK07",
+      "target": "THK08",
+      "color": "#980ef2",
+      "distance": 35.5,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK08",
+      "target": "THK09",
+      "color": "#980ef2",
+      "distance": 41.2,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK09",
+      "target": "THK10",
+      "color": "#980ef2",
+      "distance": 31.1,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK10",
+      "target": "THK11",
+      "color": "#980ef2",
+      "distance": 39.2,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK11",
+      "target": "THK12",
+      "color": "#980ef2",
+      "distance": 38.4,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK12",
+      "target": "THK13",
+      "color": "#980ef2",
+      "distance": 21.9,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK13",
+      "target": "THK14",
+      "color": "#980ef2",
+      "distance": 20.6,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK14",
+      "target": "THK15",
+      "color": "#980ef2",
+      "distance": 25.0,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK15",
+      "target": "THK16",
+      "color": "#980ef2",
+      "distance": 17.3,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK16",
+      "target": "THK17",
+      "color": "#980ef2",
+      "distance": 14.5,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK17",
+      "target": "THK18",
+      "color": "#980ef2",
+      "distance": 33.4,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK18",
+      "target": "THK19",
+      "color": "#980ef2",
+      "distance": 31.1,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK19",
+      "target": "THK20",
+      "color": "#980ef2",
+      "distance": 34.6,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK20",
+      "target": "THK21",
+      "color": "#980ef2",
+      "distance": 30.9,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK21",
+      "target": "THK22",
+      "color": "#980ef2",
+      "distance": 36.1,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK22",
+      "target": "THK23",
+      "color": "#980ef2",
+      "distance": 45.7,
+      "lines": [
+        "THK_line"
+      ]
+    },
+    {
+      "source": "THK23",
+      "target": "HKD01",
+      "color": "#b3a812",
+      "distance": 38.5,
+      "lines": [
+        "HKD_line"
+      ]
+    },
+    {
+      "source": "HKD01",
+      "target": "HKD02",
+      "color": "#b3a812",
+      "distance": 74.8,
+      "lines": [
+        "HKD_line"
+      ]
+    },
+    {
+      "source": "HKD02",
+      "target": "HKD03",
+      "color": "#b3a812",
+      "distance": 35.5,
+      "lines": [
+        "HKD_line"
+      ]
+    },
+    {
+      "source": "THK03",
+      "target": "JTS01",
+      "color": "#8295ca",
+      "distance": 34.4,
+      "lines": [
+        "JTS_line"
+      ]
+    },
+    {
+      "source": "JTS01",
+      "target": "JTS02",
+      "color": "#8295ca",
+      "distance": 21.3,
+      "lines": [
+        "JTS_line"
+      ]
+    },
+    {
+      "source": "JTS02",
+      "target": "JTS03",
+      "color": "#8295ca",
+      "distance": 19.0,
+      "lines": [
+        "JTS_line"
+      ]
+    },
+    {
+      "source": "JTS03",
+      "target": "JTS04",
+      "color": "#8295ca",
+      "distance": 46.6,
+      "lines": [
+        "JTS_line"
+      ]
+    },
+    {
+      "source": "JTS04",
+      "target": "JTS05",
+      "color": "#8295ca",
+      "distance": 47.6,
+      "lines": [
+        "JTS_line"
+      ]
+    },
+    {
+      "source": "JTS05",
+      "target": "JTS06",
+      "color": "#8295ca",
+      "distance": 29.7,
+      "lines": [
+        "JTS_line"
+      ]
+    },
+    {
+      "source": "JTS06",
+      "target": "JTS07",
+      "color": "#8295ca",
+      "distance": 41.7,
+      "lines": [
+        "JTS_line"
+      ]
+    },
+    {
+      "source": "JTS07",
+      "target": "JTS08",
+      "color": "#8295ca",
+      "distance": 23.2,
+      "lines": [
+        "JTS_line"
+      ]
+    },
+    {
+      "source": "JTS08",
+      "target": "JTS09",
+      "color": "#8295ca",
+      "distance": 40.1,
+      "lines": [
+        "JTS_line"
+      ]
+    },
+    {
+      "source": "JTS03",
+      "target": "HRK01",
+      "color": "#9338a6",
+      "distance": 18.5,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK01",
+      "target": "HRK02",
+      "color": "#9338a6",
+      "distance": 23.3,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK02",
+      "target": "HRK03",
+      "color": "#9338a6",
+      "distance": 17.6,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK03",
+      "target": "HRK04",
+      "color": "#9338a6",
+      "distance": 24.8,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK04",
+      "target": "HRK05",
+      "color": "#9338a6",
+      "distance": 33.2,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK05",
+      "target": "HRK06",
+      "color": "#9338a6",
+      "distance": 29.9,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK06",
+      "target": "HRK07",
+      "color": "#9338a6",
+      "distance": 29.6,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK07",
+      "target": "HRK08",
+      "color": "#9338a6",
+      "distance": 37.0,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK08",
+      "target": "HRK09",
+      "color": "#9338a6",
+      "distance": 39.2,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK09",
+      "target": "HRK10",
+      "color": "#9338a6",
+      "distance": 33.8,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK10",
+      "target": "HRK11",
+      "color": "#9338a6",
+      "distance": 18.9,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK11",
+      "target": "HRK12",
+      "color": "#9338a6",
+      "distance": 39.7,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK12",
+      "target": "HRK13",
+      "color": "#9338a6",
+      "distance": 27.1,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK13",
+      "target": "HRK14",
+      "color": "#9338a6",
+      "distance": 14.5,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK14",
+      "target": "HRK15",
+      "color": "#9338a6",
+      "distance": 16.3,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK15",
+      "target": "HRK16",
+      "color": "#9338a6",
+      "distance": 18.0,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK16",
+      "target": "HRK17",
+      "color": "#9338a6",
+      "distance": 19.0,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "HRK17",
+      "target": "HRK18",
+      "color": "#9338a6",
+      "distance": 30.2,
+      "lines": [
+        "HRK_line"
+      ]
+    },
+    {
+      "source": "THK18",
+      "target": "AKT01",
+      "color": "#2fc625",
+      "distance": 16.0,
+      "lines": [
+        "AKT_line"
+      ]
+    },
+    {
+      "source": "AKT01",
+      "target": "AKT02",
+      "color": "#2fc625",
+      "distance": 24.1,
+      "lines": [
+        "AKT_line"
+      ]
+    },
+    {
+      "source": "AKT02",
+      "target": "AKT03",
+      "color": "#2fc625",
+      "distance": 18.7,
+      "lines": [
+        "AKT_line"
+      ]
+    },
+    {
+      "source": "AKT03",
+      "target": "AKT04",
+      "color": "#2fc625",
+      "distance": 16.8,
+      "lines": [
+        "AKT_line"
+      ]
+    },
+    {
+      "source": "AKT04",
+      "target": "AKT05",
+      "color": "#2fc625",
+      "distance": 51.7,
+      "lines": [
+        "AKT_line"
+      ]
+    },
+    {
+      "source": "THK09",
+      "target": "YMG01",
+      "color": "#b30517",
+      "distance": 40.5,
+      "lines": [
+        "YMG_line"
+      ]
+    },
+    {
+      "source": "YMG01",
+      "target": "YMG02",
+      "color": "#b30517",
+      "distance": 9.4,
+      "lines": [
+        "YMG_line"
+      ]
+    },
+    {
+      "source": "YMG02",
+      "target": "YMG03",
+      "color": "#b30517",
+      "distance": 6.2,
+      "lines": [
+        "YMG_line"
+      ]
+    },
+    {
+      "source": "YMG03",
+      "target": "YMG04",
+      "color": "#b30517",
+      "distance": 18.9,
+      "lines": [
+        "YMG_line"
+      ]
+    },
+    {
+      "source": "YMG04",
+      "target": "YMG05",
+      "color": "#b30517",
+      "distance": 12.1,
+      "lines": [
+        "YMG_line"
+      ]
+    },
+    {
+      "source": "YMG05",
+      "target": "YMG06",
+      "color": "#b30517",
+      "distance": 13.3,
+      "lines": [
+        "YMG_line"
+      ]
+    },
+    {
+      "source": "YMG06",
+      "target": "YMG07",
+      "color": "#b30517",
+      "distance": 7.7,
+      "lines": [
+        "YMG_line"
+      ]
+    },
+    {
+      "source": "YMG07",
+      "target": "YMG08",
+      "color": "#b30517",
+      "distance": 5.4,
+      "lines": [
+        "YMG_line"
+      ]
+    },
+    {
+      "source": "YMG08",
+      "target": "YMG09",
+      "color": "#b30517",
+      "distance": 13.4,
+      "lines": [
+        "YMG_line"
+      ]
+    },
+    {
+      "source": "YMG09",
+      "target": "YMG10",
+      "color": "#b30517",
+      "distance": 21.7,
+      "lines": [
+        "YMG_line"
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "THK_line",
+      "name": "東北新幹線",
+      "color": "#980ef2"
+    },
+    {
+      "id": "HKD_line",
+      "name": "北海道新幹線",
+      "color": "#b3a812"
+    },
+    {
+      "id": "JTS_line",
+      "name": "上越新幹線",
+      "color": "#8295ca"
+    },
+    {
+      "id": "HRK_line",
+      "name": "北陸新幹線",
+      "color": "#9338a6"
+    },
+    {
+      "id": "AKT_line",
+      "name": "秋田新幹線",
+      "color": "#2fc625"
+    },
+    {
+      "id": "YMG_line",
+      "name": "山形新幹線",
+      "color": "#b30517"
+    }
+  ]
+}
