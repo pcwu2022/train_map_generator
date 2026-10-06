@@ -8,7 +8,9 @@ class SoftTerm(Term): kind='soft'
 @register
 class Crossings(SoftTerm):
     name='S1_crossings'
-    def full(self,layout): return float(len(layout.facts()['crossings']))
+    def full(self,layout):
+        facts = layout.facts()
+        return float(len(facts.get('crossings', [])) + len(facts.get('missing_crossings', [])))
 
 
 @register
@@ -16,9 +18,21 @@ class EdgeLength(SoftTerm):
     name='S2_edge_length'
     def full(self,layout):
         ratios = layout.facts()['lengths'] / layout.targets
-        lower_dev = np.maximum(0, 0.7 - ratios)
-        upper_dev = np.maximum(0, ratios - 1.3)
-        return float(np.sum((lower_dev + upper_dev)**2))
+        lower_dev = np.maximum(0, 0.8 - ratios)
+        upper_dev = np.maximum(0, ratios - 1.2)
+        penalty = (lower_dev + upper_dev)**2
+        
+        if not hasattr(self, 'terminal_edges'):
+            self.terminal_edges = []
+            for chain_nodes, chain_edges in layout.graph.chains:
+                u, v = chain_nodes[0], chain_nodes[-1]
+                if len(layout.graph.adjacency[u]) == 1 or len(layout.graph.adjacency[v]) == 1:
+                    self.terminal_edges.extend(chain_edges)
+                    
+        for ei in self.terminal_edges:
+            penalty[ei] += 10.0 * ((ratios[ei] - 1.0)**2)
+            
+        return float(np.sum(penalty))
 
 
 @register
@@ -129,3 +143,66 @@ class RelativeOrder(SoftTerm):
     def full(self,layout):
         from ..reference import relative_order_cost
         return relative_order_cost(layout,self.parameters['k'])
+
+
+@register
+class ChainAngleVariance(SoftTerm):
+    name='S15_chain_angle_variance'
+    def full(self,layout):
+        total_var = 0.0
+        facts = layout.facts()
+        for chain_nodes, chain_edges in layout.graph.chains:
+            deviations = []
+            for e in chain_edges:
+                deviations.extend(facts['edge_deviations'][e])
+            if len(deviations) > 1:
+                total_var += float(np.var(deviations))
+        return total_var
+
+@register
+class ChainTurns(SoftTerm):
+    name='S18_chain_turns'
+    def full(self,layout):
+        penalty = 0.0
+        facts = layout.facts()
+        for chain_nodes, chain_edges in layout.graph.chains:
+            turns = sum(facts['bends'][e] for e in chain_edges)
+            for node in chain_nodes[1:-1]:
+                turns += facts['node_internal_turns'].get(node, 0)
+            if turns > 2:
+                penalty += (turns - 2)**2
+        return float(penalty)
+
+
+@register
+class TransferOrthogonality(SoftTerm):
+    name='S16_transfer_orthogonality'
+    def full(self,layout):
+        penalty = 0.0
+        for node in range(len(layout.graph.nodes)):
+            is_transfer = len(layout.graph.adjacency[node]) > 2 or len(layout.graph.nodes[node].get('lines', [])) > 1
+            if is_transfer:
+                from ..geometry import node_tangents, bearing
+                tangents = node_tangents(layout.graph, layout.routes, node)
+                for edge, vec in tangents:
+                    b = bearing(vec)
+                    dist_90 = b % 90
+                    dist_90 = min(dist_90, 90 - dist_90)
+                    if dist_90 > 5:
+                        penalty += 1.0
+        return penalty
+
+
+@register
+class RadialGravity(SoftTerm):
+    name='S17_radial_gravity'
+    def full(self,layout):
+        if not hasattr(self, 'center_node'):
+            anchors = layout.anchor
+            median = np.median(anchors, axis=0)
+            distances = np.linalg.norm(anchors - median, axis=1)
+            self.center_node = np.argmin(distances)
+            
+        center_pos = layout.positions[self.center_node]
+        distances = np.linalg.norm(layout.positions - center_pos, axis=1)
+        return float(np.mean(distances))

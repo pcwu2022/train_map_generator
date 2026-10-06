@@ -10,3 +10,17 @@ routing:
   passes: 1
 refine:
   sweeps: 2
+
+terms:
+  S15_chain_angle_variance:
+    enabled: true
+    weight: 2.0
+  S16_transfer_orthogonality:
+    enabled: true
+    weight: 5.0
+  S17_radial_gravity:
+    enabled: true
+    weight: 0.1
+  S18_chain_turns:
+    enabled: true
+    weight: 5.0

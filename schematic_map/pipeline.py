@@ -20,6 +20,23 @@ def generate_layout(data,config=None,record_runtime=False,progress=None,live_cal
     validate_graph(data); graph=build_graph(data,config)
     anchor,transform=find_transform(graph,config)
     graph.topology_reference=apply_transform(graph.geo,transform['rotation_deg'],transform['aspect'])
+    
+    # Calculate inherent crossings from straight geographic lines
+    from .layout.geometry import intersection_pairs
+    geo_routes = [np.array([anchor[u], anchor[v]]) for u, v in graph.endpoints]
+    allowed = intersection_pairs(geo_routes, None, None, config['routing']['intersection_block_size'])
+    graph.allowed_crossings = { (min(u, v), max(u, v)) for u, v in allowed }
+    
+    # Calculate close station pairs for proximity hard constraint
+    d_min = config['grid']['d_min']
+    close_threshold = d_min * 1.5 # arbitrary threshold mapped to ~400m
+    
+    # Vectorized O(N^2) distance calculation
+    dist_matrix = np.linalg.norm(anchor[:, None, :] - anchor[None, :, :], axis=2)
+    u_idx, v_idx = np.where(np.triu(dist_matrix < close_threshold, 1))
+    graph.close_pairs_u = u_idx
+    graph.close_pairs_v = v_idx
+    
     targets=target_lengths(graph,config)
     positions=initial_layout(graph,anchor,targets,config); routes=[None]*len(graph.edges)
     
