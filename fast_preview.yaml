@@ -1,0 +1,12 @@
+# 快速預覽配置：針對千站以上巨型路網的 Live 模式特化
+anneal:
+  restarts: 1
+  max_sweeps: 3
+  greedy_sweeps: 1
+skeleton:
+  routing_passes: 1
+  candidates_per_ports: 1
+routing:
+  passes: 1
+refine:
+  sweeps: 2

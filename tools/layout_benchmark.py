@@ -15,7 +15,7 @@ from schematic_map.render.png import render_png
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--stage',required=True)
     parser.add_argument('--config',default='tests/config/large_network.yaml')
-    parser.add_argument('--inputs',nargs='+',default=['data/graphs/jre_shinkansen.json','data/graphs/jre.json','data/graphs/jrw.json'])
+    parser.add_argument('--inputs',nargs='+',default=['data/graphs/jre_shinkansen.json','data/graphs/jre.json','data/graphs/jrw.json','data/graphs/jrw_kansai.json'])
     args=parser.parse_args();config=load_config(args.config)
     directory=Path('output/comparisons')/args.stage;directory.mkdir(parents=True,exist_ok=True)
     (directory/'config.json').write_text(json.dumps(config,indent=2)+'\n')

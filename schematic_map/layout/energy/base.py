@@ -56,6 +56,13 @@ class Layout:
             else:
                 reports=[]
                 test_nodes=np.array([node for node in range(n) if node not in (u,v)],dtype=int)
+                if len(test_nodes) > 0:
+                    d_min_3 = 3.0 * c['grid']['d_min']
+                    p_min = np.min(path, axis=0) - d_min_3
+                    p_max = np.max(path, axis=0) + d_min_3
+                    pos = p[test_nodes]
+                    mask = (pos[:,0] >= p_min[0]) & (pos[:,0] <= p_max[0]) & (pos[:,1] >= p_min[1]) & (pos[:,1] <= p_max[1])
+                    test_nodes = test_nodes[mask]
             minimum=np.full(len(test_nodes),np.inf)
             for a,b in zip(path,path[1:]): minimum=np.minimum(minimum,point_segment_distances(p[test_nodes],a,b))
             for local in np.flatnonzero(minimum<clearance-EPS):

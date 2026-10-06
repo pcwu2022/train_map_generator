@@ -15,32 +15,70 @@ from .layout.energy.base import Layout
 from .metrics import measure
 
 
-def generate_layout(data,config=None,record_runtime=False,progress=None):
+def generate_layout(data,config=None,record_runtime=False,progress=None,live_callback=None):
     started=time.perf_counter(); config=load_config(overrides=config)
     validate_graph(data); graph=build_graph(data,config)
     anchor,transform=find_transform(graph,config)
     graph.topology_reference=apply_transform(graph.geo,transform['rotation_deg'],transform['aspect'])
     targets=target_lengths(graph,config)
     positions=initial_layout(graph,anchor,targets,config); routes=[None]*len(graph.edges)
+    
+    def make_component_callback(component, edge_ids, component_index):
+        def callback(sub_positions, sub_routes, progress_text, component_percent=0.0):
+            if not live_callback: return
+            positions[component] = sub_positions
+            for local, global_id in enumerate(edge_ids):
+                if sub_routes is not None and local < len(sub_routes): routes[global_id] = sub_routes[local]
+            nodes = []
+            for i, node in enumerate(graph.nodes):
+                item = deepcopy(node); item['schematic'] = positions[i].tolist()
+                item['marker'] = 'station'
+                item['label'] = {'offset': [0,0], 'anchor': 'center', 'rotation_deg': 0}
+                nodes.append(item)
+            edges = []
+            for i, edge in enumerate(graph.edges):
+                item = deepcopy(edge)
+                item['lines'] = edge['lines']; item['line_offsets'] = {line_id: 0 for line_id in edge['lines']}
+                if routes[i] is not None: item['path'] = routes[i].tolist()
+                else:
+                    u, v = graph.endpoints[i]
+                    item['path'] = [positions[u].tolist(), positions[v].tolist()]
+                edges.append(item)
+            clouds = [positions] + [r for r in routes if r is not None]
+            cloud = np.concatenate(clouds) if clouds else np.zeros((1,2))
+            bounds = [*cloud.min(axis=0), *cloud.max(axis=0)]
+            overall_percent = (component_index + component_percent) / len(graph.components)
+            meta = {'version':'0.1', 'bounds':bounds, 'feasible':False, 'progress': progress_text, 'percent': overall_percent}
+            live_callback({'meta':meta, 'nodes':nodes, 'edges':edges, 'lines':graph.lines, 'render':deepcopy(config['render']), 'label_style':deepcopy(config['labels']), 'web':deepcopy(config['web'])})
+        return callback
+
     component_label_boxes=[]
     # Optimize each component separately; neither obstacles nor annealing cross components.
     for number,component in enumerate(graph.components):
         if progress: progress(f'Layout component {number+1}/{len(graph.components)} ({len(component)} stations)')
         node_ids={graph.nodes[i]['id'] for i in component}
         edge_ids=[i for i,e in enumerate(graph.edges) if e['source'] in node_ids]
+        
+        comp_callback = make_component_callback(component, edge_ids, number)
+        comp_callback(positions[component], None, "Initializing component...", 0.0)
+
         subdata={'nodes':[deepcopy(graph.nodes[i]) for i in component], 'edges':[deepcopy(graph.edges[i]) for i in edge_ids],'lines':graph.lines}
         subgraph=build_graph(subdata,config)
         subgraph.geo=graph.geo[component]; subgraph.origin=graph.origin
         subgraph.topology_reference=graph.topology_reference[component]
         if config['init']['mode']=='skeleton' and config['skeleton']['enabled']:
             from .layout.skeleton import skeleton_layout
-            sublayout=skeleton_layout(subgraph,positions[component],anchor[component],targets[edge_ids],config)
+            def skeleton_cb(p, r, text, pct):
+                comp_callback(p, r, text, pct * 0.2)
+            sublayout=skeleton_layout(subgraph,positions[component],anchor[component],targets[edge_ids],config,callback=skeleton_cb)
             if config['anneal']['multistart']:
                 geographic_config=deepcopy(config);geographic_config['init']['mode']='geo'
                 geographic=initial_layout(subgraph,anchor[component],targets[edge_ids],geographic_config)
-                sublayout=optimize(subgraph,sublayout.positions,anchor[component],targets[edge_ids],config,initial_routes=sublayout.routes,alternate=geographic)
+                def anneal_cb(p, r, text, pct):
+                    comp_callback(p, r, text, 0.2 + pct * 0.8)
+                sublayout=optimize(subgraph,sublayout.positions,anchor[component],targets[edge_ids],config,initial_routes=sublayout.routes,alternate=geographic,callback=anneal_cb)
         else:
-            sublayout=optimize(subgraph,positions[component],anchor[component],targets[edge_ids],config)
+            sublayout=optimize(subgraph,positions[component],anchor[component],targets[edge_ids],config,callback=make_component_callback(component, edge_ids, number))
         sublayout=refine(sublayout)
         positions[component]=sublayout.positions
         _,label_boxes,_=place_labels(subgraph,sublayout.positions,sublayout.routes,config)

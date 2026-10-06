@@ -1,0 +1,9772 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "nodes": [
+    {
+      "id": "JRW_Kansai_A01",
+      "name": "敦賀",
+      "coordinates": [
+        136.076,
+        35.6452
+      ],
+      "schematic": [
+        218.451,
+        128.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A02",
+      "name": "新疋田",
+      "coordinates": [
+        136.1006,
+        35.5943
+      ],
+      "schematic": [
+        219.671,
+        128.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A03",
+      "name": "近江塩津",
+      "coordinates": [
+        136.151,
+        35.5396
+      ],
+      "schematic": [
+        220.891,
+        128.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A04",
+      "name": "余呉",
+      "coordinates": [
+        136.198,
+        35.5338
+      ],
+      "schematic": [
+        221.819,
+        127.364
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A05",
+      "name": "木ノ本",
+      "coordinates": [
+        136.2217,
+        35.5058
+      ],
+      "schematic": [
+        222.748,
+        126.436
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A06",
+      "name": "高月",
+      "coordinates": [
+        136.237,
+        35.4712
+      ],
+      "schematic": [
+        223.677,
+        125.507
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A07",
+      "name": "河毛",
+      "coordinates": [
+        136.24952,
+        35.44843
+      ],
+      "schematic": [
+        224.605,
+        124.579
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A08",
+      "name": "虎姫",
+      "coordinates": [
+        136.258,
+        35.4244
+      ],
+      "schematic": [
+        225.534,
+        123.65
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A09",
+      "name": "長浜",
+      "coordinates": [
+        136.265,
+        35.37833
+      ],
+      "schematic": [
+        226.462,
+        122.721
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A10",
+      "name": "田村",
+      "coordinates": [
+        136.265,
+        35.37833
+      ],
+      "schematic": [
+        227.391,
+        121.793
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A11",
+      "name": "坂田",
+      "coordinates": [
+        136.265,
+        35.37833
+      ],
+      "schematic": [
+        228.319,
+        120.864
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A12",
+      "name": "米原",
+      "coordinates": [
+        136.29049,
+        35.31418
+      ],
+      "schematic": [
+        229.248,
+        119.936
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A13",
+      "name": "京都",
+      "coordinates": [
+        135.75861,
+        34.98556
+      ],
+      "schematic": [
+        219.391,
+        108.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A14",
+      "name": "山科",
+      "coordinates": [
+        135.81722,
+        34.99222
+      ],
+      "schematic": [
+        220.891,
+        108.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A15",
+      "name": "大津",
+      "coordinates": [
+        135.865,
+        35.0028
+      ],
+      "schematic": [
+        221.891,
+        108.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A16",
+      "name": "膳所",
+      "coordinates": [
+        135.881,
+        34.9992
+      ],
+      "schematic": [
+        222.891,
+        108.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A17",
+      "name": "石山",
+      "coordinates": [
+        135.90023,
+        34.97987
+      ],
+      "schematic": [
+        223.891,
+        108.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A18",
+      "name": "瀬田",
+      "coordinates": [
+        135.92528,
+        34.98694
+      ],
+      "schematic": [
+        224.891,
+        108.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A19",
+      "name": "南草津",
+      "coordinates": [
+        135.94728,
+        35.00375
+      ],
+      "schematic": [
+        225.891,
+        108.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A20",
+      "name": "草津",
+      "coordinates": [
+        135.96173,
+        35.02235
+      ],
+      "schematic": [
+        226.391,
+        108.793
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A21",
+      "name": "栗東",
+      "coordinates": [
+        135.98,
+        35.0374
+      ],
+      "schematic": [
+        227.319,
+        109.721
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A22",
+      "name": "守山",
+      "coordinates": [
+        135.99569,
+        35.05041
+      ],
+      "schematic": [
+        228.248,
+        110.65
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A23",
+      "name": "野洲",
+      "coordinates": [
+        136.023,
+        35.0683
+      ],
+      "schematic": [
+        229.177,
+        111.579
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A24",
+      "name": "篠原",
+      "coordinates": [
+        136.07139,
+        35.09917
+      ],
+      "schematic": [
+        230.105,
+        112.507
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A25",
+      "name": "近江八幡",
+      "coordinates": [
+        136.102,
+        35.1228
+      ],
+      "schematic": [
+        231.034,
+        113.436
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A26",
+      "name": "安土",
+      "coordinates": [
+        136.1337,
+        35.1424
+      ],
+      "schematic": [
+        231.962,
+        114.364
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A27",
+      "name": "能登川",
+      "coordinates": [
+        136.16583,
+        35.18
+      ],
+      "schematic": [
+        232.891,
+        115.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A28",
+      "name": "稲枝",
+      "coordinates": [
+        136.1946,
+        35.2033
+      ],
+      "schematic": [
+        232.962,
+        116.221
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A29",
+      "name": "河瀬",
+      "coordinates": [
+        136.2252,
+        35.2254
+      ],
+      "schematic": [
+        232.034,
+        117.15
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A30",
+      "name": "南彦根",
+      "coordinates": [
+        136.2478,
+        35.246
+      ],
+      "schematic": [
+        231.105,
+        118.079
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A31",
+      "name": "彦根",
+      "coordinates": [
+        136.26343,
+        35.27253
+      ],
+      "schematic": [
+        230.177,
+        119.007
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A32",
+      "name": "西大路",
+      "coordinates": [
+        135.73234,
+        34.98103
+      ],
+      "schematic": [
+        217.617,
+        106.519
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A33",
+      "name": "桂川",
+      "coordinates": [
+        135.71038,
+        34.9645
+      ],
+      "schematic": [
+        215.843,
+        104.745
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A34",
+      "name": "向日町",
+      "coordinates": [
+        135.70944,
+        34.955
+      ],
+      "schematic": [
+        214.069,
+        102.971
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A35",
+      "name": "長岡京",
+      "coordinates": [
+        135.7007,
+        34.92352
+      ],
+      "schematic": [
+        212.295,
+        101.197
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A36",
+      "name": "山崎",
+      "coordinates": [
+        135.68,
+        34.8925
+      ],
+      "schematic": [
+        210.521,
+        99.423
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A37",
+      "name": "島本",
+      "coordinates": [
+        135.66271,
+        34.88058
+      ],
+      "schematic": [
+        208.747,
+        97.649
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A38",
+      "name": "高槻",
+      "coordinates": [
+        135.61778,
+        34.85167
+      ],
+      "schematic": [
+        206.972,
+        95.874
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A39",
+      "name": "摂津富田",
+      "coordinates": [
+        135.59335,
+        34.83767
+      ],
+      "schematic": [
+        205.198,
+        94.1
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A40",
+      "name": "JR総持寺",
+      "coordinates": [
+        135.578,
+        34.8286
+      ],
+      "schematic": [
+        203.424,
+        92.326
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A41",
+      "name": "茨木",
+      "coordinates": [
+        135.56224,
+        34.81535
+      ],
+      "schematic": [
+        201.65,
+        90.552
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A42",
+      "name": "千里丘",
+      "coordinates": [
+        135.5515,
+        34.7917
+      ],
+      "schematic": [
+        199.876,
+        88.778
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A43",
+      "name": "岸辺",
+      "coordinates": [
+        135.5416,
+        34.7766
+      ],
+      "schematic": [
+        198.102,
+        87.004
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A44",
+      "name": "吹田",
+      "coordinates": [
+        135.52367,
+        34.76317
+      ],
+      "schematic": [
+        196.328,
+        85.23
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A45",
+      "name": "東淀川",
+      "coordinates": [
+        135.5041,
+        34.7392
+      ],
+      "schematic": [
+        194.554,
+        83.456
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A46",
+      "name": "新大阪",
+      "coordinates": [
+        135.5,
+        34.73361
+      ],
+      "schematic": [
+        193.841,
+        81.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A47",
+      "name": "大阪",
+      "coordinates": [
+        135.49611,
+        34.7025
+      ],
+      "schematic": [
+        193.841,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A48",
+      "name": "塚本",
+      "coordinates": [
+        135.46892,
+        34.71273
+      ],
+      "schematic": [
+        191.591,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A49",
+      "name": "尼崎",
+      "coordinates": [
+        135.43167,
+        34.73167
+      ],
+      "schematic": [
+        189.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A50",
+      "name": "立花",
+      "coordinates": [
+        135.39851,
+        34.73584
+      ],
+      "schematic": [
+        188.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A51",
+      "name": "甲子園口",
+      "coordinates": [
+        135.3742,
+        34.7389
+      ],
+      "schematic": [
+        187.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A52",
+      "name": "西宮",
+      "coordinates": [
+        135.34786,
+        34.73897
+      ],
+      "schematic": [
+        186.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A53",
+      "name": "さくら夙川",
+      "coordinates": [
+        135.33104,
+        34.73899
+      ],
+      "schematic": [
+        185.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A54",
+      "name": "芦屋",
+      "coordinates": [
+        135.30707,
+        34.73424
+      ],
+      "schematic": [
+        184.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A55",
+      "name": "甲南山手",
+      "coordinates": [
+        135.29243,
+        34.73058
+      ],
+      "schematic": [
+        183.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A56",
+      "name": "摂津本山",
+      "coordinates": [
+        135.27645,
+        34.72668
+      ],
+      "schematic": [
+        182.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A57",
+      "name": "住吉",
+      "coordinates": [
+        135.26222,
+        34.71972
+      ],
+      "schematic": [
+        181.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A58",
+      "name": "六甲道",
+      "coordinates": [
+        135.2384,
+        34.715
+      ],
+      "schematic": [
+        180.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A59",
+      "name": "摩耶",
+      "coordinates": [
+        135.22517,
+        34.70867
+      ],
+      "schematic": [
+        179.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A60",
+      "name": "灘",
+      "coordinates": [
+        135.2165,
+        34.7062
+      ],
+      "schematic": [
+        178.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A61",
+      "name": "三ノ宮",
+      "coordinates": [
+        135.195,
+        34.69472
+      ],
+      "schematic": [
+        177.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A62",
+      "name": "元町",
+      "coordinates": [
+        135.18739,
+        34.68956
+      ],
+      "schematic": [
+        176.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A63",
+      "name": "神戸",
+      "coordinates": [
+        135.17806,
+        34.67944
+      ],
+      "schematic": [
+        175.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A64",
+      "name": "兵庫",
+      "coordinates": [
+        135.16467,
+        34.66838
+      ],
+      "schematic": [
+        174.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A65",
+      "name": "新長田",
+      "coordinates": [
+        135.14361,
+        34.65667
+      ],
+      "schematic": [
+        173.174,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A66",
+      "name": "鷹取",
+      "coordinates": [
+        135.135,
+        34.6513
+      ],
+      "schematic": [
+        172.841,
+        80.576
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A67",
+      "name": "須磨海浜公園",
+      "coordinates": [
+        135.12662,
+        34.64719
+      ],
+      "schematic": [
+        172.841,
+        81.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A68",
+      "name": "須磨",
+      "coordinates": [
+        135.113,
+        34.6423
+      ],
+      "schematic": [
+        172.841,
+        82.909
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A69",
+      "name": "塩屋",
+      "coordinates": [
+        135.08334,
+        34.63359
+      ],
+      "schematic": [
+        172.841,
+        84.076
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A70",
+      "name": "垂水",
+      "coordinates": [
+        135.054,
+        34.6295
+      ],
+      "schematic": [
+        172.841,
+        85.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A71",
+      "name": "舞子",
+      "coordinates": [
+        135.03377,
+        34.63348
+      ],
+      "schematic": [
+        172.841,
+        86.409
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A72",
+      "name": "朝霧",
+      "coordinates": [
+        135.0175,
+        34.64444
+      ],
+      "schematic": [
+        172.841,
+        87.576
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A73",
+      "name": "明石",
+      "coordinates": [
+        134.99326,
+        34.64875
+      ],
+      "schematic": [
+        172.841,
+        88.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A74",
+      "name": "西明石",
+      "coordinates": [
+        134.96054,
+        34.66685
+      ],
+      "schematic": [
+        172.841,
+        89.909
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A75",
+      "name": "大久保",
+      "coordinates": [
+        134.939,
+        34.6823
+      ],
+      "schematic": [
+        172.841,
+        91.076
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A76",
+      "name": "魚住",
+      "coordinates": [
+        134.906,
+        34.6965
+      ],
+      "schematic": [
+        172.841,
+        92.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A77",
+      "name": "土山",
+      "coordinates": [
+        134.889,
+        34.7205
+      ],
+      "schematic": [
+        172.841,
+        93.409
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A78",
+      "name": "東加古川",
+      "coordinates": [
+        134.86904,
+        34.74585
+      ],
+      "schematic": [
+        172.841,
+        94.576
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A79",
+      "name": "加古川",
+      "coordinates": [
+        134.83941,
+        34.76784
+      ],
+      "schematic": [
+        172.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A80",
+      "name": "宝殿",
+      "coordinates": [
+        134.81243,
+        34.78454
+      ],
+      "schematic": [
+        171.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A81",
+      "name": "曽根",
+      "coordinates": [
+        134.77,
+        34.79333
+      ],
+      "schematic": [
+        170.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A82",
+      "name": "ひめじ別所",
+      "coordinates": [
+        134.75325,
+        34.80555
+      ],
+      "schematic": [
+        169.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A83",
+      "name": "御着",
+      "coordinates": [
+        134.73559,
+        34.81694
+      ],
+      "schematic": [
+        168.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A84",
+      "name": "東姫路",
+      "coordinates": [
+        134.71082,
+        34.82439
+      ],
+      "schematic": [
+        167.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A85",
+      "name": "姫路",
+      "coordinates": [
+        134.69085,
+        34.82764
+      ],
+      "schematic": [
+        166.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O01",
+      "name": "天王寺",
+      "coordinates": [
+        135.51389,
+        34.64736
+      ],
+      "schematic": [
+        195.341,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O02",
+      "name": "寺田町",
+      "coordinates": [
+        135.523,
+        34.6479
+      ],
+      "schematic": [
+        196.11,
+        72.013
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O03",
+      "name": "桃谷",
+      "coordinates": [
+        135.52789,
+        34.65855
+      ],
+      "schematic": [
+        196.841,
+        72.799
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O04",
+      "name": "鶴橋",
+      "coordinates": [
+        135.53,
+        34.6653
+      ],
+      "schematic": [
+        196.841,
+        73.888
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O05",
+      "name": "玉造",
+      "coordinates": [
+        135.53283,
+        34.67352
+      ],
+      "schematic": [
+        196.841,
+        74.976
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O06",
+      "name": "森ノ宮",
+      "coordinates": [
+        135.534,
+        34.6811
+      ],
+      "schematic": [
+        196.841,
+        76.065
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O07",
+      "name": "大阪城公園",
+      "coordinates": [
+        135.534,
+        34.6886
+      ],
+      "schematic": [
+        196.841,
+        77.154
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O08",
+      "name": "京橋",
+      "coordinates": [
+        135.535,
+        34.696
+      ],
+      "schematic": [
+        196.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O09",
+      "name": "桜ノ宮",
+      "coordinates": [
+        135.52032,
+        34.70492
+      ],
+      "schematic": [
+        195.987,
+        79.096
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O10",
+      "name": "天満",
+      "coordinates": [
+        135.51214,
+        34.70493
+      ],
+      "schematic": [
+        195.048,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O11",
+      "name": "福島",
+      "coordinates": [
+        135.48827,
+        34.69603
+      ],
+      "schematic": [
+        192.134,
+        78.036
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O12",
+      "name": "野田",
+      "coordinates": [
+        135.47486,
+        34.68898
+      ],
+      "schematic": [
+        190.255,
+        76.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O13",
+      "name": "西九条",
+      "coordinates": [
+        135.46679,
+        34.68266
+      ],
+      "schematic": [
+        187.841,
+        76.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O14",
+      "name": "弁天町",
+      "coordinates": [
+        135.46267,
+        34.66908
+      ],
+      "schematic": [
+        188.045,
+        75.038
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O15",
+      "name": "大正",
+      "coordinates": [
+        135.47933,
+        34.66581
+      ],
+      "schematic": [
+        189.31,
+        73.773
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O16",
+      "name": "芦原橋",
+      "coordinates": [
+        135.4889,
+        34.65921
+      ],
+      "schematic": [
+        190.575,
+        72.508
+      ]
+    },
+    {
+      "id": "JRW_Kansai_O17",
+      "name": "今宮",
+      "coordinates": [
+        135.49304,
+        34.65418
+      ],
+      "schematic": [
+        191.841,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H01",
+      "name": "南吹田",
+      "coordinates": [
+        135.51125,
+        34.74944
+      ],
+      "schematic": [
+        195.341,
+        81.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H02",
+      "name": "JR淡路",
+      "coordinates": [
+        135.51986,
+        34.74069
+      ],
+      "schematic": [
+        196.841,
+        81.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H03",
+      "name": "城北公園通",
+      "coordinates": [
+        135.53278,
+        34.72083
+      ],
+      "schematic": [
+        198.341,
+        81.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H04",
+      "name": "JR野江",
+      "coordinates": [
+        135.54139,
+        34.70694
+      ],
+      "schematic": [
+        198.341,
+        79.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H05",
+      "name": "鴫野",
+      "coordinates": [
+        135.5453,
+        34.6926
+      ],
+      "schematic": [
+        198.341,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H06",
+      "name": "放出",
+      "coordinates": [
+        135.563,
+        34.68804
+      ],
+      "schematic": [
+        199.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H07",
+      "name": "高井田中央",
+      "coordinates": [
+        135.57246,
+        34.67911
+      ],
+      "schematic": [
+        199.841,
+        77.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H08",
+      "name": "JR河内永和",
+      "coordinates": [
+        135.572,
+        34.6638
+      ],
+      "schematic": [
+        199.841,
+        76.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H09",
+      "name": "JR俊徳道",
+      "coordinates": [
+        135.572,
+        34.6583
+      ],
+      "schematic": [
+        199.841,
+        75.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H10",
+      "name": "JR長瀬",
+      "coordinates": [
+        135.57028,
+        34.64944
+      ],
+      "schematic": [
+        199.841,
+        74.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H11",
+      "name": "衣摺加美北",
+      "coordinates": [
+        135.56703,
+        34.63833
+      ],
+      "schematic": [
+        199.841,
+        73.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H12",
+      "name": "新加美",
+      "coordinates": [
+        135.56889,
+        34.62667
+      ],
+      "schematic": [
+        199.841,
+        72.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H13",
+      "name": "久宝寺",
+      "coordinates": [
+        135.58433,
+        34.62235
+      ],
+      "schematic": [
+        199.841,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_V01",
+      "name": "亀山",
+      "coordinates": [
+        136.44985,
+        34.85038
+      ],
+      "schematic": [
+        231.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_V02",
+      "name": "関",
+      "coordinates": [
+        136.39457,
+        34.84918
+      ],
+      "schematic": [
+        230.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_V03",
+      "name": "加太",
+      "coordinates": [
+        136.34028,
+        34.8425
+      ],
+      "schematic": [
+        229.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_V04",
+      "name": "柘植",
+      "coordinates": [
+        136.256,
+        34.8471
+      ],
+      "schematic": [
+        228.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_V05",
+      "name": "新堂",
+      "coordinates": [
+        136.20651,
+        34.82117
+      ],
+      "schematic": [
+        227.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_V06",
+      "name": "佐那具",
+      "coordinates": [
+        136.16317,
+        34.80419
+      ],
+      "schematic": [
+        226.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_V07",
+      "name": "伊賀上野",
+      "coordinates": [
+        136.12291,
+        34.78914
+      ],
+      "schematic": [
+        225.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_V08",
+      "name": "島ケ原",
+      "coordinates": [
+        136.05418,
+        34.76769
+      ],
+      "schematic": [
+        224.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_V09",
+      "name": "月ケ瀬口",
+      "coordinates": [
+        136.024,
+        34.7628
+      ],
+      "schematic": [
+        223.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_V10",
+      "name": "大河原",
+      "coordinates": [
+        135.988,
+        34.7718
+      ],
+      "schematic": [
+        222.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_V11",
+      "name": "笠置",
+      "coordinates": [
+        135.93429,
+        34.75909
+      ],
+      "schematic": [
+        221.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_V12",
+      "name": "加茂",
+      "coordinates": [
+        135.8698,
+        34.75271
+      ],
+      "schematic": [
+        220.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W01",
+      "name": "新宮",
+      "coordinates": [
+        135.99444,
+        33.72521
+      ],
+      "schematic": [
+        196.841,
+        0.5
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W02",
+      "name": "三輪崎",
+      "coordinates": [
+        135.98487,
+        33.68945
+      ],
+      "schematic": [
+        196.341,
+        0.0
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W03",
+      "name": "紀伊佐野",
+      "coordinates": [
+        135.9702,
+        33.6798
+      ],
+      "schematic": [
+        195.341,
+        0.0
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W04",
+      "name": "宇久井",
+      "coordinates": [
+        135.972,
+        33.6626
+      ],
+      "schematic": [
+        194.341,
+        0.0
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W05",
+      "name": "那智",
+      "coordinates": [
+        135.93655,
+        33.64408
+      ],
+      "schematic": [
+        193.341,
+        0.0
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W06",
+      "name": "紀伊天満",
+      "coordinates": [
+        135.9345,
+        33.6368
+      ],
+      "schematic": [
+        192.341,
+        0.0
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W07",
+      "name": "紀伊勝浦",
+      "coordinates": [
+        135.9417,
+        33.6283
+      ],
+      "schematic": [
+        191.341,
+        0.0
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W08",
+      "name": "湯川",
+      "coordinates": [
+        135.925,
+        33.6095
+      ],
+      "schematic": [
+        190.341,
+        0.0
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W09",
+      "name": "太地",
+      "coordinates": [
+        135.927,
+        33.5912
+      ],
+      "schematic": [
+        189.341,
+        0.0
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W10",
+      "name": "下里",
+      "coordinates": [
+        135.922,
+        33.5823
+      ],
+      "schematic": [
+        188.341,
+        0.0
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W11",
+      "name": "紀伊浦神",
+      "coordinates": [
+        135.894,
+        33.5606
+      ],
+      "schematic": [
+        187.583,
+        0.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W12",
+      "name": "紀伊田原",
+      "coordinates": [
+        135.8683,
+        33.5365
+      ],
+      "schematic": [
+        187.583,
+        1.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W13",
+      "name": "古座",
+      "coordinates": [
+        135.82092,
+        33.51927
+      ],
+      "schematic": [
+        187.583,
+        2.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W14",
+      "name": "紀伊姫",
+      "coordinates": [
+        135.7965,
+        33.4974
+      ],
+      "schematic": [
+        187.583,
+        3.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W15",
+      "name": "串本",
+      "coordinates": [
+        135.7816,
+        33.4757
+      ],
+      "schematic": [
+        187.583,
+        4.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W16",
+      "name": "紀伊有田",
+      "coordinates": [
+        135.7364,
+        33.4907
+      ],
+      "schematic": [
+        187.583,
+        5.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W17",
+      "name": "田並",
+      "coordinates": [
+        135.719,
+        33.488
+      ],
+      "schematic": [
+        187.583,
+        6.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W18",
+      "name": "田子",
+      "coordinates": [
+        135.677,
+        33.4902
+      ],
+      "schematic": [
+        187.583,
+        7.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W19",
+      "name": "和深",
+      "coordinates": [
+        135.655,
+        33.5012
+      ],
+      "schematic": [
+        187.583,
+        8.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W20",
+      "name": "江住",
+      "coordinates": [
+        135.6038,
+        33.5092
+      ],
+      "schematic": [
+        187.583,
+        9.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W21",
+      "name": "見老津",
+      "coordinates": [
+        135.5752,
+        33.5153
+      ],
+      "schematic": [
+        187.583,
+        10.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W22",
+      "name": "周参見",
+      "coordinates": [
+        135.495,
+        33.5477
+      ],
+      "schematic": [
+        187.583,
+        11.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W23",
+      "name": "紀伊日置",
+      "coordinates": [
+        135.458,
+        33.585
+      ],
+      "schematic": [
+        187.583,
+        12.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W24",
+      "name": "椿",
+      "coordinates": [
+        135.404,
+        33.6099
+      ],
+      "schematic": [
+        187.583,
+        13.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W25",
+      "name": "紀伊富田",
+      "coordinates": [
+        135.3933,
+        33.6527
+      ],
+      "schematic": [
+        187.583,
+        14.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W26",
+      "name": "白浜",
+      "coordinates": [
+        135.3871,
+        33.6758
+      ],
+      "schematic": [
+        187.583,
+        15.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W27",
+      "name": "朝来",
+      "coordinates": [
+        135.4171,
+        33.6962
+      ],
+      "schematic": [
+        187.583,
+        16.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W28",
+      "name": "紀伊新庄",
+      "coordinates": [
+        135.4023,
+        33.721
+      ],
+      "schematic": [
+        187.583,
+        17.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W29",
+      "name": "紀伊田辺",
+      "coordinates": [
+        135.3837,
+        33.7338
+      ],
+      "schematic": [
+        187.583,
+        18.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W30",
+      "name": "芳養",
+      "coordinates": [
+        135.3552,
+        33.7474
+      ],
+      "schematic": [
+        187.583,
+        19.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W31",
+      "name": "南部",
+      "coordinates": [
+        135.3242,
+        33.7668
+      ],
+      "schematic": [
+        187.583,
+        20.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W32",
+      "name": "岩代",
+      "coordinates": [
+        135.2802,
+        33.7804
+      ],
+      "schematic": [
+        187.583,
+        21.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W33",
+      "name": "切目",
+      "coordinates": [
+        135.2412,
+        33.7969
+      ],
+      "schematic": [
+        187.583,
+        22.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W34",
+      "name": "印南",
+      "coordinates": [
+        135.2201,
+        33.8189
+      ],
+      "schematic": [
+        187.583,
+        23.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W35",
+      "name": "稲原",
+      "coordinates": [
+        135.2288,
+        33.8528
+      ],
+      "schematic": [
+        187.583,
+        24.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W36",
+      "name": "和佐",
+      "coordinates": [
+        135.207,
+        33.8974
+      ],
+      "schematic": [
+        187.583,
+        25.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W37",
+      "name": "道成寺",
+      "coordinates": [
+        135.1762,
+        33.9112
+      ],
+      "schematic": [
+        187.583,
+        26.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W38",
+      "name": "御坊",
+      "coordinates": [
+        135.15918,
+        33.90771
+      ],
+      "schematic": [
+        187.583,
+        27.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W39",
+      "name": "紀伊内原",
+      "coordinates": [
+        135.1452,
+        33.9259
+      ],
+      "schematic": [
+        187.583,
+        28.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W40",
+      "name": "紀伊由良",
+      "coordinates": [
+        135.1285,
+        33.9689
+      ],
+      "schematic": [
+        187.583,
+        29.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W41",
+      "name": "広川ビーチ",
+      "coordinates": [
+        135.1629,
+        34.0132
+      ],
+      "schematic": [
+        187.583,
+        30.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W42",
+      "name": "湯浅",
+      "coordinates": [
+        135.18,
+        34.0321
+      ],
+      "schematic": [
+        187.583,
+        31.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W43",
+      "name": "藤並",
+      "coordinates": [
+        135.1972,
+        34.0579
+      ],
+      "schematic": [
+        187.583,
+        32.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W44",
+      "name": "紀伊宮原",
+      "coordinates": [
+        135.1697,
+        34.0782
+      ],
+      "schematic": [
+        187.583,
+        33.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W45",
+      "name": "箕島",
+      "coordinates": [
+        135.1244,
+        34.0853
+      ],
+      "schematic": [
+        187.583,
+        34.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W46",
+      "name": "初島",
+      "coordinates": [
+        135.1152,
+        34.0998
+      ],
+      "schematic": [
+        187.583,
+        35.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W47",
+      "name": "下津",
+      "coordinates": [
+        135.1455,
+        34.1081
+      ],
+      "schematic": [
+        187.583,
+        36.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W48",
+      "name": "加茂郷",
+      "coordinates": [
+        135.1598,
+        34.1257
+      ],
+      "schematic": [
+        187.583,
+        37.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W49",
+      "name": "冷水浦",
+      "coordinates": [
+        135.194,
+        34.1419
+      ],
+      "schematic": [
+        187.583,
+        38.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W50",
+      "name": "海南",
+      "coordinates": [
+        135.2142,
+        34.1545
+      ],
+      "schematic": [
+        187.583,
+        39.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W51",
+      "name": "黒江",
+      "coordinates": [
+        135.2101,
+        34.1704
+      ],
+      "schematic": [
+        187.583,
+        40.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W52",
+      "name": "紀三井寺",
+      "coordinates": [
+        135.1877,
+        34.1879
+      ],
+      "schematic": [
+        187.583,
+        41.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W53",
+      "name": "宮前",
+      "coordinates": [
+        135.1888,
+        34.2132
+      ],
+      "schematic": [
+        187.583,
+        42.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W54",
+      "name": "和歌山",
+      "coordinates": [
+        135.191,
+        34.2321
+      ],
+      "schematic": [
+        187.583,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W55",
+      "name": "紀和",
+      "coordinates": [
+        135.1814,
+        34.2421
+      ],
+      "schematic": [
+        187.583,
+        44.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_W56",
+      "name": "和歌山市",
+      "coordinates": [
+        135.167,
+        34.2364
+      ],
+      "schematic": [
+        186.083,
+        44.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D01",
+      "name": "東福寺",
+      "coordinates": [
+        135.77017,
+        34.98119
+      ],
+      "schematic": [
+        219.391,
+        106.429
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D02",
+      "name": "稲荷",
+      "coordinates": [
+        135.77085,
+        34.96683
+      ],
+      "schematic": [
+        219.391,
+        104.565
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D03",
+      "name": "JR藤森",
+      "coordinates": [
+        135.77583,
+        34.94833
+      ],
+      "schematic": [
+        219.391,
+        102.701
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D04",
+      "name": "桃山",
+      "coordinates": [
+        135.7715,
+        34.9326
+      ],
+      "schematic": [
+        219.391,
+        100.837
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D05",
+      "name": "六地蔵",
+      "coordinates": [
+        135.79655,
+        34.93323
+      ],
+      "schematic": [
+        219.391,
+        98.973
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D06",
+      "name": "木幡",
+      "coordinates": [
+        135.79886,
+        34.92494
+      ],
+      "schematic": [
+        219.391,
+        97.109
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D07",
+      "name": "黄檗",
+      "coordinates": [
+        135.8032,
+        34.9133
+      ],
+      "schematic": [
+        219.391,
+        95.246
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D08",
+      "name": "宇治",
+      "coordinates": [
+        135.801,
+        34.8904
+      ],
+      "schematic": [
+        219.391,
+        93.382
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D09",
+      "name": "JR小倉",
+      "coordinates": [
+        135.78583,
+        34.88917
+      ],
+      "schematic": [
+        219.391,
+        91.518
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D10",
+      "name": "新田",
+      "coordinates": [
+        135.78056,
+        34.87417
+      ],
+      "schematic": [
+        219.391,
+        89.654
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D11",
+      "name": "城陽",
+      "coordinates": [
+        135.7804,
+        34.8561
+      ],
+      "schematic": [
+        219.391,
+        87.79
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D12",
+      "name": "長池",
+      "coordinates": [
+        135.79,
+        34.8424
+      ],
+      "schematic": [
+        219.391,
+        85.926
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D13",
+      "name": "山城青谷",
+      "coordinates": [
+        135.79992,
+        34.82847
+      ],
+      "schematic": [
+        219.391,
+        84.062
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D14",
+      "name": "山城多賀",
+      "coordinates": [
+        135.80604,
+        34.81788
+      ],
+      "schematic": [
+        219.391,
+        82.198
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D15",
+      "name": "玉水",
+      "coordinates": [
+        135.80692,
+        34.80018
+      ],
+      "schematic": [
+        219.391,
+        80.334
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D16",
+      "name": "棚倉",
+      "coordinates": [
+        135.81618,
+        34.77471
+      ],
+      "schematic": [
+        219.391,
+        78.47
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D17",
+      "name": "上狛",
+      "coordinates": [
+        135.8213,
+        34.7506
+      ],
+      "schematic": [
+        219.391,
+        76.607
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D18",
+      "name": "木津",
+      "coordinates": [
+        135.82492,
+        34.73594
+      ],
+      "schematic": [
+        219.391,
+        74.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D19",
+      "name": "平城山",
+      "coordinates": [
+        135.81049,
+        34.7107
+      ],
+      "schematic": [
+        219.391,
+        73.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_D20",
+      "name": "奈良",
+      "coordinates": [
+        135.81902,
+        34.68066
+      ],
+      "schematic": [
+        219.391,
+        72.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R01",
+      "name": "美章園",
+      "coordinates": [
+        135.52396,
+        34.63807
+      ],
+      "schematic": [
+        195.341,
+        70.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R02",
+      "name": "南田辺",
+      "coordinates": [
+        135.52064,
+        34.62567
+      ],
+      "schematic": [
+        195.341,
+        69.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R03",
+      "name": "鶴ケ丘",
+      "coordinates": [
+        135.517,
+        34.6177
+      ],
+      "schematic": [
+        195.341,
+        68.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R04",
+      "name": "長居",
+      "coordinates": [
+        135.51249,
+        34.61086
+      ],
+      "schematic": [
+        195.341,
+        67.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R05",
+      "name": "我孫子町",
+      "coordinates": [
+        135.50634,
+        34.60176
+      ],
+      "schematic": [
+        195.341,
+        66.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R06",
+      "name": "杉本町",
+      "coordinates": [
+        135.50311,
+        34.59364
+      ],
+      "schematic": [
+        195.341,
+        65.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R07",
+      "name": "浅香",
+      "coordinates": [
+        135.5022,
+        34.5856
+      ],
+      "schematic": [
+        195.341,
+        64.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R08",
+      "name": "堺市",
+      "coordinates": [
+        135.49833,
+        34.57719
+      ],
+      "schematic": [
+        195.341,
+        63.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R09",
+      "name": "三国ケ丘",
+      "coordinates": [
+        135.49279,
+        34.56526
+      ],
+      "schematic": [
+        195.341,
+        62.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R10",
+      "name": "百舌鳥",
+      "coordinates": [
+        135.4887,
+        34.5583
+      ],
+      "schematic": [
+        195.341,
+        61.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R11",
+      "name": "上野芝",
+      "coordinates": [
+        135.478,
+        34.5493
+      ],
+      "schematic": [
+        195.341,
+        60.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R12",
+      "name": "津久野",
+      "coordinates": [
+        135.468,
+        34.5423
+      ],
+      "schematic": [
+        195.341,
+        59.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R13",
+      "name": "鳳",
+      "coordinates": [
+        135.459,
+        34.5321
+      ],
+      "schematic": [
+        195.341,
+        58.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R14",
+      "name": "富木",
+      "coordinates": [
+        135.451,
+        34.5226
+      ],
+      "schematic": [
+        195.341,
+        57.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R15",
+      "name": "北信太",
+      "coordinates": [
+        135.4416,
+        34.5107
+      ],
+      "schematic": [
+        195.341,
+        56.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R16",
+      "name": "信太山",
+      "coordinates": [
+        135.4326,
+        34.5003
+      ],
+      "schematic": [
+        195.341,
+        55.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R17",
+      "name": "和泉府中",
+      "coordinates": [
+        135.4239,
+        34.4882
+      ],
+      "schematic": [
+        195.341,
+        54.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R18",
+      "name": "久米田",
+      "coordinates": [
+        135.4055,
+        34.4655
+      ],
+      "schematic": [
+        195.341,
+        53.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R19",
+      "name": "下松",
+      "coordinates": [
+        135.3969,
+        34.4575
+      ],
+      "schematic": [
+        195.341,
+        52.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R20",
+      "name": "東岸和田",
+      "coordinates": [
+        135.3853,
+        34.4491
+      ],
+      "schematic": [
+        195.341,
+        51.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R21",
+      "name": "東貝塚",
+      "coordinates": [
+        135.3724,
+        34.4403
+      ],
+      "schematic": [
+        195.341,
+        50.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R22",
+      "name": "和泉橋本",
+      "coordinates": [
+        135.359,
+        34.4275
+      ],
+      "schematic": [
+        195.341,
+        49.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R23",
+      "name": "東佐野",
+      "coordinates": [
+        135.3502,
+        34.4165
+      ],
+      "schematic": [
+        195.341,
+        48.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R24",
+      "name": "熊取",
+      "coordinates": [
+        135.3413,
+        34.4059
+      ],
+      "schematic": [
+        195.341,
+        47.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R25",
+      "name": "日根野",
+      "coordinates": [
+        135.3311,
+        34.3907
+      ],
+      "schematic": [
+        195.341,
+        46.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R26",
+      "name": "長滝",
+      "coordinates": [
+        135.3194,
+        34.3817
+      ],
+      "schematic": [
+        194.341,
+        46.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R27",
+      "name": "新家",
+      "coordinates": [
+        135.299,
+        34.3723
+      ],
+      "schematic": [
+        193.341,
+        46.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R28",
+      "name": "和泉砂川",
+      "coordinates": [
+        135.28169,
+        34.36077
+      ],
+      "schematic": [
+        192.341,
+        46.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R29",
+      "name": "和泉鳥取",
+      "coordinates": [
+        135.2631,
+        34.3428
+      ],
+      "schematic": [
+        191.341,
+        46.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R30",
+      "name": "山中渓",
+      "coordinates": [
+        135.27,
+        34.3257
+      ],
+      "schematic": [
+        190.412,
+        46.071
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R31",
+      "name": "紀伊",
+      "coordinates": [
+        135.2461,
+        34.2692
+      ],
+      "schematic": [
+        189.705,
+        45.364
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R32",
+      "name": "六十谷",
+      "coordinates": [
+        135.2071,
+        34.2625
+      ],
+      "schematic": [
+        188.997,
+        44.657
+      ]
+    },
+    {
+      "id": "JRW_Kansai_R33",
+      "name": "紀伊中ノ島",
+      "coordinates": [
+        135.1905,
+        34.2428
+      ],
+      "schematic": [
+        188.29,
+        43.95
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T01",
+      "name": "王寺",
+      "coordinates": [
+        135.704,
+        34.5974
+      ],
+      "schematic": [
+        206.841,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T02",
+      "name": "畠田",
+      "coordinates": [
+        135.70382,
+        34.57844
+      ],
+      "schematic": [
+        206.841,
+        70.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T03",
+      "name": "志都美",
+      "coordinates": [
+        135.702,
+        34.56151
+      ],
+      "schematic": [
+        206.841,
+        69.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T04",
+      "name": "香芝",
+      "coordinates": [
+        135.70577,
+        34.54314
+      ],
+      "schematic": [
+        206.841,
+        68.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T05",
+      "name": "JR五位堂",
+      "coordinates": [
+        135.71843,
+        34.52763
+      ],
+      "schematic": [
+        207.341,
+        67.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T06",
+      "name": "高田",
+      "coordinates": [
+        135.745,
+        34.5162
+      ],
+      "schematic": [
+        208.341,
+        67.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T07",
+      "name": "大和新庄",
+      "coordinates": [
+        135.73584,
+        34.48861
+      ],
+      "schematic": [
+        208.341,
+        66.234
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T08",
+      "name": "御所",
+      "coordinates": [
+        135.73396,
+        34.46462
+      ],
+      "schematic": [
+        208.341,
+        64.725
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T09",
+      "name": "玉手",
+      "coordinates": [
+        135.749,
+        34.4583
+      ],
+      "schematic": [
+        208.341,
+        63.217
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T10",
+      "name": "掖上",
+      "coordinates": [
+        135.763,
+        34.4523
+      ],
+      "schematic": [
+        208.341,
+        61.708
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T11",
+      "name": "吉野口",
+      "coordinates": [
+        135.751,
+        34.4206
+      ],
+      "schematic": [
+        208.341,
+        60.2
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T12",
+      "name": "北宇智",
+      "coordinates": [
+        135.71428,
+        34.38261
+      ],
+      "schematic": [
+        208.341,
+        58.691
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T13",
+      "name": "五条",
+      "coordinates": [
+        135.6986,
+        34.35564
+      ],
+      "schematic": [
+        208.341,
+        57.183
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T14",
+      "name": "大和二見",
+      "coordinates": [
+        135.68456,
+        34.34598
+      ],
+      "schematic": [
+        208.341,
+        55.674
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T15",
+      "name": "隅田",
+      "coordinates": [
+        135.656,
+        34.3281
+      ],
+      "schematic": [
+        208.341,
+        54.165
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T16",
+      "name": "下兵庫",
+      "coordinates": [
+        135.6348,
+        34.32265
+      ],
+      "schematic": [
+        208.341,
+        52.657
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T17",
+      "name": "橋本",
+      "coordinates": [
+        135.61491,
+        34.31809
+      ],
+      "schematic": [
+        208.341,
+        51.148
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T18",
+      "name": "紀伊山田",
+      "coordinates": [
+        135.5838,
+        34.3129
+      ],
+      "schematic": [
+        208.341,
+        49.64
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T19",
+      "name": "高野口",
+      "coordinates": [
+        135.55722,
+        34.30753
+      ],
+      "schematic": [
+        208.341,
+        48.131
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T20",
+      "name": "中飯降",
+      "coordinates": [
+        135.53196,
+        34.30426
+      ],
+      "schematic": [
+        208.341,
+        46.623
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T21",
+      "name": "妙寺",
+      "coordinates": [
+        135.5175,
+        34.2984
+      ],
+      "schematic": [
+        208.341,
+        45.114
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T22",
+      "name": "大谷",
+      "coordinates": [
+        135.494,
+        34.2989
+      ],
+      "schematic": [
+        208.341,
+        43.605
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T23",
+      "name": "笠田",
+      "coordinates": [
+        135.48,
+        34.292
+      ],
+      "schematic": [
+        207.195,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T24",
+      "name": "西笠田",
+      "coordinates": [
+        135.4524,
+        34.28
+      ],
+      "schematic": [
+        205.686,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T25",
+      "name": "名手",
+      "coordinates": [
+        135.4335,
+        34.2727
+      ],
+      "schematic": [
+        204.178,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T26",
+      "name": "粉河",
+      "coordinates": [
+        135.4042,
+        34.271
+      ],
+      "schematic": [
+        202.669,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T27",
+      "name": "紀伊長田",
+      "coordinates": [
+        135.3916,
+        34.2681
+      ],
+      "schematic": [
+        201.16,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T28",
+      "name": "打田",
+      "coordinates": [
+        135.364,
+        34.2653
+      ],
+      "schematic": [
+        199.652,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T29",
+      "name": "下井阪",
+      "coordinates": [
+        135.3403,
+        34.2622
+      ],
+      "schematic": [
+        198.143,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T30",
+      "name": "岩出",
+      "coordinates": [
+        135.3212,
+        34.2548
+      ],
+      "schematic": [
+        196.635,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T31",
+      "name": "船戸",
+      "coordinates": [
+        135.31165,
+        34.24849
+      ],
+      "schematic": [
+        195.126,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T32",
+      "name": "紀伊小倉",
+      "coordinates": [
+        135.2871,
+        34.2464
+      ],
+      "schematic": [
+        193.618,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T33",
+      "name": "布施屋",
+      "coordinates": [
+        135.2616,
+        34.2446
+      ],
+      "schematic": [
+        192.109,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T34",
+      "name": "千旦",
+      "coordinates": [
+        135.2455,
+        34.2418
+      ],
+      "schematic": [
+        190.6,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_T35",
+      "name": "田井ノ瀬",
+      "coordinates": [
+        135.23,
+        34.2423
+      ],
+      "schematic": [
+        189.092,
+        43.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A86",
+      "name": "西相生",
+      "coordinates": [
+        134.45096,
+        34.80157
+      ],
+      "schematic": [
+        145.47,
+        124.213
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A87",
+      "name": "坂越",
+      "coordinates": [
+        134.41755,
+        34.76882
+      ],
+      "schematic": [
+        142.941,
+        121.684
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A88",
+      "name": "播州赤穂",
+      "coordinates": [
+        134.39317,
+        34.75666
+      ],
+      "schematic": [
+        140.411,
+        119.154
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A89",
+      "name": "西浜",
+      "coordinates": [
+        134.36967,
+        34.75278
+      ],
+      "schematic": [
+        137.882,
+        116.625
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A90",
+      "name": "天和",
+      "coordinates": [
+        134.35183,
+        34.74936
+      ],
+      "schematic": [
+        135.352,
+        114.095
+      ]
+    },
+    {
+      "id": "JRW_Kansai_A91",
+      "name": "備前福河",
+      "coordinates": [
+        134.33147,
+        34.74678
+      ],
+      "schematic": [
+        132.823,
+        111.566
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I01",
+      "name": "日岡",
+      "coordinates": [
+        134.85739,
+        34.7787
+      ],
+      "schematic": [
+        173.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I02",
+      "name": "神野",
+      "coordinates": [
+        134.87898,
+        34.79092
+      ],
+      "schematic": [
+        174.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I03",
+      "name": "厄神",
+      "coordinates": [
+        134.907,
+        34.7946
+      ],
+      "schematic": [
+        175.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I04",
+      "name": "市場",
+      "coordinates": [
+        134.9325,
+        34.81944
+      ],
+      "schematic": [
+        176.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I05",
+      "name": "小野町",
+      "coordinates": [
+        134.9183,
+        34.8335
+      ],
+      "schematic": [
+        177.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I06",
+      "name": "粟生",
+      "coordinates": [
+        134.91,
+        34.85694
+      ],
+      "schematic": [
+        178.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I07",
+      "name": "河合西",
+      "coordinates": [
+        134.91954,
+        34.87923
+      ],
+      "schematic": [
+        179.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I08",
+      "name": "青野ケ原",
+      "coordinates": [
+        134.92797,
+        34.8972
+      ],
+      "schematic": [
+        180.841,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I09",
+      "name": "社町",
+      "coordinates": [
+        134.935,
+        34.9202
+      ],
+      "schematic": [
+        181.341,
+        96.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I10",
+      "name": "滝野",
+      "coordinates": [
+        134.956,
+        34.9413
+      ],
+      "schematic": [
+        181.341,
+        97.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I11",
+      "name": "滝",
+      "coordinates": [
+        134.962,
+        34.9487
+      ],
+      "schematic": [
+        181.341,
+        98.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I12",
+      "name": "西脇市",
+      "coordinates": [
+        134.96907,
+        34.97206
+      ],
+      "schematic": [
+        181.341,
+        99.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I13",
+      "name": "新西脇",
+      "coordinates": [
+        134.9777,
+        34.9777
+      ],
+      "schematic": [
+        181.341,
+        100.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I14",
+      "name": "比延",
+      "coordinates": [
+        134.99574,
+        34.98846
+      ],
+      "schematic": [
+        181.341,
+        101.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I15",
+      "name": "日本へそ公園",
+      "coordinates": [
+        134.9977,
+        35.0021
+      ],
+      "schematic": [
+        181.341,
+        102.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I16",
+      "name": "黒田庄",
+      "coordinates": [
+        134.9927,
+        35.0229
+      ],
+      "schematic": [
+        181.341,
+        103.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I17",
+      "name": "本黒田",
+      "coordinates": [
+        134.99606,
+        35.05279
+      ],
+      "schematic": [
+        181.341,
+        104.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I18",
+      "name": "船町口",
+      "coordinates": [
+        135.00983,
+        35.0636
+      ],
+      "schematic": [
+        181.341,
+        105.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I19",
+      "name": "久下村",
+      "coordinates": [
+        135.0305,
+        35.0758
+      ],
+      "schematic": [
+        181.341,
+        106.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_I20",
+      "name": "谷川",
+      "coordinates": [
+        135.05,
+        35.0822
+      ],
+      "schematic": [
+        181.341,
+        107.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H14",
+      "name": "西木津",
+      "coordinates": [
+        135.80352,
+        34.73779
+      ],
+      "schematic": [
+        218.684,
+        75.45
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H15",
+      "name": "祝園",
+      "coordinates": [
+        135.79194,
+        34.75997
+      ],
+      "schematic": [
+        217.977,
+        76.157
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H16",
+      "name": "下狛",
+      "coordinates": [
+        135.78849,
+        34.78053
+      ],
+      "schematic": [
+        217.27,
+        76.864
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H17",
+      "name": "JR三山木",
+      "coordinates": [
+        135.78454,
+        34.79831
+      ],
+      "schematic": [
+        216.562,
+        77.571
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H18",
+      "name": "同志社前",
+      "coordinates": [
+        135.77863,
+        34.80512
+      ],
+      "schematic": [
+        215.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H19",
+      "name": "京田辺",
+      "coordinates": [
+        135.76884,
+        34.82078
+      ],
+      "schematic": [
+        214.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H20",
+      "name": "大住",
+      "coordinates": [
+        135.749,
+        34.8306
+      ],
+      "schematic": [
+        213.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H21",
+      "name": "松井山手",
+      "coordinates": [
+        135.7276,
+        34.8335
+      ],
+      "schematic": [
+        212.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H22",
+      "name": "長尾",
+      "coordinates": [
+        135.71269,
+        34.82598
+      ],
+      "schematic": [
+        211.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H23",
+      "name": "藤阪",
+      "coordinates": [
+        135.703,
+        34.8145
+      ],
+      "schematic": [
+        210.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H24",
+      "name": "津田",
+      "coordinates": [
+        135.698,
+        34.8014
+      ],
+      "schematic": [
+        209.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H25",
+      "name": "河内磐船",
+      "coordinates": [
+        135.6845,
+        34.7765
+      ],
+      "schematic": [
+        208.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H26",
+      "name": "星田",
+      "coordinates": [
+        135.6635,
+        34.7676
+      ],
+      "schematic": [
+        207.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H27",
+      "name": "寝屋川公園",
+      "coordinates": [
+        135.6538,
+        34.7553
+      ],
+      "schematic": [
+        206.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H28",
+      "name": "忍ケ丘",
+      "coordinates": [
+        135.6452,
+        34.7459
+      ],
+      "schematic": [
+        205.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H29",
+      "name": "四条畷",
+      "coordinates": [
+        135.6391,
+        34.7298
+      ],
+      "schematic": [
+        204.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H30",
+      "name": "野崎",
+      "coordinates": [
+        135.63714,
+        34.71869
+      ],
+      "schematic": [
+        203.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H31",
+      "name": "住道",
+      "coordinates": [
+        135.621,
+        34.7054
+      ],
+      "schematic": [
+        202.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H32",
+      "name": "鴻池新田",
+      "coordinates": [
+        135.5975,
+        34.6987
+      ],
+      "schematic": [
+        201.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H33",
+      "name": "徳庵",
+      "coordinates": [
+        135.581,
+        34.6924
+      ],
+      "schematic": [
+        200.841,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_S01",
+      "name": "りんくうタウン",
+      "coordinates": [
+        135.29989,
+        34.41046
+      ],
+      "schematic": [
+        194.237,
+        47.346
+      ]
+    },
+    {
+      "id": "JRW_Kansai_S02",
+      "name": "関西空港",
+      "coordinates": [
+        135.24347,
+        34.43589
+      ],
+      "schematic": [
+        192.841,
+        47.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K01",
+      "name": "播磨高岡",
+      "coordinates": [
+        134.65879,
+        34.842
+      ],
+      "schematic": [
+        163.549,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K02",
+      "name": "余部",
+      "coordinates": [
+        134.64278,
+        34.85649
+      ],
+      "schematic": [
+        160.257,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K03",
+      "name": "太市",
+      "coordinates": [
+        134.60711,
+        34.86407
+      ],
+      "schematic": [
+        156.965,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K04",
+      "name": "本竜野",
+      "coordinates": [
+        134.55558,
+        34.86171
+      ],
+      "schematic": [
+        153.672,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K05",
+      "name": "東觜崎",
+      "coordinates": [
+        134.55786,
+        34.88794
+      ],
+      "schematic": [
+        150.38,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K06",
+      "name": "播磨新宮",
+      "coordinates": [
+        134.54633,
+        34.92096
+      ],
+      "schematic": [
+        147.088,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K07",
+      "name": "千本",
+      "coordinates": [
+        134.49432,
+        34.94246
+      ],
+      "schematic": [
+        143.796,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K08",
+      "name": "西栗栖",
+      "coordinates": [
+        134.47037,
+        34.9524
+      ],
+      "schematic": [
+        140.504,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K09",
+      "name": "三日月",
+      "coordinates": [
+        134.4353,
+        34.98481
+      ],
+      "schematic": [
+        137.212,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K10",
+      "name": "播磨徳久",
+      "coordinates": [
+        134.38564,
+        34.99048
+      ],
+      "schematic": [
+        133.92,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K11",
+      "name": "佐用",
+      "coordinates": [
+        134.3568,
+        35.0038
+      ],
+      "schematic": [
+        130.628,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K12",
+      "name": "上月",
+      "coordinates": [
+        134.32247,
+        34.98351
+      ],
+      "schematic": [
+        127.336,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K13",
+      "name": "美作土居",
+      "coordinates": [
+        134.25991,
+        34.99508
+      ],
+      "schematic": [
+        124.044,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K14",
+      "name": "美作江見",
+      "coordinates": [
+        134.21975,
+        35.0134
+      ],
+      "schematic": [
+        120.752,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K15",
+      "name": "楢原",
+      "coordinates": [
+        134.1894,
+        35.01973
+      ],
+      "schematic": [
+        117.46,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K16",
+      "name": "林野",
+      "coordinates": [
+        134.15082,
+        35.01367
+      ],
+      "schematic": [
+        114.168,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K17",
+      "name": "勝間田",
+      "coordinates": [
+        134.11898,
+        35.03589
+      ],
+      "schematic": [
+        110.876,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K18",
+      "name": "西勝間田",
+      "coordinates": [
+        134.08931,
+        35.04355
+      ],
+      "schematic": [
+        107.584,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K19",
+      "name": "美作大崎",
+      "coordinates": [
+        134.06748,
+        35.04531
+      ],
+      "schematic": [
+        104.292,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K20",
+      "name": "院庄",
+      "coordinates": [
+        133.95736,
+        35.05905
+      ],
+      "schematic": [
+        95.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K21",
+      "name": "美作千代",
+      "coordinates": [
+        133.9062,
+        35.05831
+      ],
+      "schematic": [
+        94.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K22",
+      "name": "坪井",
+      "coordinates": [
+        133.87735,
+        35.06206
+      ],
+      "schematic": [
+        93.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K23",
+      "name": "美作追分",
+      "coordinates": [
+        133.82004,
+        35.05886
+      ],
+      "schematic": [
+        92.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K24",
+      "name": "美作落合",
+      "coordinates": [
+        133.75965,
+        35.02319
+      ],
+      "schematic": [
+        91.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K25",
+      "name": "古見",
+      "coordinates": [
+        133.76063,
+        35.04922
+      ],
+      "schematic": [
+        90.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K26",
+      "name": "久世",
+      "coordinates": [
+        133.74537,
+        35.08083
+      ],
+      "schematic": [
+        89.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K27",
+      "name": "中国勝山",
+      "coordinates": [
+        133.69451,
+        35.08051
+      ],
+      "schematic": [
+        88.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K28",
+      "name": "月田",
+      "coordinates": [
+        133.66686,
+        35.04822
+      ],
+      "schematic": [
+        87.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K29",
+      "name": "富原",
+      "coordinates": [
+        133.61213,
+        35.05498
+      ],
+      "schematic": [
+        86.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K30",
+      "name": "刑部",
+      "coordinates": [
+        133.56577,
+        35.07619
+      ],
+      "schematic": [
+        85.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K31",
+      "name": "丹治部",
+      "coordinates": [
+        133.55364,
+        35.04637
+      ],
+      "schematic": [
+        84.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K32",
+      "name": "岩山",
+      "coordinates": [
+        133.51259,
+        35.02277
+      ],
+      "schematic": [
+        83.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_K33",
+      "name": "新見",
+      "coordinates": [
+        133.45694,
+        34.98722
+      ],
+      "schematic": [
+        82.5,
+        95.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_C01",
+      "name": "油日",
+      "coordinates": [
+        136.22953,
+        34.88969
+      ],
+      "schematic": [
+        228.391,
+        78.348
+      ]
+    },
+    {
+      "id": "JRW_Kansai_C02",
+      "name": "甲賀",
+      "coordinates": [
+        136.21268,
+        34.9013
+      ],
+      "schematic": [
+        228.391,
+        81.953
+      ]
+    },
+    {
+      "id": "JRW_Kansai_C03",
+      "name": "寺庄",
+      "coordinates": [
+        136.186,
+        34.9191
+      ],
+      "schematic": [
+        228.391,
+        85.558
+      ]
+    },
+    {
+      "id": "JRW_Kansai_C04",
+      "name": "甲南",
+      "coordinates": [
+        136.16899,
+        34.9318
+      ],
+      "schematic": [
+        228.391,
+        89.163
+      ]
+    },
+    {
+      "id": "JRW_Kansai_C05",
+      "name": "貴生川",
+      "coordinates": [
+        136.15393,
+        34.95211
+      ],
+      "schematic": [
+        228.391,
+        92.768
+      ]
+    },
+    {
+      "id": "JRW_Kansai_C06",
+      "name": "三雲",
+      "coordinates": [
+        136.11778,
+        34.98313
+      ],
+      "schematic": [
+        228.391,
+        96.373
+      ]
+    },
+    {
+      "id": "JRW_Kansai_C07",
+      "name": "甲西",
+      "coordinates": [
+        136.08236,
+        35.00065
+      ],
+      "schematic": [
+        228.391,
+        99.978
+      ]
+    },
+    {
+      "id": "JRW_Kansai_C08",
+      "name": "石部",
+      "coordinates": [
+        136.05296,
+        35.01769
+      ],
+      "schematic": [
+        228.391,
+        103.583
+      ]
+    },
+    {
+      "id": "JRW_Kansai_C09",
+      "name": "手原",
+      "coordinates": [
+        135.999,
+        35.0273
+      ],
+      "schematic": [
+        228.391,
+        107.188
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B01",
+      "name": "永原",
+      "coordinates": [
+        136.12225,
+        35.49883
+      ],
+      "schematic": [
+        220.891,
+        127.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B02",
+      "name": "マキノ",
+      "coordinates": [
+        136.0595,
+        35.4613
+      ],
+      "schematic": [
+        220.891,
+        126.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B03",
+      "name": "近江中庄",
+      "coordinates": [
+        136.038,
+        35.4416
+      ],
+      "schematic": [
+        220.891,
+        125.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B04",
+      "name": "近江今津",
+      "coordinates": [
+        136.03089,
+        35.40169
+      ],
+      "schematic": [
+        220.891,
+        124.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B05",
+      "name": "新旭",
+      "coordinates": [
+        136.0349,
+        35.3552
+      ],
+      "schematic": [
+        220.891,
+        123.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B06",
+      "name": "安曇川",
+      "coordinates": [
+        136.02,
+        35.3282
+      ],
+      "schematic": [
+        220.891,
+        122.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B07",
+      "name": "近江高島",
+      "coordinates": [
+        136.011,
+        35.2926
+      ],
+      "schematic": [
+        220.891,
+        121.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B08",
+      "name": "北小松",
+      "coordinates": [
+        135.97097,
+        35.25392
+      ],
+      "schematic": [
+        220.891,
+        120.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B09",
+      "name": "近江舞子",
+      "coordinates": [
+        135.96,
+        35.2364
+      ],
+      "schematic": [
+        220.891,
+        119.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B10",
+      "name": "比良",
+      "coordinates": [
+        135.94392,
+        35.21986
+      ],
+      "schematic": [
+        220.891,
+        118.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B11",
+      "name": "志賀",
+      "coordinates": [
+        135.9248,
+        35.2024
+      ],
+      "schematic": [
+        220.891,
+        117.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B12",
+      "name": "蓬莱",
+      "coordinates": [
+        135.91481,
+        35.18272
+      ],
+      "schematic": [
+        220.891,
+        116.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B13",
+      "name": "和邇",
+      "coordinates": [
+        135.922,
+        35.1621
+      ],
+      "schematic": [
+        220.891,
+        115.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B14",
+      "name": "小野",
+      "coordinates": [
+        135.9225,
+        35.13889
+      ],
+      "schematic": [
+        220.891,
+        114.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B15",
+      "name": "堅田",
+      "coordinates": [
+        135.9152,
+        35.1212
+      ],
+      "schematic": [
+        220.891,
+        113.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B16",
+      "name": "おごと温泉",
+      "coordinates": [
+        135.895,
+        35.09722
+      ],
+      "schematic": [
+        220.891,
+        112.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B17",
+      "name": "比叡山坂本",
+      "coordinates": [
+        135.8782,
+        35.0704
+      ],
+      "schematic": [
+        220.891,
+        111.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B18",
+      "name": "唐崎",
+      "coordinates": [
+        135.8669,
+        35.0497
+      ],
+      "schematic": [
+        220.891,
+        110.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_B19",
+      "name": "大津京",
+      "coordinates": [
+        135.857,
+        35.0245
+      ],
+      "schematic": [
+        220.891,
+        109.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E01",
+      "name": "梅小路京都西",
+      "coordinates": [
+        135.74317,
+        34.98878
+      ],
+      "schematic": [
+        219.391,
+        109.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E02",
+      "name": "丹波口",
+      "coordinates": [
+        135.742,
+        34.9954
+      ],
+      "schematic": [
+        219.391,
+        110.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E03",
+      "name": "二条",
+      "coordinates": [
+        135.74174,
+        35.01103
+      ],
+      "schematic": [
+        219.391,
+        111.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E04",
+      "name": "円町",
+      "coordinates": [
+        135.73056,
+        35.01819
+      ],
+      "schematic": [
+        219.391,
+        112.293
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E05",
+      "name": "花園",
+      "coordinates": [
+        135.71778,
+        35.01861
+      ],
+      "schematic": [
+        219.341,
+        113.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E06",
+      "name": "太秦",
+      "coordinates": [
+        135.701,
+        35.0171
+      ],
+      "schematic": [
+        218.341,
+        113.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E07",
+      "name": "嵯峨嵐山",
+      "coordinates": [
+        135.68131,
+        35.01874
+      ],
+      "schematic": [
+        217.341,
+        113.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E08",
+      "name": "保津峡",
+      "coordinates": [
+        135.64031,
+        35.02304
+      ],
+      "schematic": [
+        216.341,
+        113.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E09",
+      "name": "馬堀",
+      "coordinates": [
+        135.602,
+        35.0106
+      ],
+      "schematic": [
+        215.341,
+        113.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E10",
+      "name": "亀岡",
+      "coordinates": [
+        135.58246,
+        35.01663
+      ],
+      "schematic": [
+        214.341,
+        113.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E11",
+      "name": "並河",
+      "coordinates": [
+        135.5549,
+        35.0325
+      ],
+      "schematic": [
+        213.341,
+        113.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E12",
+      "name": "千代川",
+      "coordinates": [
+        135.5482,
+        35.0488
+      ],
+      "schematic": [
+        212.341,
+        113.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E13",
+      "name": "八木",
+      "coordinates": [
+        135.53175,
+        35.06922
+      ],
+      "schematic": [
+        211.341,
+        113.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_E14",
+      "name": "吉富",
+      "coordinates": [
+        135.499,
+        35.0919
+      ],
+      "schematic": [
+        210.341,
+        113.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_U01",
+      "name": "京終",
+      "coordinates": [
+        135.82883,
+        34.66986
+      ],
+      "schematic": [
+        219.391,
+        71.508
+      ]
+    },
+    {
+      "id": "JRW_Kansai_U02",
+      "name": "帯解",
+      "coordinates": [
+        135.82638,
+        34.64343
+      ],
+      "schematic": [
+        219.391,
+        70.273
+      ]
+    },
+    {
+      "id": "JRW_Kansai_U03",
+      "name": "櫟本",
+      "coordinates": [
+        135.82631,
+        34.62107
+      ],
+      "schematic": [
+        219.391,
+        69.039
+      ]
+    },
+    {
+      "id": "JRW_Kansai_U04",
+      "name": "天理",
+      "coordinates": [
+        135.83,
+        34.601
+      ],
+      "schematic": [
+        219.391,
+        67.804
+      ]
+    },
+    {
+      "id": "JRW_Kansai_U05",
+      "name": "長柄",
+      "coordinates": [
+        135.83507,
+        34.57374
+      ],
+      "schematic": [
+        218.218,
+        67.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_U06",
+      "name": "柳本",
+      "coordinates": [
+        135.839,
+        34.5592
+      ],
+      "schematic": [
+        216.983,
+        67.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_U07",
+      "name": "巻向",
+      "coordinates": [
+        135.84109,
+        34.54487
+      ],
+      "schematic": [
+        215.748,
+        67.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_U08",
+      "name": "三輪",
+      "coordinates": [
+        135.84842,
+        34.52716
+      ],
+      "schematic": [
+        214.514,
+        67.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_U09",
+      "name": "桜井",
+      "coordinates": [
+        135.847,
+        34.5131
+      ],
+      "schematic": [
+        213.279,
+        67.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_U10",
+      "name": "香久山",
+      "coordinates": [
+        135.8251,
+        34.5108
+      ],
+      "schematic": [
+        212.045,
+        67.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_U11",
+      "name": "畝傍",
+      "coordinates": [
+        135.794,
+        34.5084
+      ],
+      "schematic": [
+        210.81,
+        67.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_U12",
+      "name": "金橋",
+      "coordinates": [
+        135.76529,
+        34.50964
+      ],
+      "schematic": [
+        209.575,
+        67.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_P01",
+      "name": "安治川口",
+      "coordinates": [
+        135.4441,
+        34.67377
+      ],
+      "schematic": [
+        186.841,
+        76.743
+      ]
+    },
+    {
+      "id": "JRW_Kansai_P02",
+      "name": "ユニバーサルシティ",
+      "coordinates": [
+        135.43859,
+        34.66784
+      ],
+      "schematic": [
+        186.341,
+        76.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_P03",
+      "name": "桜島",
+      "coordinates": [
+        135.43217,
+        34.66194
+      ],
+      "schematic": [
+        186.341,
+        75.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H34",
+      "name": "大阪城北詰",
+      "coordinates": [
+        135.526,
+        34.6939
+      ],
+      "schematic": [
+        195.716,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H35",
+      "name": "大阪天満宮",
+      "coordinates": [
+        135.513,
+        34.6973
+      ],
+      "schematic": [
+        194.591,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H36",
+      "name": "北新地",
+      "coordinates": [
+        135.49704,
+        34.69832
+      ],
+      "schematic": [
+        193.466,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H37",
+      "name": "新福島",
+      "coordinates": [
+        135.48567,
+        34.69496
+      ],
+      "schematic": [
+        192.341,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H38",
+      "name": "海老江",
+      "coordinates": [
+        135.47328,
+        34.69544
+      ],
+      "schematic": [
+        191.216,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H39",
+      "name": "御幣島",
+      "coordinates": [
+        135.4558,
+        34.7127
+      ],
+      "schematic": [
+        190.091,
+        78.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_H40",
+      "name": "加島",
+      "coordinates": [
+        135.45418,
+        34.7275
+      ],
+      "schematic": [
+        189.341,
+        78.618
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J01",
+      "name": "京口",
+      "coordinates": [
+        134.70509,
+        34.83396
+      ],
+      "schematic": [
+        166.841,
+        96.772
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J02",
+      "name": "野里",
+      "coordinates": [
+        134.71128,
+        34.85614
+      ],
+      "schematic": [
+        166.841,
+        97.801
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J03",
+      "name": "砥堀",
+      "coordinates": [
+        134.72455,
+        34.8662
+      ],
+      "schematic": [
+        166.841,
+        98.831
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J04",
+      "name": "仁豊野",
+      "coordinates": [
+        134.72831,
+        34.88502
+      ],
+      "schematic": [
+        166.841,
+        99.86
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J05",
+      "name": "香呂",
+      "coordinates": [
+        134.73597,
+        34.91121
+      ],
+      "schematic": [
+        166.841,
+        100.89
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J06",
+      "name": "溝口",
+      "coordinates": [
+        134.74247,
+        34.92818
+      ],
+      "schematic": [
+        166.841,
+        101.919
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J07",
+      "name": "福崎",
+      "coordinates": [
+        134.75074,
+        34.96054
+      ],
+      "schematic": [
+        166.841,
+        102.949
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J08",
+      "name": "甘地",
+      "coordinates": [
+        134.75885,
+        34.98788
+      ],
+      "schematic": [
+        166.841,
+        103.978
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J09",
+      "name": "鶴居",
+      "coordinates": [
+        134.75475,
+        35.02313
+      ],
+      "schematic": [
+        166.841,
+        105.007
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J10",
+      "name": "新野",
+      "coordinates": [
+        134.75249,
+        35.0502
+      ],
+      "schematic": [
+        166.841,
+        106.037
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J11",
+      "name": "寺前",
+      "coordinates": [
+        134.74292,
+        35.06509
+      ],
+      "schematic": [
+        166.841,
+        107.066
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J12",
+      "name": "長谷",
+      "coordinates": [
+        134.74794,
+        35.11692
+      ],
+      "schematic": [
+        166.841,
+        108.096
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J13",
+      "name": "生野",
+      "coordinates": [
+        134.7893,
+        35.16322
+      ],
+      "schematic": [
+        166.841,
+        109.125
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J14",
+      "name": "新井",
+      "coordinates": [
+        134.79518,
+        35.23664
+      ],
+      "schematic": [
+        166.841,
+        110.154
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J15",
+      "name": "青倉",
+      "coordinates": [
+        134.81153,
+        35.26709
+      ],
+      "schematic": [
+        166.841,
+        111.184
+      ]
+    },
+    {
+      "id": "JRW_Kansai_J16",
+      "name": "竹田",
+      "coordinates": [
+        134.83587,
+        35.2991
+      ],
+      "schematic": [
+        166.841,
+        112.213
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G01",
+      "name": "塚口",
+      "coordinates": [
+        135.425,
+        34.751
+      ],
+      "schematic": [
+        189.341,
+        81.286
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G02",
+      "name": "猪名寺",
+      "coordinates": [
+        135.42261,
+        34.76408
+      ],
+      "schematic": [
+        189.341,
+        82.83
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G03",
+      "name": "伊丹",
+      "coordinates": [
+        135.42166,
+        34.78063
+      ],
+      "schematic": [
+        189.341,
+        84.373
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G04",
+      "name": "北伊丹",
+      "coordinates": [
+        135.41935,
+        34.80136
+      ],
+      "schematic": [
+        189.341,
+        85.917
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G05",
+      "name": "川西池田",
+      "coordinates": [
+        135.40991,
+        34.82496
+      ],
+      "schematic": [
+        189.341,
+        87.46
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G06",
+      "name": "中山寺",
+      "coordinates": [
+        135.3738,
+        34.81669
+      ],
+      "schematic": [
+        189.341,
+        89.004
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G07",
+      "name": "宝塚",
+      "coordinates": [
+        135.341,
+        34.8114
+      ],
+      "schematic": [
+        189.341,
+        90.547
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G08",
+      "name": "生瀬",
+      "coordinates": [
+        135.3251,
+        34.8194
+      ],
+      "schematic": [
+        189.341,
+        92.09
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G09",
+      "name": "西宮名塩",
+      "coordinates": [
+        135.3087,
+        34.8273
+      ],
+      "schematic": [
+        189.341,
+        93.634
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G10",
+      "name": "武田尾",
+      "coordinates": [
+        135.306,
+        34.8561
+      ],
+      "schematic": [
+        189.341,
+        95.177
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G11",
+      "name": "道場",
+      "coordinates": [
+        135.2556,
+        34.8672
+      ],
+      "schematic": [
+        189.341,
+        96.721
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G12",
+      "name": "三田",
+      "coordinates": [
+        135.22997,
+        34.88843
+      ],
+      "schematic": [
+        189.341,
+        98.264
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G13",
+      "name": "新三田",
+      "coordinates": [
+        135.2092,
+        34.9097
+      ],
+      "schematic": [
+        189.341,
+        99.808
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G14",
+      "name": "広野",
+      "coordinates": [
+        135.19139,
+        34.92833
+      ],
+      "schematic": [
+        189.341,
+        101.351
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G15",
+      "name": "相野",
+      "coordinates": [
+        135.15611,
+        34.9475
+      ],
+      "schematic": [
+        189.341,
+        102.895
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G16",
+      "name": "藍本",
+      "coordinates": [
+        135.15528,
+        34.97694
+      ],
+      "schematic": [
+        189.341,
+        104.438
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G17",
+      "name": "草野",
+      "coordinates": [
+        135.15222,
+        34.99694
+      ],
+      "schematic": [
+        189.341,
+        105.982
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G18",
+      "name": "古市",
+      "coordinates": [
+        135.15528,
+        35.02194
+      ],
+      "schematic": [
+        189.058,
+        107.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G19",
+      "name": "南矢代",
+      "coordinates": [
+        135.1749,
+        35.0377
+      ],
+      "schematic": [
+        187.515,
+        107.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G20",
+      "name": "篠山口",
+      "coordinates": [
+        135.17763,
+        35.05621
+      ],
+      "schematic": [
+        185.971,
+        107.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G21",
+      "name": "丹波大山",
+      "coordinates": [
+        135.169,
+        35.0722
+      ],
+      "schematic": [
+        184.428,
+        107.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G22",
+      "name": "下滝",
+      "coordinates": [
+        135.0944,
+        35.0877
+      ],
+      "schematic": [
+        182.884,
+        107.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G23",
+      "name": "柏原",
+      "coordinates": [
+        135.07722,
+        35.12722
+      ],
+      "schematic": [
+        181.341,
+        108.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G24",
+      "name": "石生",
+      "coordinates": [
+        135.0637,
+        35.1527
+      ],
+      "schematic": [
+        181.341,
+        109.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G25",
+      "name": "黒井",
+      "coordinates": [
+        135.09723,
+        35.16868
+      ],
+      "schematic": [
+        181.341,
+        110.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G26",
+      "name": "市島",
+      "coordinates": [
+        135.1305,
+        35.2079
+      ],
+      "schematic": [
+        181.341,
+        111.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_G27",
+      "name": "丹波竹田",
+      "coordinates": [
+        135.134,
+        35.2437
+      ],
+      "schematic": [
+        181.341,
+        112.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_L01",
+      "name": "淵垣",
+      "coordinates": [
+        135.2945,
+        35.3284
+      ],
+      "schematic": [
+        199.341,
+        114.463
+      ]
+    },
+    {
+      "id": "JRW_Kansai_L02",
+      "name": "梅迫",
+      "coordinates": [
+        135.311,
+        35.3486
+      ],
+      "schematic": [
+        199.341,
+        115.683
+      ]
+    },
+    {
+      "id": "JRW_Kansai_L03",
+      "name": "真倉",
+      "coordinates": [
+        135.3263,
+        35.407
+      ],
+      "schematic": [
+        199.341,
+        116.903
+      ]
+    },
+    {
+      "id": "JRW_Kansai_L04",
+      "name": "西舞鶴",
+      "coordinates": [
+        135.33039,
+        35.44188
+      ],
+      "schematic": [
+        199.341,
+        118.123
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q01",
+      "name": "郡山",
+      "coordinates": [
+        135.79039,
+        34.64808
+      ],
+      "schematic": [
+        216.719,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q02",
+      "name": "大和小泉",
+      "coordinates": [
+        135.76362,
+        34.6224
+      ],
+      "schematic": [
+        213.426,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q03",
+      "name": "法隆寺",
+      "coordinates": [
+        135.73921,
+        34.60162
+      ],
+      "schematic": [
+        210.134,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q04",
+      "name": "三郷",
+      "coordinates": [
+        135.68744,
+        34.58915
+      ],
+      "schematic": [
+        205.841,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q05",
+      "name": "河内堅上",
+      "coordinates": [
+        135.6627,
+        34.5743
+      ],
+      "schematic": [
+        204.841,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q06",
+      "name": "高井田",
+      "coordinates": [
+        135.639,
+        34.5714
+      ],
+      "schematic": [
+        203.841,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q07",
+      "name": "柏原",
+      "coordinates": [
+        135.62326,
+        34.58676
+      ],
+      "schematic": [
+        202.841,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q08",
+      "name": "志紀",
+      "coordinates": [
+        135.61561,
+        34.60058
+      ],
+      "schematic": [
+        201.841,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q09",
+      "name": "八尾",
+      "coordinates": [
+        135.597,
+        34.6176
+      ],
+      "schematic": [
+        200.841,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q10",
+      "name": "加美",
+      "coordinates": [
+        135.56725,
+        34.62683
+      ],
+      "schematic": [
+        198.716,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q11",
+      "name": "平野",
+      "coordinates": [
+        135.55173,
+        34.63074
+      ],
+      "schematic": [
+        197.591,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q12",
+      "name": "東部市場前",
+      "coordinates": [
+        135.538,
+        34.6381
+      ],
+      "schematic": [
+        196.466,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q13",
+      "name": "新今宮",
+      "coordinates": [
+        135.501,
+        34.6502
+      ],
+      "schematic": [
+        193.591,
+        71.243
+      ]
+    },
+    {
+      "id": "JRW_Kansai_Q14",
+      "name": "JR難波",
+      "coordinates": [
+        135.49533,
+        34.66642
+      ],
+      "schematic": [
+        191.841,
+        72.743
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "JRW_Kansai_A01",
+      "target": "JRW_Kansai_A02",
+      "distance": 6.7,
+      "lines": [
+        "hokuriku_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A02",
+      "target": "JRW_Kansai_A03",
+      "distance": 7.8,
+      "lines": [
+        "hokuriku_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A03",
+      "target": "JRW_Kansai_A04",
+      "distance": 4.9,
+      "lines": [
+        "hokuriku_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A04",
+      "target": "JRW_Kansai_A05",
+      "distance": 4.1,
+      "lines": [
+        "hokuriku_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A05",
+      "target": "JRW_Kansai_A06",
+      "distance": 4.2,
+      "lines": [
+        "hokuriku_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A06",
+      "target": "JRW_Kansai_A07",
+      "distance": 2.6,
+      "lines": [
+        "hokuriku_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A07",
+      "target": "JRW_Kansai_A08",
+      "distance": 2.8,
+      "lines": [
+        "hokuriku_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A08",
+      "target": "JRW_Kansai_A09",
+      "distance": 5.1,
+      "lines": [
+        "hokuriku_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A09",
+      "target": "JRW_Kansai_A10",
+      "distance": 3.0,
+      "lines": [
+        "hokuriku_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A10",
+      "target": "JRW_Kansai_A11",
+      "distance": 2.3,
+      "lines": [
+        "hokuriku_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A11",
+      "target": "JRW_Kansai_A12",
+      "distance": 2.4,
+      "lines": [
+        "hokuriku_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A13",
+      "target": "JRW_Kansai_A14",
+      "distance": 5.5,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A14",
+      "target": "JRW_Kansai_A15",
+      "distance": 4.5,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A15",
+      "target": "JRW_Kansai_A16",
+      "distance": 1.7,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A16",
+      "target": "JRW_Kansai_A17",
+      "distance": 2.8,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A17",
+      "target": "JRW_Kansai_A18",
+      "distance": 2.5,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A18",
+      "target": "JRW_Kansai_A19",
+      "distance": 2.7,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A19",
+      "target": "JRW_Kansai_A20",
+      "distance": 2.5,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A20",
+      "target": "JRW_Kansai_A21",
+      "distance": 2.3,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A21",
+      "target": "JRW_Kansai_A22",
+      "distance": 2.1,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A22",
+      "target": "JRW_Kansai_A23",
+      "distance": 3.1,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A23",
+      "target": "JRW_Kansai_A24",
+      "distance": 5.6,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A24",
+      "target": "JRW_Kansai_A25",
+      "distance": 4.0,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A25",
+      "target": "JRW_Kansai_A26",
+      "distance": 3.5,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A26",
+      "target": "JRW_Kansai_A27",
+      "distance": 5.1,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A27",
+      "target": "JRW_Kansai_A28",
+      "distance": 3.7,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A28",
+      "target": "JRW_Kansai_A29",
+      "distance": 3.7,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A29",
+      "target": "JRW_Kansai_A30",
+      "distance": 3.1,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A30",
+      "target": "JRW_Kansai_A31",
+      "distance": 3.3,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A31",
+      "target": "JRW_Kansai_A12",
+      "distance": 6.0,
+      "lines": [
+        "biwako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A13",
+      "target": "JRW_Kansai_A32",
+      "distance": 2.5,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A32",
+      "target": "JRW_Kansai_A33",
+      "distance": 2.8,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A33",
+      "target": "JRW_Kansai_A34",
+      "distance": 1.1,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A34",
+      "target": "JRW_Kansai_A35",
+      "distance": 3.7,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A35",
+      "target": "JRW_Kansai_A36",
+      "distance": 4.0,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A36",
+      "target": "JRW_Kansai_A37",
+      "distance": 2.2,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A37",
+      "target": "JRW_Kansai_A38",
+      "distance": 5.3,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A38",
+      "target": "JRW_Kansai_A39",
+      "distance": 2.9,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A39",
+      "target": "JRW_Kansai_A40",
+      "distance": 1.7,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A40",
+      "target": "JRW_Kansai_A41",
+      "distance": 2.0,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A41",
+      "target": "JRW_Kansai_A42",
+      "distance": 2.9,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A42",
+      "target": "JRW_Kansai_A43",
+      "distance": 1.7,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A43",
+      "target": "JRW_Kansai_A44",
+      "distance": 2.4,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A44",
+      "target": "JRW_Kansai_A45",
+      "distance": 3.1,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A45",
+      "target": "JRW_Kansai_A46",
+      "distance": 0.7,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A46",
+      "target": "JRW_Kansai_A47",
+      "distance": 3.8,
+      "lines": [
+        "jr_kyoto_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A47",
+      "target": "JRW_Kansai_A48",
+      "distance": 3.4,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A48",
+      "target": "JRW_Kansai_A49",
+      "distance": 4.3,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A49",
+      "target": "JRW_Kansai_A50",
+      "distance": 3.0,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A50",
+      "target": "JRW_Kansai_A51",
+      "distance": 2.2,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A51",
+      "target": "JRW_Kansai_A52",
+      "distance": 2.5,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A52",
+      "target": "JRW_Kansai_A53",
+      "distance": 1.5,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A53",
+      "target": "JRW_Kansai_A54",
+      "distance": 2.3,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A54",
+      "target": "JRW_Kansai_A55",
+      "distance": 1.4,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A55",
+      "target": "JRW_Kansai_A56",
+      "distance": 1.5,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A56",
+      "target": "JRW_Kansai_A57",
+      "distance": 1.6,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A57",
+      "target": "JRW_Kansai_A58",
+      "distance": 2.2,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A58",
+      "target": "JRW_Kansai_A59",
+      "distance": 1.4,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A59",
+      "target": "JRW_Kansai_A60",
+      "distance": 0.9,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A60",
+      "target": "JRW_Kansai_A61",
+      "distance": 2.4,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A61",
+      "target": "JRW_Kansai_A62",
+      "distance": 0.8,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A62",
+      "target": "JRW_Kansai_A63",
+      "distance": 1.7,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A63",
+      "target": "JRW_Kansai_A64",
+      "distance": 1.8,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A64",
+      "target": "JRW_Kansai_A65",
+      "distance": 2.3,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A65",
+      "target": "JRW_Kansai_A66",
+      "distance": 1.0,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A66",
+      "target": "JRW_Kansai_A67",
+      "distance": 0.9,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A67",
+      "target": "JRW_Kansai_A68",
+      "distance": 1.3,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A68",
+      "target": "JRW_Kansai_A69",
+      "distance": 2.9,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A69",
+      "target": "JRW_Kansai_A70",
+      "distance": 2.9,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A70",
+      "target": "JRW_Kansai_A71",
+      "distance": 2.0,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A71",
+      "target": "JRW_Kansai_A72",
+      "distance": 1.9,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A72",
+      "target": "JRW_Kansai_A73",
+      "distance": 2.4,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A73",
+      "target": "JRW_Kansai_A74",
+      "distance": 3.4,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A74",
+      "target": "JRW_Kansai_A75",
+      "distance": 2.8,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A75",
+      "target": "JRW_Kansai_A76",
+      "distance": 3.5,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A76",
+      "target": "JRW_Kansai_A77",
+      "distance": 3.1,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A77",
+      "target": "JRW_Kansai_A78",
+      "distance": 3.3,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A78",
+      "target": "JRW_Kansai_A79",
+      "distance": 3.6,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A79",
+      "target": "JRW_Kansai_A80",
+      "distance": 3.3,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A80",
+      "target": "JRW_Kansai_A81",
+      "distance": 4.0,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A81",
+      "target": "JRW_Kansai_A82",
+      "distance": 2.0,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A82",
+      "target": "JRW_Kansai_A83",
+      "distance": 2.1,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A83",
+      "target": "JRW_Kansai_A84",
+      "distance": 2.4,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A84",
+      "target": "JRW_Kansai_A85",
+      "distance": 1.9,
+      "lines": [
+        "jr_kobe_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O01",
+      "target": "JRW_Kansai_O02",
+      "distance": 1.0,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O02",
+      "target": "JRW_Kansai_O03",
+      "distance": 1.2,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O03",
+      "target": "JRW_Kansai_O04",
+      "distance": 0.8,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O04",
+      "target": "JRW_Kansai_O05",
+      "distance": 0.9,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O05",
+      "target": "JRW_Kansai_O06",
+      "distance": 0.9,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O06",
+      "target": "JRW_Kansai_O07",
+      "distance": 0.9,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O07",
+      "target": "JRW_Kansai_O08",
+      "distance": 0.8,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O08",
+      "target": "JRW_Kansai_O09",
+      "distance": 1.8,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O09",
+      "target": "JRW_Kansai_O10",
+      "distance": 0.8,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O10",
+      "target": "JRW_Kansai_A47",
+      "distance": 1.6,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A47",
+      "target": "JRW_Kansai_O11",
+      "distance": 1.0,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O11",
+      "target": "JRW_Kansai_O12",
+      "distance": 1.4,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O12",
+      "target": "JRW_Kansai_O13",
+      "distance": 1.2,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O13",
+      "target": "JRW_Kansai_O14",
+      "distance": 1.6,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O14",
+      "target": "JRW_Kansai_O15",
+      "distance": 1.8,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O15",
+      "target": "JRW_Kansai_O16",
+      "distance": 1.2,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O16",
+      "target": "JRW_Kansai_O17",
+      "distance": 0.6,
+      "lines": [
+        "osaka_loop_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A46",
+      "target": "JRW_Kansai_H01",
+      "distance": 2.0,
+      "lines": [
+        "osaka_higashi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H01",
+      "target": "JRW_Kansai_H02",
+      "distance": 1.3,
+      "lines": [
+        "osaka_higashi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H02",
+      "target": "JRW_Kansai_H03",
+      "distance": 2.1,
+      "lines": [
+        "osaka_higashi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H03",
+      "target": "JRW_Kansai_H04",
+      "distance": 2.2,
+      "lines": [
+        "osaka_higashi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H04",
+      "target": "JRW_Kansai_H05",
+      "distance": 1.8,
+      "lines": [
+        "osaka_higashi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H05",
+      "target": "JRW_Kansai_H06",
+      "distance": 1.62,
+      "lines": [
+        "osaka_higashi_line",
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H06",
+      "target": "JRW_Kansai_H07",
+      "distance": 1.68,
+      "lines": [
+        "osaka_higashi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H07",
+      "target": "JRW_Kansai_H08",
+      "distance": 1.6,
+      "lines": [
+        "osaka_higashi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H08",
+      "target": "JRW_Kansai_H09",
+      "distance": 0.6,
+      "lines": [
+        "osaka_higashi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H09",
+      "target": "JRW_Kansai_H10",
+      "distance": 1.0,
+      "lines": [
+        "osaka_higashi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H10",
+      "target": "JRW_Kansai_H11",
+      "distance": 1.3,
+      "lines": [
+        "osaka_higashi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H11",
+      "target": "JRW_Kansai_H12",
+      "distance": 1.4,
+      "lines": [
+        "osaka_higashi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H12",
+      "target": "JRW_Kansai_H13",
+      "distance": 1.6,
+      "lines": [
+        "osaka_higashi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V01",
+      "target": "JRW_Kansai_V02",
+      "distance": 5.7,
+      "lines": [
+        "kansai_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V02",
+      "target": "JRW_Kansai_V03",
+      "distance": 5.4,
+      "lines": [
+        "kansai_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V03",
+      "target": "JRW_Kansai_V04",
+      "distance": 8.9,
+      "lines": [
+        "kansai_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V04",
+      "target": "JRW_Kansai_V05",
+      "distance": 6.2,
+      "lines": [
+        "kansai_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V05",
+      "target": "JRW_Kansai_V06",
+      "distance": 4.4,
+      "lines": [
+        "kansai_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V06",
+      "target": "JRW_Kansai_V07",
+      "distance": 4.0,
+      "lines": [
+        "kansai_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V07",
+      "target": "JRW_Kansai_V08",
+      "distance": 7.3,
+      "lines": [
+        "kansai_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V08",
+      "target": "JRW_Kansai_V09",
+      "distance": 3.0,
+      "lines": [
+        "kansai_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V09",
+      "target": "JRW_Kansai_V10",
+      "distance": 4.0,
+      "lines": [
+        "kansai_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V10",
+      "target": "JRW_Kansai_V11",
+      "distance": 5.4,
+      "lines": [
+        "kansai_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V11",
+      "target": "JRW_Kansai_V12",
+      "distance": 6.7,
+      "lines": [
+        "kansai_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W01",
+      "target": "JRW_Kansai_W02",
+      "distance": 4.7,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W02",
+      "target": "JRW_Kansai_W03",
+      "distance": 1.7,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W03",
+      "target": "JRW_Kansai_W04",
+      "distance": 2.1,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W04",
+      "target": "JRW_Kansai_W05",
+      "distance": 4.3,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W05",
+      "target": "JRW_Kansai_W06",
+      "distance": 0.9,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W06",
+      "target": "JRW_Kansai_W07",
+      "distance": 1.2,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W07",
+      "target": "JRW_Kansai_W08",
+      "distance": 2.7,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W08",
+      "target": "JRW_Kansai_W09",
+      "distance": 2.1,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W09",
+      "target": "JRW_Kansai_W10",
+      "distance": 1.2,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W10",
+      "target": "JRW_Kansai_W11",
+      "distance": 3.9,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W11",
+      "target": "JRW_Kansai_W12",
+      "distance": 4.0,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W12",
+      "target": "JRW_Kansai_W13",
+      "distance": 6.0,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W13",
+      "target": "JRW_Kansai_W14",
+      "distance": 3.9,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W14",
+      "target": "JRW_Kansai_W15",
+      "distance": 2.9,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W15",
+      "target": "JRW_Kansai_W16",
+      "distance": 5.8,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W16",
+      "target": "JRW_Kansai_W17",
+      "distance": 1.8,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W17",
+      "target": "JRW_Kansai_W18",
+      "distance": 4.3,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W18",
+      "target": "JRW_Kansai_W19",
+      "distance": 2.7,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W19",
+      "target": "JRW_Kansai_W20",
+      "distance": 5.6,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W20",
+      "target": "JRW_Kansai_W21",
+      "distance": 3.0,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W21",
+      "target": "JRW_Kansai_W22",
+      "distance": 9.0,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W22",
+      "target": "JRW_Kansai_W23",
+      "distance": 7.2,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W23",
+      "target": "JRW_Kansai_W24",
+      "distance": 6.1,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W24",
+      "target": "JRW_Kansai_W25",
+      "distance": 5.2,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W25",
+      "target": "JRW_Kansai_W26",
+      "distance": 2.9,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W26",
+      "target": "JRW_Kansai_W27",
+      "distance": 4.3,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W27",
+      "target": "JRW_Kansai_W28",
+      "distance": 3.5,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W28",
+      "target": "JRW_Kansai_W29",
+      "distance": 2.2,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W29",
+      "target": "JRW_Kansai_W30",
+      "distance": 4.1,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W30",
+      "target": "JRW_Kansai_W31",
+      "distance": 5.0,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W31",
+      "target": "JRW_Kansai_W32",
+      "distance": 5.1,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W32",
+      "target": "JRW_Kansai_W33",
+      "distance": 5.9,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W33",
+      "target": "JRW_Kansai_W34",
+      "distance": 3.8,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W34",
+      "target": "JRW_Kansai_W35",
+      "distance": 4.3,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W35",
+      "target": "JRW_Kansai_W36",
+      "distance": 6.8,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W36",
+      "target": "JRW_Kansai_W37",
+      "distance": 4.3,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W37",
+      "target": "JRW_Kansai_W38",
+      "distance": 1.6,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W38",
+      "target": "JRW_Kansai_W39",
+      "distance": 2.9,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W39",
+      "target": "JRW_Kansai_W40",
+      "distance": 5.3,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W40",
+      "target": "JRW_Kansai_W41",
+      "distance": 6.8,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W41",
+      "target": "JRW_Kansai_W42",
+      "distance": 2.6,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W42",
+      "target": "JRW_Kansai_W43",
+      "distance": 3.4,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W43",
+      "target": "JRW_Kansai_W44",
+      "distance": 3.9,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W44",
+      "target": "JRW_Kansai_W45",
+      "distance": 4.4,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W45",
+      "target": "JRW_Kansai_W46",
+      "distance": 2.5,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W46",
+      "target": "JRW_Kansai_W47",
+      "distance": 3.0,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W47",
+      "target": "JRW_Kansai_W48",
+      "distance": 2.7,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W48",
+      "target": "JRW_Kansai_W49",
+      "distance": 3.9,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W49",
+      "target": "JRW_Kansai_W50",
+      "distance": 2.8,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W50",
+      "target": "JRW_Kansai_W51",
+      "distance": 1.8,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W51",
+      "target": "JRW_Kansai_W52",
+      "distance": 3.6,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W52",
+      "target": "JRW_Kansai_W53",
+      "distance": 2.9,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W53",
+      "target": "JRW_Kansai_W54",
+      "distance": 2.1,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W54",
+      "target": "JRW_Kansai_W55",
+      "distance": 1.8,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_W55",
+      "target": "JRW_Kansai_W56",
+      "distance": 1.5,
+      "lines": [
+        "kisei_main_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A13",
+      "target": "JRW_Kansai_D01",
+      "distance": 1.1,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D01",
+      "target": "JRW_Kansai_D02",
+      "distance": 1.6,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D02",
+      "target": "JRW_Kansai_D03",
+      "distance": 2.3,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D03",
+      "target": "JRW_Kansai_D04",
+      "distance": 2.2,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D04",
+      "target": "JRW_Kansai_D05",
+      "distance": 2.3,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D05",
+      "target": "JRW_Kansai_D06",
+      "distance": 1.1,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D06",
+      "target": "JRW_Kansai_D07",
+      "distance": 1.4,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D07",
+      "target": "JRW_Kansai_D08",
+      "distance": 2.9,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D08",
+      "target": "JRW_Kansai_D09",
+      "distance": 1.4,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D09",
+      "target": "JRW_Kansai_D10",
+      "distance": 1.8,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D10",
+      "target": "JRW_Kansai_D11",
+      "distance": 2.1,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D11",
+      "target": "JRW_Kansai_D12",
+      "distance": 1.8,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D12",
+      "target": "JRW_Kansai_D13",
+      "distance": 2.0,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D13",
+      "target": "JRW_Kansai_D14",
+      "distance": 1.3,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D14",
+      "target": "JRW_Kansai_D15",
+      "distance": 2.0,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D15",
+      "target": "JRW_Kansai_D16",
+      "distance": 3.0,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D16",
+      "target": "JRW_Kansai_D17",
+      "distance": 2.8,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D17",
+      "target": "JRW_Kansai_D18",
+      "distance": 1.6,
+      "lines": [
+        "nara_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D18",
+      "target": "JRW_Kansai_D19",
+      "distance": 3.2,
+      "lines": [
+        "nara_line",
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D19",
+      "target": "JRW_Kansai_D20",
+      "distance": 3.8,
+      "lines": [
+        "nara_line",
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O01",
+      "target": "JRW_Kansai_R01",
+      "distance": 1.5,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R01",
+      "target": "JRW_Kansai_R02",
+      "distance": 1.5,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R02",
+      "target": "JRW_Kansai_R03",
+      "distance": 0.9,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R03",
+      "target": "JRW_Kansai_R04",
+      "distance": 0.8,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R04",
+      "target": "JRW_Kansai_R05",
+      "distance": 1.2,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R05",
+      "target": "JRW_Kansai_R06",
+      "distance": 1.0,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R06",
+      "target": "JRW_Kansai_R07",
+      "distance": 1.0,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R07",
+      "target": "JRW_Kansai_R08",
+      "distance": 0.9,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R08",
+      "target": "JRW_Kansai_R09",
+      "distance": 1.4,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R09",
+      "target": "JRW_Kansai_R10",
+      "distance": 0.9,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R10",
+      "target": "JRW_Kansai_R11",
+      "distance": 1.3,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R11",
+      "target": "JRW_Kansai_R12",
+      "distance": 1.3,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R12",
+      "target": "JRW_Kansai_R13",
+      "distance": 1.4,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R13",
+      "target": "JRW_Kansai_R14",
+      "distance": 1.2,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R14",
+      "target": "JRW_Kansai_R15",
+      "distance": 1.7,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R15",
+      "target": "JRW_Kansai_R16",
+      "distance": 1.4,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R16",
+      "target": "JRW_Kansai_R17",
+      "distance": 1.5,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R17",
+      "target": "JRW_Kansai_R18",
+      "distance": 3.0,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R18",
+      "target": "JRW_Kansai_R19",
+      "distance": 1.2,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R19",
+      "target": "JRW_Kansai_R20",
+      "distance": 1.4,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R20",
+      "target": "JRW_Kansai_R21",
+      "distance": 1.6,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R21",
+      "target": "JRW_Kansai_R22",
+      "distance": 1.9,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R22",
+      "target": "JRW_Kansai_R23",
+      "distance": 1.5,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R23",
+      "target": "JRW_Kansai_R24",
+      "distance": 1.5,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R24",
+      "target": "JRW_Kansai_R25",
+      "distance": 1.9,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R25",
+      "target": "JRW_Kansai_R26",
+      "distance": 1.4,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R26",
+      "target": "JRW_Kansai_R27",
+      "distance": 2.3,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R27",
+      "target": "JRW_Kansai_R28",
+      "distance": 1.9,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R28",
+      "target": "JRW_Kansai_R29",
+      "distance": 2.8,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R29",
+      "target": "JRW_Kansai_R30",
+      "distance": 1.9,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R30",
+      "target": "JRW_Kansai_R31",
+      "distance": 8.1,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R31",
+      "target": "JRW_Kansai_R32",
+      "distance": 3.9,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R32",
+      "target": "JRW_Kansai_R33",
+      "distance": 3.0,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R33",
+      "target": "JRW_Kansai_W54",
+      "distance": 1.1,
+      "lines": [
+        "hanwa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T01",
+      "target": "JRW_Kansai_T02",
+      "distance": 2.6,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T02",
+      "target": "JRW_Kansai_T03",
+      "distance": 1.9,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T03",
+      "target": "JRW_Kansai_T04",
+      "distance": 2.1,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T04",
+      "target": "JRW_Kansai_T05",
+      "distance": 2.1,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T05",
+      "target": "JRW_Kansai_T06",
+      "distance": 2.8,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T06",
+      "target": "JRW_Kansai_T07",
+      "distance": 3.4,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T07",
+      "target": "JRW_Kansai_T08",
+      "distance": 2.7,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T08",
+      "target": "JRW_Kansai_T09",
+      "distance": 1.8,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T09",
+      "target": "JRW_Kansai_T10",
+      "distance": 1.5,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T10",
+      "target": "JRW_Kansai_T11",
+      "distance": 4.0,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T11",
+      "target": "JRW_Kansai_T12",
+      "distance": 6.6,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T12",
+      "target": "JRW_Kansai_T13",
+      "distance": 3.9,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T13",
+      "target": "JRW_Kansai_T14",
+      "distance": 1.7,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T14",
+      "target": "JRW_Kansai_T15",
+      "distance": 4.0,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T15",
+      "target": "JRW_Kansai_T16",
+      "distance": 2.1,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T16",
+      "target": "JRW_Kansai_T17",
+      "distance": 1.9,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T17",
+      "target": "JRW_Kansai_T18",
+      "distance": 2.9,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T18",
+      "target": "JRW_Kansai_T19",
+      "distance": 2.6,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T19",
+      "target": "JRW_Kansai_T20",
+      "distance": 2.4,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T20",
+      "target": "JRW_Kansai_T21",
+      "distance": 1.6,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T21",
+      "target": "JRW_Kansai_T22",
+      "distance": 2.1,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T22",
+      "target": "JRW_Kansai_T23",
+      "distance": 1.5,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T23",
+      "target": "JRW_Kansai_T24",
+      "distance": 3.1,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T24",
+      "target": "JRW_Kansai_T25",
+      "distance": 1.9,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T25",
+      "target": "JRW_Kansai_T26",
+      "distance": 2.8,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T26",
+      "target": "JRW_Kansai_T27",
+      "distance": 1.2,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T27",
+      "target": "JRW_Kansai_T28",
+      "distance": 2.6,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T28",
+      "target": "JRW_Kansai_T29",
+      "distance": 2.2,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T29",
+      "target": "JRW_Kansai_T30",
+      "distance": 2.2,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T30",
+      "target": "JRW_Kansai_T31",
+      "distance": 1.1,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T31",
+      "target": "JRW_Kansai_T32",
+      "distance": 2.3,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T32",
+      "target": "JRW_Kansai_T33",
+      "distance": 2.3,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T33",
+      "target": "JRW_Kansai_T34",
+      "distance": 1.5,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T34",
+      "target": "JRW_Kansai_T35",
+      "distance": 1.5,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T35",
+      "target": "JRW_Kansai_W54",
+      "distance": 4.6,
+      "lines": [
+        "wakayama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A86",
+      "target": "JRW_Kansai_A87",
+      "distance": 4.8,
+      "lines": [
+        "ako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A87",
+      "target": "JRW_Kansai_A88",
+      "distance": 2.7,
+      "lines": [
+        "ako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A88",
+      "target": "JRW_Kansai_A89",
+      "distance": 2.4,
+      "lines": [
+        "ako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A89",
+      "target": "JRW_Kansai_A90",
+      "distance": 1.6,
+      "lines": [
+        "ako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A90",
+      "target": "JRW_Kansai_A91",
+      "distance": 1.9,
+      "lines": [
+        "ako_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A79",
+      "target": "JRW_Kansai_I01",
+      "distance": 2.3,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I01",
+      "target": "JRW_Kansai_I02",
+      "distance": 2.5,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I02",
+      "target": "JRW_Kansai_I03",
+      "distance": 2.6,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I03",
+      "target": "JRW_Kansai_I04",
+      "distance": 4.1,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I04",
+      "target": "JRW_Kansai_I05",
+      "distance": 2.2,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I05",
+      "target": "JRW_Kansai_I06",
+      "distance": 2.9,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I06",
+      "target": "JRW_Kansai_I07",
+      "distance": 2.6,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I07",
+      "target": "JRW_Kansai_I08",
+      "distance": 2.1,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I08",
+      "target": "JRW_Kansai_I09",
+      "distance": 2.9,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I09",
+      "target": "JRW_Kansai_I10",
+      "distance": 3.1,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I10",
+      "target": "JRW_Kansai_I11",
+      "distance": 1.1,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I11",
+      "target": "JRW_Kansai_I12",
+      "distance": 2.8,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I12",
+      "target": "JRW_Kansai_I13",
+      "distance": 1.1,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I13",
+      "target": "JRW_Kansai_I14",
+      "distance": 2.3,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I14",
+      "target": "JRW_Kansai_I15",
+      "distance": 1.5,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I15",
+      "target": "JRW_Kansai_I16",
+      "distance": 2.4,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I16",
+      "target": "JRW_Kansai_I17",
+      "distance": 3.5,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I17",
+      "target": "JRW_Kansai_I18",
+      "distance": 1.8,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I18",
+      "target": "JRW_Kansai_I19",
+      "distance": 2.5,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I19",
+      "target": "JRW_Kansai_I20",
+      "distance": 2.2,
+      "lines": [
+        "kakogawa_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D18",
+      "target": "JRW_Kansai_H14",
+      "distance": 2.2,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H14",
+      "target": "JRW_Kansai_H15",
+      "distance": 2.9,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H15",
+      "target": "JRW_Kansai_H16",
+      "distance": 2.3,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H16",
+      "target": "JRW_Kansai_H17",
+      "distance": 2.0,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H17",
+      "target": "JRW_Kansai_H18",
+      "distance": 1.1,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H18",
+      "target": "JRW_Kansai_H19",
+      "distance": 1.9,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H19",
+      "target": "JRW_Kansai_H20",
+      "distance": 2.1,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H20",
+      "target": "JRW_Kansai_H21",
+      "distance": 2.5,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H21",
+      "target": "JRW_Kansai_H22",
+      "distance": 1.6,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H22",
+      "target": "JRW_Kansai_H23",
+      "distance": 1.6,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H23",
+      "target": "JRW_Kansai_H24",
+      "distance": 1.6,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H24",
+      "target": "JRW_Kansai_H25",
+      "distance": 3.2,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H25",
+      "target": "JRW_Kansai_H26",
+      "distance": 2.1,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H26",
+      "target": "JRW_Kansai_H27",
+      "distance": 1.7,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H27",
+      "target": "JRW_Kansai_H28",
+      "distance": 1.3,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H28",
+      "target": "JRW_Kansai_H29",
+      "distance": 1.9,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H29",
+      "target": "JRW_Kansai_H30",
+      "distance": 1.3,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H30",
+      "target": "JRW_Kansai_H31",
+      "distance": 2.2,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H31",
+      "target": "JRW_Kansai_H32",
+      "distance": 2.4,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H32",
+      "target": "JRW_Kansai_H33",
+      "distance": 1.9,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H33",
+      "target": "JRW_Kansai_H06",
+      "distance": 1.8,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H05",
+      "target": "JRW_Kansai_O08",
+      "distance": 1.6,
+      "lines": [
+        "katamachi_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_R25",
+      "target": "JRW_Kansai_S01",
+      "distance": 4.2,
+      "lines": [
+        "kansai_airport_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_S01",
+      "target": "JRW_Kansai_S02",
+      "distance": 6.9,
+      "lines": [
+        "kansai_airport_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A85",
+      "target": "JRW_Kansai_K01",
+      "distance": 3.8,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K01",
+      "target": "JRW_Kansai_K02",
+      "distance": 2.3,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K02",
+      "target": "JRW_Kansai_K03",
+      "distance": 3.8,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K03",
+      "target": "JRW_Kansai_K04",
+      "distance": 5.0,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K04",
+      "target": "JRW_Kansai_K05",
+      "distance": 2.9,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K05",
+      "target": "JRW_Kansai_K06",
+      "distance": 4.3,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K06",
+      "target": "JRW_Kansai_K07",
+      "distance": 5.5,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K07",
+      "target": "JRW_Kansai_K08",
+      "distance": 3.6,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K08",
+      "target": "JRW_Kansai_K09",
+      "distance": 5.4,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K09",
+      "target": "JRW_Kansai_K10",
+      "distance": 5.9,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K10",
+      "target": "JRW_Kansai_K11",
+      "distance": 3.4,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K11",
+      "target": "JRW_Kansai_K12",
+      "distance": 5.0,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K12",
+      "target": "JRW_Kansai_K13",
+      "distance": 6.7,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K13",
+      "target": "JRW_Kansai_K14",
+      "distance": 5.4,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K14",
+      "target": "JRW_Kansai_K15",
+      "distance": 3.4,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K15",
+      "target": "JRW_Kansai_K16",
+      "distance": 4.0,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K16",
+      "target": "JRW_Kansai_K17",
+      "distance": 3.9,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K17",
+      "target": "JRW_Kansai_K18",
+      "distance": 3.0,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K18",
+      "target": "JRW_Kansai_K19",
+      "distance": 2.0,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K19",
+      "target": "JRW_Kansai_K20",
+      "distance": 11.5,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K20",
+      "target": "JRW_Kansai_K21",
+      "distance": 4.8,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K21",
+      "target": "JRW_Kansai_K22",
+      "distance": 2.7,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K22",
+      "target": "JRW_Kansai_K23",
+      "distance": 5.6,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K23",
+      "target": "JRW_Kansai_K24",
+      "distance": 7.0,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K24",
+      "target": "JRW_Kansai_K25",
+      "distance": 3.7,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K25",
+      "target": "JRW_Kansai_K26",
+      "distance": 4.3,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K26",
+      "target": "JRW_Kansai_K27",
+      "distance": 4.9,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K27",
+      "target": "JRW_Kansai_K28",
+      "distance": 4.8,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K28",
+      "target": "JRW_Kansai_K29",
+      "distance": 6.1,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K29",
+      "target": "JRW_Kansai_K30",
+      "distance": 6.5,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K30",
+      "target": "JRW_Kansai_K31",
+      "distance": 3.8,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K31",
+      "target": "JRW_Kansai_K32",
+      "distance": 4.8,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_K32",
+      "target": "JRW_Kansai_K33",
+      "distance": 8.3,
+      "lines": [
+        "kishin_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V04",
+      "target": "JRW_Kansai_C01",
+      "distance": 5.3,
+      "lines": [
+        "kusatsu_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_C01",
+      "target": "JRW_Kansai_C02",
+      "distance": 2.1,
+      "lines": [
+        "kusatsu_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_C02",
+      "target": "JRW_Kansai_C03",
+      "distance": 3.1,
+      "lines": [
+        "kusatsu_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_C03",
+      "target": "JRW_Kansai_C04",
+      "distance": 2.0,
+      "lines": [
+        "kusatsu_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_C04",
+      "target": "JRW_Kansai_C05",
+      "distance": 2.8,
+      "lines": [
+        "kusatsu_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_C05",
+      "target": "JRW_Kansai_C06",
+      "distance": 5.2,
+      "lines": [
+        "kusatsu_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_C06",
+      "target": "JRW_Kansai_C07",
+      "distance": 3.8,
+      "lines": [
+        "kusatsu_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_C07",
+      "target": "JRW_Kansai_C08",
+      "distance": 3.3,
+      "lines": [
+        "kusatsu_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_C08",
+      "target": "JRW_Kansai_C09",
+      "distance": 5.1,
+      "lines": [
+        "kusatsu_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_C09",
+      "target": "JRW_Kansai_A20",
+      "distance": 4.0,
+      "lines": [
+        "kusatsu_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A03",
+      "target": "JRW_Kansai_B01",
+      "distance": 5.8,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B01",
+      "target": "JRW_Kansai_B02",
+      "distance": 7.1,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B02",
+      "target": "JRW_Kansai_B03",
+      "distance": 3.2,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B03",
+      "target": "JRW_Kansai_B04",
+      "distance": 4.8,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B04",
+      "target": "JRW_Kansai_B05",
+      "distance": 4.9,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B05",
+      "target": "JRW_Kansai_B06",
+      "distance": 3.3,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B06",
+      "target": "JRW_Kansai_B07",
+      "distance": 4.1,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B07",
+      "target": "JRW_Kansai_B08",
+      "distance": 6.4,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B08",
+      "target": "JRW_Kansai_B09",
+      "distance": 2.3,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B09",
+      "target": "JRW_Kansai_B10",
+      "distance": 2.2,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B10",
+      "target": "JRW_Kansai_B11",
+      "distance": 2.7,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B11",
+      "target": "JRW_Kansai_B12",
+      "distance": 2.4,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B12",
+      "target": "JRW_Kansai_B13",
+      "distance": 2.4,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B13",
+      "target": "JRW_Kansai_B14",
+      "distance": 2.7,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B14",
+      "target": "JRW_Kansai_B15",
+      "distance": 2.1,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B15",
+      "target": "JRW_Kansai_B16",
+      "distance": 3.2,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B16",
+      "target": "JRW_Kansai_B17",
+      "distance": 3.4,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B17",
+      "target": "JRW_Kansai_B18",
+      "distance": 2.6,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B18",
+      "target": "JRW_Kansai_B19",
+      "distance": 3.1,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_B19",
+      "target": "JRW_Kansai_A14",
+      "distance": 5.4,
+      "lines": [
+        "kosei_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A13",
+      "target": "JRW_Kansai_E01",
+      "distance": 1.7,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E01",
+      "target": "JRW_Kansai_E02",
+      "distance": 0.8,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E02",
+      "target": "JRW_Kansai_E03",
+      "distance": 1.7,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E03",
+      "target": "JRW_Kansai_E04",
+      "distance": 1.6,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E04",
+      "target": "JRW_Kansai_E05",
+      "distance": 1.1,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E05",
+      "target": "JRW_Kansai_E06",
+      "distance": 1.7,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E06",
+      "target": "JRW_Kansai_E07",
+      "distance": 1.7,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E07",
+      "target": "JRW_Kansai_E08",
+      "distance": 4.0,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E08",
+      "target": "JRW_Kansai_E09",
+      "distance": 3.8,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E09",
+      "target": "JRW_Kansai_E10",
+      "distance": 2.1,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E10",
+      "target": "JRW_Kansai_E11",
+      "distance": 3.2,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E11",
+      "target": "JRW_Kansai_E12",
+      "distance": 1.8,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E12",
+      "target": "JRW_Kansai_E13",
+      "distance": 3.0,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_E13",
+      "target": "JRW_Kansai_E14",
+      "distance": 4.1,
+      "lines": [
+        "sagano_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D20",
+      "target": "JRW_Kansai_U01",
+      "distance": 1.9,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_U01",
+      "target": "JRW_Kansai_U02",
+      "distance": 2.9,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_U02",
+      "target": "JRW_Kansai_U03",
+      "distance": 2.5,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_U03",
+      "target": "JRW_Kansai_U04",
+      "distance": 2.3,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_U04",
+      "target": "JRW_Kansai_U05",
+      "distance": 3.0,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_U05",
+      "target": "JRW_Kansai_U06",
+      "distance": 1.7,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_U06",
+      "target": "JRW_Kansai_U07",
+      "distance": 1.6,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_U07",
+      "target": "JRW_Kansai_U08",
+      "distance": 2.1,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_U08",
+      "target": "JRW_Kansai_U09",
+      "distance": 1.7,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_U09",
+      "target": "JRW_Kansai_U10",
+      "distance": 2.0,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_U10",
+      "target": "JRW_Kansai_U11",
+      "distance": 3.0,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_U11",
+      "target": "JRW_Kansai_U12",
+      "distance": 2.6,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_U12",
+      "target": "JRW_Kansai_T06",
+      "distance": 2.1,
+      "lines": [
+        "sakurai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O13",
+      "target": "JRW_Kansai_P01",
+      "distance": 2.4,
+      "lines": [
+        "sakurajima_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_P01",
+      "target": "JRW_Kansai_P02",
+      "distance": 0.8,
+      "lines": [
+        "sakurajima_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_P02",
+      "target": "JRW_Kansai_P03",
+      "distance": 0.9,
+      "lines": [
+        "sakurajima_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O08",
+      "target": "JRW_Kansai_H34",
+      "distance": 0.9,
+      "lines": [
+        "jr_touzai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H34",
+      "target": "JRW_Kansai_H35",
+      "distance": 1.3,
+      "lines": [
+        "jr_touzai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H35",
+      "target": "JRW_Kansai_H36",
+      "distance": 1.4,
+      "lines": [
+        "jr_touzai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H36",
+      "target": "JRW_Kansai_H37",
+      "distance": 1.2,
+      "lines": [
+        "jr_touzai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H37",
+      "target": "JRW_Kansai_H38",
+      "distance": 1.2,
+      "lines": [
+        "jr_touzai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H38",
+      "target": "JRW_Kansai_H39",
+      "distance": 2.6,
+      "lines": [
+        "jr_touzai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H39",
+      "target": "JRW_Kansai_H40",
+      "distance": 1.7,
+      "lines": [
+        "jr_touzai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H40",
+      "target": "JRW_Kansai_A49",
+      "distance": 2.2,
+      "lines": [
+        "jr_touzai_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A85",
+      "target": "JRW_Kansai_J01",
+      "distance": 1.7,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J01",
+      "target": "JRW_Kansai_J02",
+      "distance": 2.6,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J02",
+      "target": "JRW_Kansai_J03",
+      "distance": 1.7,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J03",
+      "target": "JRW_Kansai_J04",
+      "distance": 2.2,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J04",
+      "target": "JRW_Kansai_J05",
+      "distance": 3.0,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J05",
+      "target": "JRW_Kansai_J06",
+      "distance": 2.0,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J06",
+      "target": "JRW_Kansai_J07",
+      "distance": 3.9,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J07",
+      "target": "JRW_Kansai_J08",
+      "distance": 3.5,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J08",
+      "target": "JRW_Kansai_J09",
+      "distance": 3.9,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J09",
+      "target": "JRW_Kansai_J10",
+      "distance": 3.2,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J10",
+      "target": "JRW_Kansai_J11",
+      "distance": 1.9,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J11",
+      "target": "JRW_Kansai_J12",
+      "distance": 6.3,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J12",
+      "target": "JRW_Kansai_J13",
+      "distance": 7.7,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J13",
+      "target": "JRW_Kansai_J14",
+      "distance": 8.3,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J14",
+      "target": "JRW_Kansai_J15",
+      "distance": 3.7,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_J15",
+      "target": "JRW_Kansai_J16",
+      "distance": 4.3,
+      "lines": [
+        "bantan_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_A49",
+      "target": "JRW_Kansai_G01",
+      "distance": 2.5,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G01",
+      "target": "JRW_Kansai_G02",
+      "distance": 1.4,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G02",
+      "target": "JRW_Kansai_G03",
+      "distance": 1.9,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G03",
+      "target": "JRW_Kansai_G04",
+      "distance": 2.1,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G04",
+      "target": "JRW_Kansai_G05",
+      "distance": 3.1,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G05",
+      "target": "JRW_Kansai_G06",
+      "distance": 3.5,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G06",
+      "target": "JRW_Kansai_G07",
+      "distance": 3.3,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G07",
+      "target": "JRW_Kansai_G08",
+      "distance": 1.9,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G08",
+      "target": "JRW_Kansai_G09",
+      "distance": 2.2,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G09",
+      "target": "JRW_Kansai_G10",
+      "distance": 3.2,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G10",
+      "target": "JRW_Kansai_G11",
+      "distance": 5.0,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G11",
+      "target": "JRW_Kansai_G12",
+      "distance": 3.6,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G12",
+      "target": "JRW_Kansai_G13",
+      "distance": 3.2,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G13",
+      "target": "JRW_Kansai_G14",
+      "distance": 2.8,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G14",
+      "target": "JRW_Kansai_G15",
+      "distance": 4.3,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G15",
+      "target": "JRW_Kansai_G16",
+      "distance": 4.2,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G16",
+      "target": "JRW_Kansai_G17",
+      "distance": 2.3,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G17",
+      "target": "JRW_Kansai_G18",
+      "distance": 3.0,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G18",
+      "target": "JRW_Kansai_G19",
+      "distance": 2.6,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G19",
+      "target": "JRW_Kansai_G20",
+      "distance": 2.3,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G20",
+      "target": "JRW_Kansai_G21",
+      "distance": 2.3,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G21",
+      "target": "JRW_Kansai_G22",
+      "distance": 8.0,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G22",
+      "target": "JRW_Kansai_I20",
+      "distance": 4.3,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_I20",
+      "target": "JRW_Kansai_G23",
+      "distance": 7.0,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G23",
+      "target": "JRW_Kansai_G24",
+      "distance": 3.2,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G24",
+      "target": "JRW_Kansai_G25",
+      "distance": 4.3,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G25",
+      "target": "JRW_Kansai_G26",
+      "distance": 6.5,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_G26",
+      "target": "JRW_Kansai_G27",
+      "distance": 4.2,
+      "lines": [
+        "fukuchiyama_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_L01",
+      "target": "JRW_Kansai_L02",
+      "distance": 2.9,
+      "lines": [
+        "maizuru_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_L02",
+      "target": "JRW_Kansai_L03",
+      "distance": 7.3,
+      "lines": [
+        "maizuru_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_L03",
+      "target": "JRW_Kansai_L04",
+      "distance": 4.0,
+      "lines": [
+        "maizuru_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_V12",
+      "target": "JRW_Kansai_D18",
+      "distance": 6.0,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_D20",
+      "target": "JRW_Kansai_Q01",
+      "distance": 4.8,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q01",
+      "target": "JRW_Kansai_Q02",
+      "distance": 3.8,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q02",
+      "target": "JRW_Kansai_Q03",
+      "distance": 3.2,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q03",
+      "target": "JRW_Kansai_T01",
+      "distance": 3.6,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_T01",
+      "target": "JRW_Kansai_Q04",
+      "distance": 1.8,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q04",
+      "target": "JRW_Kansai_Q05",
+      "distance": 2.9,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q05",
+      "target": "JRW_Kansai_Q06",
+      "distance": 2.4,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q06",
+      "target": "JRW_Kansai_Q07",
+      "distance": 2.4,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q07",
+      "target": "JRW_Kansai_Q08",
+      "distance": 1.7,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q08",
+      "target": "JRW_Kansai_Q09",
+      "distance": 2.6,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q09",
+      "target": "JRW_Kansai_H13",
+      "distance": 1.2,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_H13",
+      "target": "JRW_Kansai_Q10",
+      "distance": 1.7,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q10",
+      "target": "JRW_Kansai_Q11",
+      "distance": 1.5,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q11",
+      "target": "JRW_Kansai_Q12",
+      "distance": 1.5,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q12",
+      "target": "JRW_Kansai_O01",
+      "distance": 2.4,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O01",
+      "target": "JRW_Kansai_Q13",
+      "distance": 1.0,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_Q13",
+      "target": "JRW_Kansai_O17",
+      "distance": 1.2,
+      "lines": [
+        "yamatoji_line"
+      ]
+    },
+    {
+      "source": "JRW_Kansai_O17",
+      "target": "JRW_Kansai_Q14",
+      "distance": 1.3,
+      "lines": [
+        "yamatoji_line"
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "hokuriku_main_line",
+      "name": "北陸本線",
+      "color": "#e33734"
+    },
+    {
+      "id": "biwako_line",
+      "name": "琵琶湖線",
+      "color": "#da50e1"
+    },
+    {
+      "id": "jr_kyoto_line",
+      "name": "JR京都線",
+      "color": "#a61421"
+    },
+    {
+      "id": "jr_kobe_line",
+      "name": "JR神戸線",
+      "color": "#772fad"
+    },
+    {
+      "id": "osaka_loop_line",
+      "name": "大阪環状線",
+      "color": "#55ac85"
+    },
+    {
+      "id": "osaka_higashi_line",
+      "name": "おおさか東線",
+      "color": "#7d7d33"
+    },
+    {
+      "id": "kansai_main_line",
+      "name": "関西本線",
+      "color": "#84c0e9"
+    },
+    {
+      "id": "kisei_main_line",
+      "name": "紀勢本線",
+      "color": "#e4c870"
+    },
+    {
+      "id": "sanyo_main_line",
+      "name": "山陽本線",
+      "color": "#6b1a56"
+    },
+    {
+      "id": "nara_line",
+      "name": "奈良線",
+      "color": "#667d5a"
+    },
+    {
+      "id": "hanwa_line",
+      "name": "阪和線",
+      "color": "#3d92d1"
+    },
+    {
+      "id": "wakayama_line",
+      "name": "和歌山線",
+      "color": "#5ef970"
+    },
+    {
+      "id": "ako_line",
+      "name": "赤穂線",
+      "color": "#c72c6f"
+    },
+    {
+      "id": "obama_line",
+      "name": "小浜線",
+      "color": "#cf0c14"
+    },
+    {
+      "id": "kakogawa_line",
+      "name": "加古川線",
+      "color": "#7b9819"
+    },
+    {
+      "id": "katamachi_line",
+      "name": "片町線",
+      "color": "#9d1a19"
+    },
+    {
+      "id": "kansai_airport_line",
+      "name": "関西空港線",
+      "color": "#cfd882"
+    },
+    {
+      "id": "kishin_line",
+      "name": "姫新線",
+      "color": "#7b9a47"
+    },
+    {
+      "id": "kusatsu_line",
+      "name": "草津線",
+      "color": "#9ba481"
+    },
+    {
+      "id": "kosei_line",
+      "name": "湖西線",
+      "color": "#b82c6f"
+    },
+    {
+      "id": "sagano_line",
+      "name": "嵯峨野線",
+      "color": "#24559a"
+    },
+    {
+      "id": "sakurai_line",
+      "name": "桜井線",
+      "color": "#e52e84"
+    },
+    {
+      "id": "sakurajima_line",
+      "name": "桜島線",
+      "color": "#eea4b4"
+    },
+    {
+      "id": "jr_touzai_line",
+      "name": "JR東西線",
+      "color": "#67d9ef"
+    },
+    {
+      "id": "hakubi_line",
+      "name": "伯備線",
+      "color": "#99d35c"
+    },
+    {
+      "id": "bantan_line",
+      "name": "播但線",
+      "color": "#03e8ae"
+    },
+    {
+      "id": "fukuchiyama_line",
+      "name": "福知山線",
+      "color": "#886dbe"
+    },
+    {
+      "id": "maizuru_line",
+      "name": "舞鶴線",
+      "color": "#2c0c69"
+    },
+    {
+      "id": "yamatoji_line",
+      "name": "大和路線",
+      "color": "#128c82"
+    },
+    {
+      "id": "wadamisaki_line",
+      "name": "和田岬線",
+      "color": "#45cb68"
+    },
+    {
+      "id": "hagoromo_line",
+      "name": "羽衣線",
+      "color": "#7eba1c"
+    }
+  ]
+}

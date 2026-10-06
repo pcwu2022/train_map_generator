@@ -1,0 +1,2785 @@
+{
+  "segments": [
+    {
+      "id": "hokuriku_main_line",
+      "name": "北陸本線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A01",
+          "name": "敦賀",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_A02",
+          "name": "新疋田",
+          "km": 6.7
+        },
+        {
+          "id": "JRW_Kansai_A03",
+          "name": "近江塩津",
+          "km": 14.5
+        },
+        {
+          "id": "JRW_Kansai_A04",
+          "name": "余呉",
+          "km": 19.4
+        },
+        {
+          "id": "JRW_Kansai_A05",
+          "name": "木ノ本",
+          "km": 23.5
+        },
+        {
+          "id": "JRW_Kansai_A06",
+          "name": "高月",
+          "km": 27.7
+        },
+        {
+          "id": "JRW_Kansai_A07",
+          "name": "河毛",
+          "km": 30.3
+        },
+        {
+          "id": "JRW_Kansai_A08",
+          "name": "虎姫",
+          "km": 33.1
+        },
+        {
+          "id": "JRW_Kansai_A09",
+          "name": "長浜",
+          "km": 38.2
+        },
+        {
+          "id": "JRW_Kansai_A10",
+          "name": "田村",
+          "km": 41.2
+        },
+        {
+          "id": "JRW_Kansai_A11",
+          "name": "坂田",
+          "km": 43.5
+        },
+        {
+          "id": "JRW_Kansai_A12",
+          "name": "米原",
+          "km": 45.9
+        }
+      ]
+    },
+    {
+      "id": "biwako_line",
+      "name": "琵琶湖線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A13",
+          "name": "京都",
+          "km": 67.7
+        },
+        {
+          "id": "JRW_Kansai_A14",
+          "name": "山科",
+          "km": 62.2
+        },
+        {
+          "id": "JRW_Kansai_A15",
+          "name": "大津",
+          "km": 57.7
+        },
+        {
+          "id": "JRW_Kansai_A16",
+          "name": "膳所",
+          "km": 56.0
+        },
+        {
+          "id": "JRW_Kansai_A17",
+          "name": "石山",
+          "km": 53.2
+        },
+        {
+          "id": "JRW_Kansai_A18",
+          "name": "瀬田",
+          "km": 50.7
+        },
+        {
+          "id": "JRW_Kansai_A19",
+          "name": "南草津",
+          "km": 48.0
+        },
+        {
+          "id": "JRW_Kansai_A20",
+          "name": "草津",
+          "km": 45.5
+        },
+        {
+          "id": "JRW_Kansai_A21",
+          "name": "栗東",
+          "km": 43.2
+        },
+        {
+          "id": "JRW_Kansai_A22",
+          "name": "守山",
+          "km": 41.1
+        },
+        {
+          "id": "JRW_Kansai_A23",
+          "name": "野洲",
+          "km": 38.0
+        },
+        {
+          "id": "JRW_Kansai_A24",
+          "name": "篠原",
+          "km": 32.4
+        },
+        {
+          "id": "JRW_Kansai_A25",
+          "name": "近江八幡",
+          "km": 28.4
+        },
+        {
+          "id": "JRW_Kansai_A26",
+          "name": "安土",
+          "km": 24.9
+        },
+        {
+          "id": "JRW_Kansai_A27",
+          "name": "能登川",
+          "km": 19.8
+        },
+        {
+          "id": "JRW_Kansai_A28",
+          "name": "稲枝",
+          "km": 16.1
+        },
+        {
+          "id": "JRW_Kansai_A29",
+          "name": "河瀬",
+          "km": 12.4
+        },
+        {
+          "id": "JRW_Kansai_A30",
+          "name": "南彦根",
+          "km": 9.3
+        },
+        {
+          "id": "JRW_Kansai_A31",
+          "name": "彦根",
+          "km": 6.0
+        },
+        {
+          "id": "JRW_Kansai_A12",
+          "name": "米原",
+          "km": 0.0
+        }
+      ]
+    },
+    {
+      "id": "jr_kyoto_line",
+      "name": "JR京都線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A13",
+          "name": "京都",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_A32",
+          "name": "西大路",
+          "km": 2.5
+        },
+        {
+          "id": "JRW_Kansai_A33",
+          "name": "桂川",
+          "km": 5.3
+        },
+        {
+          "id": "JRW_Kansai_A34",
+          "name": "向日町",
+          "km": 6.4
+        },
+        {
+          "id": "JRW_Kansai_A35",
+          "name": "長岡京",
+          "km": 10.1
+        },
+        {
+          "id": "JRW_Kansai_A36",
+          "name": "山崎",
+          "km": 14.1
+        },
+        {
+          "id": "JRW_Kansai_A37",
+          "name": "島本",
+          "km": 16.3
+        },
+        {
+          "id": "JRW_Kansai_A38",
+          "name": "高槻",
+          "km": 21.6
+        },
+        {
+          "id": "JRW_Kansai_A39",
+          "name": "摂津富田",
+          "km": 24.5
+        },
+        {
+          "id": "JRW_Kansai_A40",
+          "name": "JR総持寺",
+          "km": 26.2
+        },
+        {
+          "id": "JRW_Kansai_A41",
+          "name": "茨木",
+          "km": 28.2
+        },
+        {
+          "id": "JRW_Kansai_A42",
+          "name": "千里丘",
+          "km": 31.1
+        },
+        {
+          "id": "JRW_Kansai_A43",
+          "name": "岸辺",
+          "km": 32.8
+        },
+        {
+          "id": "JRW_Kansai_A44",
+          "name": "吹田",
+          "km": 35.2
+        },
+        {
+          "id": "JRW_Kansai_A45",
+          "name": "東淀川",
+          "km": 38.3
+        },
+        {
+          "id": "JRW_Kansai_A46",
+          "name": "新大阪",
+          "km": 39.0
+        },
+        {
+          "id": "JRW_Kansai_A47",
+          "name": "大阪",
+          "km": 42.8
+        }
+      ]
+    },
+    {
+      "id": "jr_kobe_line",
+      "name": "JR神戸線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A47",
+          "name": "大阪",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_A48",
+          "name": "塚本",
+          "km": 3.4
+        },
+        {
+          "id": "JRW_Kansai_A49",
+          "name": "尼崎",
+          "km": 7.7
+        },
+        {
+          "id": "JRW_Kansai_A50",
+          "name": "立花",
+          "km": 10.7
+        },
+        {
+          "id": "JRW_Kansai_A51",
+          "name": "甲子園口",
+          "km": 12.9
+        },
+        {
+          "id": "JRW_Kansai_A52",
+          "name": "西宮",
+          "km": 15.4
+        },
+        {
+          "id": "JRW_Kansai_A53",
+          "name": "さくら夙川",
+          "km": 16.9
+        },
+        {
+          "id": "JRW_Kansai_A54",
+          "name": "芦屋",
+          "km": 19.2
+        },
+        {
+          "id": "JRW_Kansai_A55",
+          "name": "甲南山手",
+          "km": 20.6
+        },
+        {
+          "id": "JRW_Kansai_A56",
+          "name": "摂津本山",
+          "km": 22.1
+        },
+        {
+          "id": "JRW_Kansai_A57",
+          "name": "住吉",
+          "km": 23.7
+        },
+        {
+          "id": "JRW_Kansai_A58",
+          "name": "六甲道",
+          "km": 25.9
+        },
+        {
+          "id": "JRW_Kansai_A59",
+          "name": "摩耶",
+          "km": 27.3
+        },
+        {
+          "id": "JRW_Kansai_A60",
+          "name": "灘",
+          "km": 28.2
+        },
+        {
+          "id": "JRW_Kansai_A61",
+          "name": "三ノ宮",
+          "km": 30.6
+        },
+        {
+          "id": "JRW_Kansai_A62",
+          "name": "元町",
+          "km": 31.4
+        },
+        {
+          "id": "JRW_Kansai_A63",
+          "name": "神戸",
+          "km": 33.1
+        },
+        {
+          "id": "JRW_Kansai_A64",
+          "name": "兵庫",
+          "km": 34.9
+        },
+        {
+          "id": "JRW_Kansai_A65",
+          "name": "新長田",
+          "km": 37.2
+        },
+        {
+          "id": "JRW_Kansai_A66",
+          "name": "鷹取",
+          "km": 38.2
+        },
+        {
+          "id": "JRW_Kansai_A67",
+          "name": "須磨海浜公園",
+          "km": 39.1
+        },
+        {
+          "id": "JRW_Kansai_A68",
+          "name": "須磨",
+          "km": 40.4
+        },
+        {
+          "id": "JRW_Kansai_A69",
+          "name": "塩屋",
+          "km": 43.3
+        },
+        {
+          "id": "JRW_Kansai_A70",
+          "name": "垂水",
+          "km": 46.2
+        },
+        {
+          "id": "JRW_Kansai_A71",
+          "name": "舞子",
+          "km": 48.2
+        },
+        {
+          "id": "JRW_Kansai_A72",
+          "name": "朝霧",
+          "km": 50.1
+        },
+        {
+          "id": "JRW_Kansai_A73",
+          "name": "明石",
+          "km": 52.5
+        },
+        {
+          "id": "JRW_Kansai_A74",
+          "name": "西明石",
+          "km": 55.9
+        },
+        {
+          "id": "JRW_Kansai_A75",
+          "name": "大久保",
+          "km": 58.7
+        },
+        {
+          "id": "JRW_Kansai_A76",
+          "name": "魚住",
+          "km": 62.2
+        },
+        {
+          "id": "JRW_Kansai_A77",
+          "name": "土山",
+          "km": 65.3
+        },
+        {
+          "id": "JRW_Kansai_A78",
+          "name": "東加古川",
+          "km": 68.6
+        },
+        {
+          "id": "JRW_Kansai_A79",
+          "name": "加古川",
+          "km": 72.2
+        },
+        {
+          "id": "JRW_Kansai_A80",
+          "name": "宝殿",
+          "km": 75.5
+        },
+        {
+          "id": "JRW_Kansai_A81",
+          "name": "曽根",
+          "km": 79.5
+        },
+        {
+          "id": "JRW_Kansai_A82",
+          "name": "ひめじ別所",
+          "km": 81.5
+        },
+        {
+          "id": "JRW_Kansai_A83",
+          "name": "御着",
+          "km": 83.6
+        },
+        {
+          "id": "JRW_Kansai_A84",
+          "name": "東姫路",
+          "km": 86.0
+        },
+        {
+          "id": "JRW_Kansai_A85",
+          "name": "姫路",
+          "km": 87.9
+        }
+      ]
+    },
+    {
+      "id": "osaka_loop_line",
+      "name": "大阪環状線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_O01",
+          "name": "天王寺",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_O02",
+          "name": "寺田町",
+          "km": 1.0
+        },
+        {
+          "id": "JRW_Kansai_O03",
+          "name": "桃谷",
+          "km": 2.2
+        },
+        {
+          "id": "JRW_Kansai_O04",
+          "name": "鶴橋",
+          "km": 3.0
+        },
+        {
+          "id": "JRW_Kansai_O05",
+          "name": "玉造",
+          "km": 3.9
+        },
+        {
+          "id": "JRW_Kansai_O06",
+          "name": "森ノ宮",
+          "km": 4.8
+        },
+        {
+          "id": "JRW_Kansai_O07",
+          "name": "大阪城公園",
+          "km": 5.7
+        },
+        {
+          "id": "JRW_Kansai_O08",
+          "name": "京橋",
+          "km": 6.5
+        },
+        {
+          "id": "JRW_Kansai_O09",
+          "name": "桜ノ宮",
+          "km": 8.3
+        },
+        {
+          "id": "JRW_Kansai_O10",
+          "name": "天満",
+          "km": 9.1
+        },
+        {
+          "id": "JRW_Kansai_A47",
+          "name": "大阪",
+          "km": 10.7
+        },
+        {
+          "id": "JRW_Kansai_O11",
+          "name": "福島",
+          "km": 11.7
+        },
+        {
+          "id": "JRW_Kansai_O12",
+          "name": "野田",
+          "km": 13.1
+        },
+        {
+          "id": "JRW_Kansai_O13",
+          "name": "西九条",
+          "km": 14.3
+        },
+        {
+          "id": "JRW_Kansai_O14",
+          "name": "弁天町",
+          "km": 15.9
+        },
+        {
+          "id": "JRW_Kansai_O15",
+          "name": "大正",
+          "km": 17.7
+        },
+        {
+          "id": "JRW_Kansai_O16",
+          "name": "芦原橋",
+          "km": 18.9
+        },
+        {
+          "id": "JRW_Kansai_O17",
+          "name": "今宮",
+          "km": 19.5
+        }
+      ]
+    },
+    {
+      "id": "osaka_higashi_line",
+      "name": "おおさか東線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A46",
+          "name": "新大阪",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_H01",
+          "name": "南吹田",
+          "km": 2.0
+        },
+        {
+          "id": "JRW_Kansai_H02",
+          "name": "JR淡路",
+          "km": 3.3
+        },
+        {
+          "id": "JRW_Kansai_H03",
+          "name": "城北公園通",
+          "km": 5.4
+        },
+        {
+          "id": "JRW_Kansai_H04",
+          "name": "JR野江",
+          "km": 7.6
+        },
+        {
+          "id": "JRW_Kansai_H05",
+          "name": "鴫野",
+          "km": 9.4
+        },
+        {
+          "id": "JRW_Kansai_H06",
+          "name": "放出",
+          "km": 11.02
+        },
+        {
+          "id": "JRW_Kansai_H07",
+          "name": "高井田中央",
+          "km": 12.7
+        },
+        {
+          "id": "JRW_Kansai_H08",
+          "name": "JR河内永和",
+          "km": 14.3
+        },
+        {
+          "id": "JRW_Kansai_H09",
+          "name": "JR俊徳道",
+          "km": 14.9
+        },
+        {
+          "id": "JRW_Kansai_H10",
+          "name": "JR長瀬",
+          "km": 15.9
+        },
+        {
+          "id": "JRW_Kansai_H11",
+          "name": "衣摺加美北",
+          "km": 17.2
+        },
+        {
+          "id": "JRW_Kansai_H12",
+          "name": "新加美",
+          "km": 18.6
+        },
+        {
+          "id": "JRW_Kansai_H13",
+          "name": "久宝寺",
+          "km": 20.2
+        }
+      ]
+    },
+    {
+      "id": "kansai_main_line",
+      "name": "関西本線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_V01",
+          "name": "亀山",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_V02",
+          "name": "関",
+          "km": 5.7
+        },
+        {
+          "id": "JRW_Kansai_V03",
+          "name": "加太",
+          "km": 11.1
+        },
+        {
+          "id": "JRW_Kansai_V04",
+          "name": "柘植",
+          "km": 20.0
+        },
+        {
+          "id": "JRW_Kansai_V05",
+          "name": "新堂",
+          "km": 26.2
+        },
+        {
+          "id": "JRW_Kansai_V06",
+          "name": "佐那具",
+          "km": 30.6
+        },
+        {
+          "id": "JRW_Kansai_V07",
+          "name": "伊賀上野",
+          "km": 34.6
+        },
+        {
+          "id": "JRW_Kansai_V08",
+          "name": "島ケ原",
+          "km": 41.9
+        },
+        {
+          "id": "JRW_Kansai_V09",
+          "name": "月ケ瀬口",
+          "km": 44.9
+        },
+        {
+          "id": "JRW_Kansai_V10",
+          "name": "大河原",
+          "km": 48.9
+        },
+        {
+          "id": "JRW_Kansai_V11",
+          "name": "笠置",
+          "km": 54.3
+        },
+        {
+          "id": "JRW_Kansai_V12",
+          "name": "加茂",
+          "km": 61.0
+        }
+      ]
+    },
+    {
+      "id": "kisei_main_line",
+      "name": "紀勢本線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_W01",
+          "name": "新宮",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_W02",
+          "name": "三輪崎",
+          "km": 4.7
+        },
+        {
+          "id": "JRW_Kansai_W03",
+          "name": "紀伊佐野",
+          "km": 6.4
+        },
+        {
+          "id": "JRW_Kansai_W04",
+          "name": "宇久井",
+          "km": 8.5
+        },
+        {
+          "id": "JRW_Kansai_W05",
+          "name": "那智",
+          "km": 12.8
+        },
+        {
+          "id": "JRW_Kansai_W06",
+          "name": "紀伊天満",
+          "km": 13.7
+        },
+        {
+          "id": "JRW_Kansai_W07",
+          "name": "紀伊勝浦",
+          "km": 14.9
+        },
+        {
+          "id": "JRW_Kansai_W08",
+          "name": "湯川",
+          "km": 17.6
+        },
+        {
+          "id": "JRW_Kansai_W09",
+          "name": "太地",
+          "km": 19.7
+        },
+        {
+          "id": "JRW_Kansai_W10",
+          "name": "下里",
+          "km": 20.9
+        },
+        {
+          "id": "JRW_Kansai_W11",
+          "name": "紀伊浦神",
+          "km": 24.8
+        },
+        {
+          "id": "JRW_Kansai_W12",
+          "name": "紀伊田原",
+          "km": 28.8
+        },
+        {
+          "id": "JRW_Kansai_W13",
+          "name": "古座",
+          "km": 34.8
+        },
+        {
+          "id": "JRW_Kansai_W14",
+          "name": "紀伊姫",
+          "km": 38.7
+        },
+        {
+          "id": "JRW_Kansai_W15",
+          "name": "串本",
+          "km": 41.6
+        },
+        {
+          "id": "JRW_Kansai_W16",
+          "name": "紀伊有田",
+          "km": 47.4
+        },
+        {
+          "id": "JRW_Kansai_W17",
+          "name": "田並",
+          "km": 49.2
+        },
+        {
+          "id": "JRW_Kansai_W18",
+          "name": "田子",
+          "km": 53.5
+        },
+        {
+          "id": "JRW_Kansai_W19",
+          "name": "和深",
+          "km": 56.2
+        },
+        {
+          "id": "JRW_Kansai_W20",
+          "name": "江住",
+          "km": 61.8
+        },
+        {
+          "id": "JRW_Kansai_W21",
+          "name": "見老津",
+          "km": 64.8
+        },
+        {
+          "id": "JRW_Kansai_W22",
+          "name": "周参見",
+          "km": 73.8
+        },
+        {
+          "id": "JRW_Kansai_W23",
+          "name": "紀伊日置",
+          "km": 81.0
+        },
+        {
+          "id": "JRW_Kansai_W24",
+          "name": "椿",
+          "km": 87.1
+        },
+        {
+          "id": "JRW_Kansai_W25",
+          "name": "紀伊富田",
+          "km": 92.3
+        },
+        {
+          "id": "JRW_Kansai_W26",
+          "name": "白浜",
+          "km": 95.2
+        },
+        {
+          "id": "JRW_Kansai_W27",
+          "name": "朝来",
+          "km": 99.5
+        },
+        {
+          "id": "JRW_Kansai_W28",
+          "name": "紀伊新庄",
+          "km": 103.0
+        },
+        {
+          "id": "JRW_Kansai_W29",
+          "name": "紀伊田辺",
+          "km": 105.2
+        },
+        {
+          "id": "JRW_Kansai_W30",
+          "name": "芳養",
+          "km": 109.3
+        },
+        {
+          "id": "JRW_Kansai_W31",
+          "name": "南部",
+          "km": 114.3
+        },
+        {
+          "id": "JRW_Kansai_W32",
+          "name": "岩代",
+          "km": 119.4
+        },
+        {
+          "id": "JRW_Kansai_W33",
+          "name": "切目",
+          "km": 125.3
+        },
+        {
+          "id": "JRW_Kansai_W34",
+          "name": "印南",
+          "km": 129.1
+        },
+        {
+          "id": "JRW_Kansai_W35",
+          "name": "稲原",
+          "km": 133.4
+        },
+        {
+          "id": "JRW_Kansai_W36",
+          "name": "和佐",
+          "km": 140.2
+        },
+        {
+          "id": "JRW_Kansai_W37",
+          "name": "道成寺",
+          "km": 144.5
+        },
+        {
+          "id": "JRW_Kansai_W38",
+          "name": "御坊",
+          "km": 146.1
+        },
+        {
+          "id": "JRW_Kansai_W39",
+          "name": "紀伊内原",
+          "km": 149.0
+        },
+        {
+          "id": "JRW_Kansai_W40",
+          "name": "紀伊由良",
+          "km": 154.3
+        },
+        {
+          "id": "JRW_Kansai_W41",
+          "name": "広川ビーチ",
+          "km": 161.1
+        },
+        {
+          "id": "JRW_Kansai_W42",
+          "name": "湯浅",
+          "km": 163.7
+        },
+        {
+          "id": "JRW_Kansai_W43",
+          "name": "藤並",
+          "km": 167.1
+        },
+        {
+          "id": "JRW_Kansai_W44",
+          "name": "紀伊宮原",
+          "km": 171.0
+        },
+        {
+          "id": "JRW_Kansai_W45",
+          "name": "箕島",
+          "km": 175.4
+        },
+        {
+          "id": "JRW_Kansai_W46",
+          "name": "初島",
+          "km": 177.9
+        },
+        {
+          "id": "JRW_Kansai_W47",
+          "name": "下津",
+          "km": 180.9
+        },
+        {
+          "id": "JRW_Kansai_W48",
+          "name": "加茂郷",
+          "km": 183.6
+        },
+        {
+          "id": "JRW_Kansai_W49",
+          "name": "冷水浦",
+          "km": 187.5
+        },
+        {
+          "id": "JRW_Kansai_W50",
+          "name": "海南",
+          "km": 190.3
+        },
+        {
+          "id": "JRW_Kansai_W51",
+          "name": "黒江",
+          "km": 192.1
+        },
+        {
+          "id": "JRW_Kansai_W52",
+          "name": "紀三井寺",
+          "km": 195.7
+        },
+        {
+          "id": "JRW_Kansai_W53",
+          "name": "宮前",
+          "km": 198.6
+        },
+        {
+          "id": "JRW_Kansai_W54",
+          "name": "和歌山",
+          "km": 200.7
+        },
+        {
+          "id": "JRW_Kansai_W55",
+          "name": "紀和",
+          "km": 202.5
+        },
+        {
+          "id": "JRW_Kansai_W56",
+          "name": "和歌山市",
+          "km": 204.0
+        }
+      ]
+    },
+    {
+      "id": "sanyo_main_line",
+      "name": "山陽本線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A85",
+          "name": "姫路",
+          "km": 54.8
+        }
+      ]
+    },
+    {
+      "id": "nara_line",
+      "name": "奈良線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A13",
+          "name": "京都",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_D01",
+          "name": "東福寺",
+          "km": 1.1
+        },
+        {
+          "id": "JRW_Kansai_D02",
+          "name": "稲荷",
+          "km": 2.7
+        },
+        {
+          "id": "JRW_Kansai_D03",
+          "name": "JR藤森",
+          "km": 5.0
+        },
+        {
+          "id": "JRW_Kansai_D04",
+          "name": "桃山",
+          "km": 7.2
+        },
+        {
+          "id": "JRW_Kansai_D05",
+          "name": "六地蔵",
+          "km": 9.5
+        },
+        {
+          "id": "JRW_Kansai_D06",
+          "name": "木幡",
+          "km": 10.6
+        },
+        {
+          "id": "JRW_Kansai_D07",
+          "name": "黄檗",
+          "km": 12.0
+        },
+        {
+          "id": "JRW_Kansai_D08",
+          "name": "宇治",
+          "km": 14.9
+        },
+        {
+          "id": "JRW_Kansai_D09",
+          "name": "JR小倉",
+          "km": 16.3
+        },
+        {
+          "id": "JRW_Kansai_D10",
+          "name": "新田",
+          "km": 18.1
+        },
+        {
+          "id": "JRW_Kansai_D11",
+          "name": "城陽",
+          "km": 20.2
+        },
+        {
+          "id": "JRW_Kansai_D12",
+          "name": "長池",
+          "km": 22.0
+        },
+        {
+          "id": "JRW_Kansai_D13",
+          "name": "山城青谷",
+          "km": 24.0
+        },
+        {
+          "id": "JRW_Kansai_D14",
+          "name": "山城多賀",
+          "km": 25.3
+        },
+        {
+          "id": "JRW_Kansai_D15",
+          "name": "玉水",
+          "km": 27.3
+        },
+        {
+          "id": "JRW_Kansai_D16",
+          "name": "棚倉",
+          "km": 30.3
+        },
+        {
+          "id": "JRW_Kansai_D17",
+          "name": "上狛",
+          "km": 33.1
+        },
+        {
+          "id": "JRW_Kansai_D18",
+          "name": "木津",
+          "km": 34.7
+        },
+        {
+          "id": "JRW_Kansai_D19",
+          "name": "平城山",
+          "km": 37.9
+        },
+        {
+          "id": "JRW_Kansai_D20",
+          "name": "奈良",
+          "km": 41.7
+        }
+      ]
+    },
+    {
+      "id": "hanwa_line",
+      "name": "阪和線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_O01",
+          "name": "天王寺",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_R01",
+          "name": "美章園",
+          "km": 1.5
+        },
+        {
+          "id": "JRW_Kansai_R02",
+          "name": "南田辺",
+          "km": 3.0
+        },
+        {
+          "id": "JRW_Kansai_R03",
+          "name": "鶴ケ丘",
+          "km": 3.9
+        },
+        {
+          "id": "JRW_Kansai_R04",
+          "name": "長居",
+          "km": 4.7
+        },
+        {
+          "id": "JRW_Kansai_R05",
+          "name": "我孫子町",
+          "km": 5.9
+        },
+        {
+          "id": "JRW_Kansai_R06",
+          "name": "杉本町",
+          "km": 6.9
+        },
+        {
+          "id": "JRW_Kansai_R07",
+          "name": "浅香",
+          "km": 7.9
+        },
+        {
+          "id": "JRW_Kansai_R08",
+          "name": "堺市",
+          "km": 8.8
+        },
+        {
+          "id": "JRW_Kansai_R09",
+          "name": "三国ケ丘",
+          "km": 10.2
+        },
+        {
+          "id": "JRW_Kansai_R10",
+          "name": "百舌鳥",
+          "km": 11.1
+        },
+        {
+          "id": "JRW_Kansai_R11",
+          "name": "上野芝",
+          "km": 12.4
+        },
+        {
+          "id": "JRW_Kansai_R12",
+          "name": "津久野",
+          "km": 13.7
+        },
+        {
+          "id": "JRW_Kansai_R13",
+          "name": "鳳",
+          "km": 15.1
+        },
+        {
+          "id": "JRW_Kansai_R14",
+          "name": "富木",
+          "km": 16.3
+        },
+        {
+          "id": "JRW_Kansai_R15",
+          "name": "北信太",
+          "km": 18.0
+        },
+        {
+          "id": "JRW_Kansai_R16",
+          "name": "信太山",
+          "km": 19.4
+        },
+        {
+          "id": "JRW_Kansai_R17",
+          "name": "和泉府中",
+          "km": 20.9
+        },
+        {
+          "id": "JRW_Kansai_R18",
+          "name": "久米田",
+          "km": 23.9
+        },
+        {
+          "id": "JRW_Kansai_R19",
+          "name": "下松",
+          "km": 25.1
+        },
+        {
+          "id": "JRW_Kansai_R20",
+          "name": "東岸和田",
+          "km": 26.5
+        },
+        {
+          "id": "JRW_Kansai_R21",
+          "name": "東貝塚",
+          "km": 28.1
+        },
+        {
+          "id": "JRW_Kansai_R22",
+          "name": "和泉橋本",
+          "km": 30.0
+        },
+        {
+          "id": "JRW_Kansai_R23",
+          "name": "東佐野",
+          "km": 31.5
+        },
+        {
+          "id": "JRW_Kansai_R24",
+          "name": "熊取",
+          "km": 33.0
+        },
+        {
+          "id": "JRW_Kansai_R25",
+          "name": "日根野",
+          "km": 34.9
+        },
+        {
+          "id": "JRW_Kansai_R26",
+          "name": "長滝",
+          "km": 36.3
+        },
+        {
+          "id": "JRW_Kansai_R27",
+          "name": "新家",
+          "km": 38.6
+        },
+        {
+          "id": "JRW_Kansai_R28",
+          "name": "和泉砂川",
+          "km": 40.5
+        },
+        {
+          "id": "JRW_Kansai_R29",
+          "name": "和泉鳥取",
+          "km": 43.3
+        },
+        {
+          "id": "JRW_Kansai_R30",
+          "name": "山中渓",
+          "km": 45.2
+        },
+        {
+          "id": "JRW_Kansai_R31",
+          "name": "紀伊",
+          "km": 53.3
+        },
+        {
+          "id": "JRW_Kansai_R32",
+          "name": "六十谷",
+          "km": 57.2
+        },
+        {
+          "id": "JRW_Kansai_R33",
+          "name": "紀伊中ノ島",
+          "km": 60.2
+        },
+        {
+          "id": "JRW_Kansai_W54",
+          "name": "和歌山",
+          "km": 61.3
+        }
+      ]
+    },
+    {
+      "id": "wakayama_line",
+      "name": "和歌山線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_T01",
+          "name": "王寺",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_T02",
+          "name": "畠田",
+          "km": 2.6
+        },
+        {
+          "id": "JRW_Kansai_T03",
+          "name": "志都美",
+          "km": 4.5
+        },
+        {
+          "id": "JRW_Kansai_T04",
+          "name": "香芝",
+          "km": 6.6
+        },
+        {
+          "id": "JRW_Kansai_T05",
+          "name": "JR五位堂",
+          "km": 8.7
+        },
+        {
+          "id": "JRW_Kansai_T06",
+          "name": "高田",
+          "km": 11.5
+        },
+        {
+          "id": "JRW_Kansai_T07",
+          "name": "大和新庄",
+          "km": 14.9
+        },
+        {
+          "id": "JRW_Kansai_T08",
+          "name": "御所",
+          "km": 17.6
+        },
+        {
+          "id": "JRW_Kansai_T09",
+          "name": "玉手",
+          "km": 19.4
+        },
+        {
+          "id": "JRW_Kansai_T10",
+          "name": "掖上",
+          "km": 20.9
+        },
+        {
+          "id": "JRW_Kansai_T11",
+          "name": "吉野口",
+          "km": 24.9
+        },
+        {
+          "id": "JRW_Kansai_T12",
+          "name": "北宇智",
+          "km": 31.5
+        },
+        {
+          "id": "JRW_Kansai_T13",
+          "name": "五条",
+          "km": 35.4
+        },
+        {
+          "id": "JRW_Kansai_T14",
+          "name": "大和二見",
+          "km": 37.1
+        },
+        {
+          "id": "JRW_Kansai_T15",
+          "name": "隅田",
+          "km": 41.1
+        },
+        {
+          "id": "JRW_Kansai_T16",
+          "name": "下兵庫",
+          "km": 43.2
+        },
+        {
+          "id": "JRW_Kansai_T17",
+          "name": "橋本",
+          "km": 45.1
+        },
+        {
+          "id": "JRW_Kansai_T18",
+          "name": "紀伊山田",
+          "km": 48.0
+        },
+        {
+          "id": "JRW_Kansai_T19",
+          "name": "高野口",
+          "km": 50.6
+        },
+        {
+          "id": "JRW_Kansai_T20",
+          "name": "中飯降",
+          "km": 53.0
+        },
+        {
+          "id": "JRW_Kansai_T21",
+          "name": "妙寺",
+          "km": 54.6
+        },
+        {
+          "id": "JRW_Kansai_T22",
+          "name": "大谷",
+          "km": 56.7
+        },
+        {
+          "id": "JRW_Kansai_T23",
+          "name": "笠田",
+          "km": 58.2
+        },
+        {
+          "id": "JRW_Kansai_T24",
+          "name": "西笠田",
+          "km": 61.3
+        },
+        {
+          "id": "JRW_Kansai_T25",
+          "name": "名手",
+          "km": 63.2
+        },
+        {
+          "id": "JRW_Kansai_T26",
+          "name": "粉河",
+          "km": 66.0
+        },
+        {
+          "id": "JRW_Kansai_T27",
+          "name": "紀伊長田",
+          "km": 67.2
+        },
+        {
+          "id": "JRW_Kansai_T28",
+          "name": "打田",
+          "km": 69.8
+        },
+        {
+          "id": "JRW_Kansai_T29",
+          "name": "下井阪",
+          "km": 72.0
+        },
+        {
+          "id": "JRW_Kansai_T30",
+          "name": "岩出",
+          "km": 74.2
+        },
+        {
+          "id": "JRW_Kansai_T31",
+          "name": "船戸",
+          "km": 75.3
+        },
+        {
+          "id": "JRW_Kansai_T32",
+          "name": "紀伊小倉",
+          "km": 77.6
+        },
+        {
+          "id": "JRW_Kansai_T33",
+          "name": "布施屋",
+          "km": 79.9
+        },
+        {
+          "id": "JRW_Kansai_T34",
+          "name": "千旦",
+          "km": 81.4
+        },
+        {
+          "id": "JRW_Kansai_T35",
+          "name": "田井ノ瀬",
+          "km": 82.9
+        },
+        {
+          "id": "JRW_Kansai_W54",
+          "name": "和歌山",
+          "km": 87.5
+        }
+      ]
+    },
+    {
+      "id": "ako_line",
+      "name": "赤穂線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A86",
+          "name": "西相生",
+          "km": 3.0
+        },
+        {
+          "id": "JRW_Kansai_A87",
+          "name": "坂越",
+          "km": 7.8
+        },
+        {
+          "id": "JRW_Kansai_A88",
+          "name": "播州赤穂",
+          "km": 10.5
+        },
+        {
+          "id": "JRW_Kansai_A89",
+          "name": "西浜",
+          "km": 12.9
+        },
+        {
+          "id": "JRW_Kansai_A90",
+          "name": "天和",
+          "km": 14.5
+        },
+        {
+          "id": "JRW_Kansai_A91",
+          "name": "備前福河",
+          "km": 16.4
+        }
+      ]
+    },
+    {
+      "id": "obama_line",
+      "name": "小浜線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A01",
+          "name": "敦賀",
+          "km": 0.0
+        }
+      ]
+    },
+    {
+      "id": "kakogawa_line",
+      "name": "加古川線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A79",
+          "name": "加古川",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_I01",
+          "name": "日岡",
+          "km": 2.3
+        },
+        {
+          "id": "JRW_Kansai_I02",
+          "name": "神野",
+          "km": 4.8
+        },
+        {
+          "id": "JRW_Kansai_I03",
+          "name": "厄神",
+          "km": 7.4
+        },
+        {
+          "id": "JRW_Kansai_I04",
+          "name": "市場",
+          "km": 11.5
+        },
+        {
+          "id": "JRW_Kansai_I05",
+          "name": "小野町",
+          "km": 13.7
+        },
+        {
+          "id": "JRW_Kansai_I06",
+          "name": "粟生",
+          "km": 16.6
+        },
+        {
+          "id": "JRW_Kansai_I07",
+          "name": "河合西",
+          "km": 19.2
+        },
+        {
+          "id": "JRW_Kansai_I08",
+          "name": "青野ケ原",
+          "km": 21.3
+        },
+        {
+          "id": "JRW_Kansai_I09",
+          "name": "社町",
+          "km": 24.2
+        },
+        {
+          "id": "JRW_Kansai_I10",
+          "name": "滝野",
+          "km": 27.3
+        },
+        {
+          "id": "JRW_Kansai_I11",
+          "name": "滝",
+          "km": 28.4
+        },
+        {
+          "id": "JRW_Kansai_I12",
+          "name": "西脇市",
+          "km": 31.2
+        },
+        {
+          "id": "JRW_Kansai_I13",
+          "name": "新西脇",
+          "km": 32.3
+        },
+        {
+          "id": "JRW_Kansai_I14",
+          "name": "比延",
+          "km": 34.6
+        },
+        {
+          "id": "JRW_Kansai_I15",
+          "name": "日本へそ公園",
+          "km": 36.1
+        },
+        {
+          "id": "JRW_Kansai_I16",
+          "name": "黒田庄",
+          "km": 38.5
+        },
+        {
+          "id": "JRW_Kansai_I17",
+          "name": "本黒田",
+          "km": 42.0
+        },
+        {
+          "id": "JRW_Kansai_I18",
+          "name": "船町口",
+          "km": 43.8
+        },
+        {
+          "id": "JRW_Kansai_I19",
+          "name": "久下村",
+          "km": 46.3
+        },
+        {
+          "id": "JRW_Kansai_I20",
+          "name": "谷川",
+          "km": 48.5
+        }
+      ]
+    },
+    {
+      "id": "katamachi_line",
+      "name": "片町線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_D18",
+          "name": "木津",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_H14",
+          "name": "西木津",
+          "km": 2.2
+        },
+        {
+          "id": "JRW_Kansai_H15",
+          "name": "祝園",
+          "km": 5.1
+        },
+        {
+          "id": "JRW_Kansai_H16",
+          "name": "下狛",
+          "km": 7.4
+        },
+        {
+          "id": "JRW_Kansai_H17",
+          "name": "JR三山木",
+          "km": 9.4
+        },
+        {
+          "id": "JRW_Kansai_H18",
+          "name": "同志社前",
+          "km": 10.5
+        },
+        {
+          "id": "JRW_Kansai_H19",
+          "name": "京田辺",
+          "km": 12.4
+        },
+        {
+          "id": "JRW_Kansai_H20",
+          "name": "大住",
+          "km": 14.5
+        },
+        {
+          "id": "JRW_Kansai_H21",
+          "name": "松井山手",
+          "km": 17.0
+        },
+        {
+          "id": "JRW_Kansai_H22",
+          "name": "長尾",
+          "km": 18.6
+        },
+        {
+          "id": "JRW_Kansai_H23",
+          "name": "藤阪",
+          "km": 20.2
+        },
+        {
+          "id": "JRW_Kansai_H24",
+          "name": "津田",
+          "km": 21.8
+        },
+        {
+          "id": "JRW_Kansai_H25",
+          "name": "河内磐船",
+          "km": 25.0
+        },
+        {
+          "id": "JRW_Kansai_H26",
+          "name": "星田",
+          "km": 27.1
+        },
+        {
+          "id": "JRW_Kansai_H27",
+          "name": "寝屋川公園",
+          "km": 28.8
+        },
+        {
+          "id": "JRW_Kansai_H28",
+          "name": "忍ケ丘",
+          "km": 30.1
+        },
+        {
+          "id": "JRW_Kansai_H29",
+          "name": "四条畷",
+          "km": 32.0
+        },
+        {
+          "id": "JRW_Kansai_H30",
+          "name": "野崎",
+          "km": 33.3
+        },
+        {
+          "id": "JRW_Kansai_H31",
+          "name": "住道",
+          "km": 35.5
+        },
+        {
+          "id": "JRW_Kansai_H32",
+          "name": "鴻池新田",
+          "km": 37.9
+        },
+        {
+          "id": "JRW_Kansai_H33",
+          "name": "徳庵",
+          "km": 39.8
+        },
+        {
+          "id": "JRW_Kansai_H06",
+          "name": "放出",
+          "km": 41.6
+        },
+        {
+          "id": "JRW_Kansai_H05",
+          "name": "鴫野",
+          "km": 43.2
+        },
+        {
+          "id": "JRW_Kansai_O08",
+          "name": "京橋",
+          "km": 44.8
+        }
+      ]
+    },
+    {
+      "id": "kansai_airport_line",
+      "name": "関西空港線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_R25",
+          "name": "日根野",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_S01",
+          "name": "りんくうタウン",
+          "km": 4.2
+        },
+        {
+          "id": "JRW_Kansai_S02",
+          "name": "関西空港",
+          "km": 11.1
+        }
+      ]
+    },
+    {
+      "id": "kishin_line",
+      "name": "姫新線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A85",
+          "name": "姫路",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_K01",
+          "name": "播磨高岡",
+          "km": 3.8
+        },
+        {
+          "id": "JRW_Kansai_K02",
+          "name": "余部",
+          "km": 6.1
+        },
+        {
+          "id": "JRW_Kansai_K03",
+          "name": "太市",
+          "km": 9.9
+        },
+        {
+          "id": "JRW_Kansai_K04",
+          "name": "本竜野",
+          "km": 14.9
+        },
+        {
+          "id": "JRW_Kansai_K05",
+          "name": "東觜崎",
+          "km": 17.8
+        },
+        {
+          "id": "JRW_Kansai_K06",
+          "name": "播磨新宮",
+          "km": 22.1
+        },
+        {
+          "id": "JRW_Kansai_K07",
+          "name": "千本",
+          "km": 27.6
+        },
+        {
+          "id": "JRW_Kansai_K08",
+          "name": "西栗栖",
+          "km": 31.2
+        },
+        {
+          "id": "JRW_Kansai_K09",
+          "name": "三日月",
+          "km": 36.6
+        },
+        {
+          "id": "JRW_Kansai_K10",
+          "name": "播磨徳久",
+          "km": 42.5
+        },
+        {
+          "id": "JRW_Kansai_K11",
+          "name": "佐用",
+          "km": 45.9
+        },
+        {
+          "id": "JRW_Kansai_K12",
+          "name": "上月",
+          "km": 50.9
+        },
+        {
+          "id": "JRW_Kansai_K13",
+          "name": "美作土居",
+          "km": 57.6
+        },
+        {
+          "id": "JRW_Kansai_K14",
+          "name": "美作江見",
+          "km": 63.0
+        },
+        {
+          "id": "JRW_Kansai_K15",
+          "name": "楢原",
+          "km": 66.4
+        },
+        {
+          "id": "JRW_Kansai_K16",
+          "name": "林野",
+          "km": 70.4
+        },
+        {
+          "id": "JRW_Kansai_K17",
+          "name": "勝間田",
+          "km": 74.3
+        },
+        {
+          "id": "JRW_Kansai_K18",
+          "name": "西勝間田",
+          "km": 77.3
+        },
+        {
+          "id": "JRW_Kansai_K19",
+          "name": "美作大崎",
+          "km": 79.3
+        },
+        {
+          "id": "JRW_Kansai_K20",
+          "name": "院庄",
+          "km": 90.8
+        },
+        {
+          "id": "JRW_Kansai_K21",
+          "name": "美作千代",
+          "km": 95.6
+        },
+        {
+          "id": "JRW_Kansai_K22",
+          "name": "坪井",
+          "km": 98.3
+        },
+        {
+          "id": "JRW_Kansai_K23",
+          "name": "美作追分",
+          "km": 103.9
+        },
+        {
+          "id": "JRW_Kansai_K24",
+          "name": "美作落合",
+          "km": 110.9
+        },
+        {
+          "id": "JRW_Kansai_K25",
+          "name": "古見",
+          "km": 114.6
+        },
+        {
+          "id": "JRW_Kansai_K26",
+          "name": "久世",
+          "km": 118.9
+        },
+        {
+          "id": "JRW_Kansai_K27",
+          "name": "中国勝山",
+          "km": 123.8
+        },
+        {
+          "id": "JRW_Kansai_K28",
+          "name": "月田",
+          "km": 128.6
+        },
+        {
+          "id": "JRW_Kansai_K29",
+          "name": "富原",
+          "km": 134.7
+        },
+        {
+          "id": "JRW_Kansai_K30",
+          "name": "刑部",
+          "km": 141.2
+        },
+        {
+          "id": "JRW_Kansai_K31",
+          "name": "丹治部",
+          "km": 145.0
+        },
+        {
+          "id": "JRW_Kansai_K32",
+          "name": "岩山",
+          "km": 149.8
+        },
+        {
+          "id": "JRW_Kansai_K33",
+          "name": "新見",
+          "km": 158.1
+        }
+      ]
+    },
+    {
+      "id": "kusatsu_line",
+      "name": "草津線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_V04",
+          "name": "柘植",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_C01",
+          "name": "油日",
+          "km": 5.3
+        },
+        {
+          "id": "JRW_Kansai_C02",
+          "name": "甲賀",
+          "km": 7.4
+        },
+        {
+          "id": "JRW_Kansai_C03",
+          "name": "寺庄",
+          "km": 10.5
+        },
+        {
+          "id": "JRW_Kansai_C04",
+          "name": "甲南",
+          "km": 12.5
+        },
+        {
+          "id": "JRW_Kansai_C05",
+          "name": "貴生川",
+          "km": 15.3
+        },
+        {
+          "id": "JRW_Kansai_C06",
+          "name": "三雲",
+          "km": 20.5
+        },
+        {
+          "id": "JRW_Kansai_C07",
+          "name": "甲西",
+          "km": 24.3
+        },
+        {
+          "id": "JRW_Kansai_C08",
+          "name": "石部",
+          "km": 27.6
+        },
+        {
+          "id": "JRW_Kansai_C09",
+          "name": "手原",
+          "km": 32.7
+        },
+        {
+          "id": "JRW_Kansai_A20",
+          "name": "草津",
+          "km": 36.7
+        }
+      ]
+    },
+    {
+      "id": "kosei_line",
+      "name": "湖西線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A03",
+          "name": "近江塩津",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_B01",
+          "name": "永原",
+          "km": 5.8
+        },
+        {
+          "id": "JRW_Kansai_B02",
+          "name": "マキノ",
+          "km": 12.9
+        },
+        {
+          "id": "JRW_Kansai_B03",
+          "name": "近江中庄",
+          "km": 16.1
+        },
+        {
+          "id": "JRW_Kansai_B04",
+          "name": "近江今津",
+          "km": 20.9
+        },
+        {
+          "id": "JRW_Kansai_B05",
+          "name": "新旭",
+          "km": 25.8
+        },
+        {
+          "id": "JRW_Kansai_B06",
+          "name": "安曇川",
+          "km": 29.1
+        },
+        {
+          "id": "JRW_Kansai_B07",
+          "name": "近江高島",
+          "km": 33.2
+        },
+        {
+          "id": "JRW_Kansai_B08",
+          "name": "北小松",
+          "km": 39.6
+        },
+        {
+          "id": "JRW_Kansai_B09",
+          "name": "近江舞子",
+          "km": 41.9
+        },
+        {
+          "id": "JRW_Kansai_B10",
+          "name": "比良",
+          "km": 44.1
+        },
+        {
+          "id": "JRW_Kansai_B11",
+          "name": "志賀",
+          "km": 46.8
+        },
+        {
+          "id": "JRW_Kansai_B12",
+          "name": "蓬莱",
+          "km": 49.2
+        },
+        {
+          "id": "JRW_Kansai_B13",
+          "name": "和邇",
+          "km": 51.6
+        },
+        {
+          "id": "JRW_Kansai_B14",
+          "name": "小野",
+          "km": 54.3
+        },
+        {
+          "id": "JRW_Kansai_B15",
+          "name": "堅田",
+          "km": 56.4
+        },
+        {
+          "id": "JRW_Kansai_B16",
+          "name": "おごと温泉",
+          "km": 59.6
+        },
+        {
+          "id": "JRW_Kansai_B17",
+          "name": "比叡山坂本",
+          "km": 63.0
+        },
+        {
+          "id": "JRW_Kansai_B18",
+          "name": "唐崎",
+          "km": 65.6
+        },
+        {
+          "id": "JRW_Kansai_B19",
+          "name": "大津京",
+          "km": 68.7
+        },
+        {
+          "id": "JRW_Kansai_A14",
+          "name": "山科",
+          "km": 74.1
+        }
+      ]
+    },
+    {
+      "id": "sagano_line",
+      "name": "嵯峨野線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A13",
+          "name": "京都",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_E01",
+          "name": "梅小路京都西",
+          "km": 1.7
+        },
+        {
+          "id": "JRW_Kansai_E02",
+          "name": "丹波口",
+          "km": 2.5
+        },
+        {
+          "id": "JRW_Kansai_E03",
+          "name": "二条",
+          "km": 4.2
+        },
+        {
+          "id": "JRW_Kansai_E04",
+          "name": "円町",
+          "km": 5.8
+        },
+        {
+          "id": "JRW_Kansai_E05",
+          "name": "花園",
+          "km": 6.9
+        },
+        {
+          "id": "JRW_Kansai_E06",
+          "name": "太秦",
+          "km": 8.6
+        },
+        {
+          "id": "JRW_Kansai_E07",
+          "name": "嵯峨嵐山",
+          "km": 10.3
+        },
+        {
+          "id": "JRW_Kansai_E08",
+          "name": "保津峡",
+          "km": 14.3
+        },
+        {
+          "id": "JRW_Kansai_E09",
+          "name": "馬堀",
+          "km": 18.1
+        },
+        {
+          "id": "JRW_Kansai_E10",
+          "name": "亀岡",
+          "km": 20.2
+        },
+        {
+          "id": "JRW_Kansai_E11",
+          "name": "並河",
+          "km": 23.4
+        },
+        {
+          "id": "JRW_Kansai_E12",
+          "name": "千代川",
+          "km": 25.2
+        },
+        {
+          "id": "JRW_Kansai_E13",
+          "name": "八木",
+          "km": 28.2
+        },
+        {
+          "id": "JRW_Kansai_E14",
+          "name": "吉富",
+          "km": 32.3
+        }
+      ]
+    },
+    {
+      "id": "sakurai_line",
+      "name": "桜井線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_D20",
+          "name": "奈良",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_U01",
+          "name": "京終",
+          "km": 1.9
+        },
+        {
+          "id": "JRW_Kansai_U02",
+          "name": "帯解",
+          "km": 4.8
+        },
+        {
+          "id": "JRW_Kansai_U03",
+          "name": "櫟本",
+          "km": 7.3
+        },
+        {
+          "id": "JRW_Kansai_U04",
+          "name": "天理",
+          "km": 9.6
+        },
+        {
+          "id": "JRW_Kansai_U05",
+          "name": "長柄",
+          "km": 12.6
+        },
+        {
+          "id": "JRW_Kansai_U06",
+          "name": "柳本",
+          "km": 14.3
+        },
+        {
+          "id": "JRW_Kansai_U07",
+          "name": "巻向",
+          "km": 15.9
+        },
+        {
+          "id": "JRW_Kansai_U08",
+          "name": "三輪",
+          "km": 18.0
+        },
+        {
+          "id": "JRW_Kansai_U09",
+          "name": "桜井",
+          "km": 19.7
+        },
+        {
+          "id": "JRW_Kansai_U10",
+          "name": "香久山",
+          "km": 21.7
+        },
+        {
+          "id": "JRW_Kansai_U11",
+          "name": "畝傍",
+          "km": 24.7
+        },
+        {
+          "id": "JRW_Kansai_U12",
+          "name": "金橋",
+          "km": 27.3
+        },
+        {
+          "id": "JRW_Kansai_T06",
+          "name": "高田",
+          "km": 29.4
+        }
+      ]
+    },
+    {
+      "id": "sakurajima_line",
+      "name": "桜島線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_O13",
+          "name": "西九条",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_P01",
+          "name": "安治川口",
+          "km": 2.4
+        },
+        {
+          "id": "JRW_Kansai_P02",
+          "name": "ユニバーサルシティ",
+          "km": 3.2
+        },
+        {
+          "id": "JRW_Kansai_P03",
+          "name": "桜島",
+          "km": 4.1
+        }
+      ]
+    },
+    {
+      "id": "jr_touzai_line",
+      "name": "JR東西線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_O08",
+          "name": "京橋",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_H34",
+          "name": "大阪城北詰",
+          "km": 0.9
+        },
+        {
+          "id": "JRW_Kansai_H35",
+          "name": "大阪天満宮",
+          "km": 2.2
+        },
+        {
+          "id": "JRW_Kansai_H36",
+          "name": "北新地",
+          "km": 3.6
+        },
+        {
+          "id": "JRW_Kansai_H37",
+          "name": "新福島",
+          "km": 4.8
+        },
+        {
+          "id": "JRW_Kansai_H38",
+          "name": "海老江",
+          "km": 6.0
+        },
+        {
+          "id": "JRW_Kansai_H39",
+          "name": "御幣島",
+          "km": 8.6
+        },
+        {
+          "id": "JRW_Kansai_H40",
+          "name": "加島",
+          "km": 10.3
+        },
+        {
+          "id": "JRW_Kansai_A49",
+          "name": "尼崎",
+          "km": 12.5
+        }
+      ]
+    },
+    {
+      "id": "hakubi_line",
+      "name": "伯備線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_K33",
+          "name": "新見",
+          "km": 64.4
+        }
+      ]
+    },
+    {
+      "id": "bantan_line",
+      "name": "播但線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A85",
+          "name": "姫路",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_J01",
+          "name": "京口",
+          "km": 1.7
+        },
+        {
+          "id": "JRW_Kansai_J02",
+          "name": "野里",
+          "km": 4.3
+        },
+        {
+          "id": "JRW_Kansai_J03",
+          "name": "砥堀",
+          "km": 6.0
+        },
+        {
+          "id": "JRW_Kansai_J04",
+          "name": "仁豊野",
+          "km": 8.2
+        },
+        {
+          "id": "JRW_Kansai_J05",
+          "name": "香呂",
+          "km": 11.2
+        },
+        {
+          "id": "JRW_Kansai_J06",
+          "name": "溝口",
+          "km": 13.2
+        },
+        {
+          "id": "JRW_Kansai_J07",
+          "name": "福崎",
+          "km": 17.1
+        },
+        {
+          "id": "JRW_Kansai_J08",
+          "name": "甘地",
+          "km": 20.6
+        },
+        {
+          "id": "JRW_Kansai_J09",
+          "name": "鶴居",
+          "km": 24.5
+        },
+        {
+          "id": "JRW_Kansai_J10",
+          "name": "新野",
+          "km": 27.7
+        },
+        {
+          "id": "JRW_Kansai_J11",
+          "name": "寺前",
+          "km": 29.6
+        },
+        {
+          "id": "JRW_Kansai_J12",
+          "name": "長谷",
+          "km": 35.9
+        },
+        {
+          "id": "JRW_Kansai_J13",
+          "name": "生野",
+          "km": 43.6
+        },
+        {
+          "id": "JRW_Kansai_J14",
+          "name": "新井",
+          "km": 51.9
+        },
+        {
+          "id": "JRW_Kansai_J15",
+          "name": "青倉",
+          "km": 55.6
+        },
+        {
+          "id": "JRW_Kansai_J16",
+          "name": "竹田",
+          "km": 59.9
+        }
+      ]
+    },
+    {
+      "id": "fukuchiyama_line",
+      "name": "福知山線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A49",
+          "name": "尼崎",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_G01",
+          "name": "塚口",
+          "km": 2.5
+        },
+        {
+          "id": "JRW_Kansai_G02",
+          "name": "猪名寺",
+          "km": 3.9
+        },
+        {
+          "id": "JRW_Kansai_G03",
+          "name": "伊丹",
+          "km": 5.8
+        },
+        {
+          "id": "JRW_Kansai_G04",
+          "name": "北伊丹",
+          "km": 7.9
+        },
+        {
+          "id": "JRW_Kansai_G05",
+          "name": "川西池田",
+          "km": 11.0
+        },
+        {
+          "id": "JRW_Kansai_G06",
+          "name": "中山寺",
+          "km": 14.5
+        },
+        {
+          "id": "JRW_Kansai_G07",
+          "name": "宝塚",
+          "km": 17.8
+        },
+        {
+          "id": "JRW_Kansai_G08",
+          "name": "生瀬",
+          "km": 19.7
+        },
+        {
+          "id": "JRW_Kansai_G09",
+          "name": "西宮名塩",
+          "km": 21.9
+        },
+        {
+          "id": "JRW_Kansai_G10",
+          "name": "武田尾",
+          "km": 25.1
+        },
+        {
+          "id": "JRW_Kansai_G11",
+          "name": "道場",
+          "km": 30.1
+        },
+        {
+          "id": "JRW_Kansai_G12",
+          "name": "三田",
+          "km": 33.7
+        },
+        {
+          "id": "JRW_Kansai_G13",
+          "name": "新三田",
+          "km": 36.9
+        },
+        {
+          "id": "JRW_Kansai_G14",
+          "name": "広野",
+          "km": 39.7
+        },
+        {
+          "id": "JRW_Kansai_G15",
+          "name": "相野",
+          "km": 44.0
+        },
+        {
+          "id": "JRW_Kansai_G16",
+          "name": "藍本",
+          "km": 48.2
+        },
+        {
+          "id": "JRW_Kansai_G17",
+          "name": "草野",
+          "km": 50.5
+        },
+        {
+          "id": "JRW_Kansai_G18",
+          "name": "古市",
+          "km": 53.5
+        },
+        {
+          "id": "JRW_Kansai_G19",
+          "name": "南矢代",
+          "km": 56.1
+        },
+        {
+          "id": "JRW_Kansai_G20",
+          "name": "篠山口",
+          "km": 58.4
+        },
+        {
+          "id": "JRW_Kansai_G21",
+          "name": "丹波大山",
+          "km": 60.7
+        },
+        {
+          "id": "JRW_Kansai_G22",
+          "name": "下滝",
+          "km": 68.7
+        },
+        {
+          "id": "JRW_Kansai_I20",
+          "name": "谷川",
+          "km": 73.0
+        },
+        {
+          "id": "JRW_Kansai_G23",
+          "name": "柏原",
+          "km": 80.0
+        },
+        {
+          "id": "JRW_Kansai_G24",
+          "name": "石生",
+          "km": 83.2
+        },
+        {
+          "id": "JRW_Kansai_G25",
+          "name": "黒井",
+          "km": 87.5
+        },
+        {
+          "id": "JRW_Kansai_G26",
+          "name": "市島",
+          "km": 94.0
+        },
+        {
+          "id": "JRW_Kansai_G27",
+          "name": "丹波竹田",
+          "km": 98.2
+        }
+      ]
+    },
+    {
+      "id": "maizuru_line",
+      "name": "舞鶴線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_L01",
+          "name": "淵垣",
+          "km": 5.3
+        },
+        {
+          "id": "JRW_Kansai_L02",
+          "name": "梅迫",
+          "km": 8.2
+        },
+        {
+          "id": "JRW_Kansai_L03",
+          "name": "真倉",
+          "km": 15.5
+        },
+        {
+          "id": "JRW_Kansai_L04",
+          "name": "西舞鶴",
+          "km": 19.5
+        }
+      ]
+    },
+    {
+      "id": "yamatoji_line",
+      "name": "大和路線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_V12",
+          "name": "加茂",
+          "km": 0.0
+        },
+        {
+          "id": "JRW_Kansai_D18",
+          "name": "木津",
+          "km": 6.0
+        },
+        {
+          "id": "JRW_Kansai_D19",
+          "name": "平城山",
+          "km": 9.2
+        },
+        {
+          "id": "JRW_Kansai_D20",
+          "name": "奈良",
+          "km": 13.0
+        },
+        {
+          "id": "JRW_Kansai_Q01",
+          "name": "郡山",
+          "km": 17.8
+        },
+        {
+          "id": "JRW_Kansai_Q02",
+          "name": "大和小泉",
+          "km": 21.6
+        },
+        {
+          "id": "JRW_Kansai_Q03",
+          "name": "法隆寺",
+          "km": 24.8
+        },
+        {
+          "id": "JRW_Kansai_T01",
+          "name": "王寺",
+          "km": 28.4
+        },
+        {
+          "id": "JRW_Kansai_Q04",
+          "name": "三郷",
+          "km": 30.2
+        },
+        {
+          "id": "JRW_Kansai_Q05",
+          "name": "河内堅上",
+          "km": 33.1
+        },
+        {
+          "id": "JRW_Kansai_Q06",
+          "name": "高井田",
+          "km": 35.5
+        },
+        {
+          "id": "JRW_Kansai_Q07",
+          "name": "柏原",
+          "km": 37.9
+        },
+        {
+          "id": "JRW_Kansai_Q08",
+          "name": "志紀",
+          "km": 39.6
+        },
+        {
+          "id": "JRW_Kansai_Q09",
+          "name": "八尾",
+          "km": 42.2
+        },
+        {
+          "id": "JRW_Kansai_H13",
+          "name": "久宝寺",
+          "km": 43.4
+        },
+        {
+          "id": "JRW_Kansai_Q10",
+          "name": "加美",
+          "km": 45.1
+        },
+        {
+          "id": "JRW_Kansai_Q11",
+          "name": "平野",
+          "km": 46.6
+        },
+        {
+          "id": "JRW_Kansai_Q12",
+          "name": "東部市場前",
+          "km": 48.1
+        },
+        {
+          "id": "JRW_Kansai_O01",
+          "name": "天王寺",
+          "km": 50.5
+        },
+        {
+          "id": "JRW_Kansai_Q13",
+          "name": "新今宮",
+          "km": 51.5
+        },
+        {
+          "id": "JRW_Kansai_O17",
+          "name": "今宮",
+          "km": 52.7
+        },
+        {
+          "id": "JRW_Kansai_Q14",
+          "name": "JR難波",
+          "km": 54.0
+        }
+      ]
+    },
+    {
+      "id": "wadamisaki_line",
+      "name": "和田岬線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_A64",
+          "name": "兵庫",
+          "km": 0.0
+        }
+      ]
+    },
+    {
+      "id": "hagoromo_line",
+      "name": "羽衣線",
+      "stations": [
+        {
+          "id": "JRW_Kansai_R13",
+          "name": "鳳",
+          "km": 0.0
+        }
+      ]
+    }
+  ]
+}

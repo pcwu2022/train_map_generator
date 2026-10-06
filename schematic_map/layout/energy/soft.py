@@ -14,7 +14,11 @@ class Crossings(SoftTerm):
 @register
 class EdgeLength(SoftTerm):
     name='S2_edge_length'
-    def full(self,layout): return float(np.sum(((layout.facts()['lengths']-layout.targets)/layout.targets)**2))
+    def full(self,layout):
+        ratios = layout.facts()['lengths'] / layout.targets
+        lower_dev = np.maximum(0, 0.7 - ratios)
+        upper_dev = np.maximum(0, ratios - 1.3)
+        return float(np.sum((lower_dev + upper_dev)**2))
 
 
 @register
@@ -33,8 +37,17 @@ class Angle(SoftTerm):
 class Bends(SoftTerm):
     name='S4_bends'
     def full(self,layout):
+        if not self.weight: return 0.
         bends=layout.facts()['bends']
-        return float(np.sum(np.minimum(bends,1))+np.sum(bends>1)*self.parameters['second_bend']/self.weight) if self.weight else 0.
+        base_penalty=np.minimum(bends,1)+(bends>1)*self.parameters['second_bend']/self.weight
+        multiplier = np.ones(len(bends))
+        d_min = layout.config['grid']['d_min']
+        lengths = layout.facts()['lengths']
+        for i, edge in enumerate(layout.graph.edges):
+            line_factor = 1.0 + 0.5 * (len(edge.get('lines', [])) - 1)
+            length_factor = max(1.0, lengths[i] / (3.0 * d_min))
+            multiplier[i] = line_factor * length_factor
+        return float(np.sum(base_penalty * multiplier))
 
 
 @register
@@ -105,7 +118,7 @@ class Zigzag(SoftTerm):
 class MinimumRun(SoftTerm):
     name='S13_min_run'
     def full(self,layout):
-        minimum=self.parameters['run_min']
+        minimum = 3.0 * layout.config['grid']['d_min']
         return sum(((minimum-run['length'])/minimum)**2 for run in line_statistics(layout)['runs']
                    if run['length']<minimum and not run['terminal'])
 

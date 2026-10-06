@@ -22,7 +22,7 @@ def slice_polyline(path,start,end):
     cleaned.append(result[-1]);return np.asarray(cleaned)
 
 
-def skeleton_layout(graph,initial,anchor,targets,config):
+def skeleton_layout(graph,initial,anchor,targets,config,callback=None):
     from .anneal import optimize
     keys=key_nodes(graph)
     chains=[(nodes,edges) for nodes,edges in graph.chains if nodes[0]!=nodes[-1]]
@@ -50,13 +50,20 @@ def skeleton_layout(graph,initial,anchor,targets,config):
             coarse.topology_orders.append([edge for edge,angle in sorted(outgoing,key=lambda item:(item[1],item[0]))])
         coarse_config=deepcopy(config)
         coarse_config['routing']['passes']=config['skeleton']['routing_passes']
+        coarse_config['anneal']['max_sweeps'] = config['skeleton'].get('anneal_sweeps', min(3, config['anneal']['max_sweeps']))
+        coarse_config['anneal']['greedy_sweeps'] = config['skeleton'].get('greedy_sweeps', min(1, config['anneal']['greedy_sweeps']))
         for name,term in coarse_config['terms'].items():term['enabled']=term['enabled'] and name in config['skeleton']['terms']
         coarse_targets=np.array([max(sum(targets[chain_edges]),edge['min_path_length']) for (_,chain_edges),edge in zip(chains,edges)])
         coarse_points=initial[keys].copy()
         ratios=[edge['min_path_length']/max(float(np.linalg.norm(coarse_points[v]-coarse_points[u])),EPS) for edge,(u,v) in zip(edges,coarse.endpoints)]
         scale=min(config['skeleton']['max_initial_scale'],max([1.]+ratios))
         center=coarse_points.mean(axis=0);coarse_points=center+(coarse_points-center)*scale
-        state=optimize(coarse,coarse_points,anchor[keys],coarse_targets,coarse_config)
+        def coarse_callback(p, r, text, percent):
+            if callback:
+                current_pos = initial.copy()
+                current_pos[keys] = p
+                callback(current_pos, None, f'Skeleton {text}', percent)
+        state=optimize(coarse,coarse_points,anchor[keys],coarse_targets,coarse_config,callback=coarse_callback if callback else None)
         positions[keys]=state.positions
         paths=state.routes
     else:paths=[]
