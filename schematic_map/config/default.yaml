@@ -12,7 +12,19 @@ transform:
   optimize_transform: false
   chain_bearings: true
   primary_prominence: 2.0
-init: {mode: skeleton, stress_iterations: 40, anchor_weight: 0.05}
+init: {mode: lp, stress_iterations: 40, anchor_weight: 0.05}
+# Constraint-graph LP layout (init.mode: lp). Units are station spacings.
+lp:
+  port_diagonal_cost: 0.6   # extra squared-radian cost of a diagonal port; larger means fewer diagonals
+  min_piece: 0.5            # minimum length of each straight piece
+  rel_neighbors: 6          # each key node gets relative-position constraints to this many nearest key nodes
+  rel_ratio: 0.35           # constrain an axis only when the geographic vector's share on it reaches this
+  node_sep: 1.5             # minimum separation in relative-position constraints
+  seg_sep: 1.5              # minimum distance between pieces of different chains
+  w_rel: 20.0               # cost per unit of violated relative position
+  w_sep: 50.0               # cost per unit of violated piece separation
+  w_shape: 500.0            # cost per unit of too-short or reversed pieces
+  rounds: 10                # maximum crossing/overlap repair re-solves
 routing:
   diagonal_tolerance_deg: 15
   min_segment: 0.8

@@ -83,7 +83,11 @@ def generate_layout(data,config=None,record_runtime=False,progress=None,live_cal
         subgraph=build_graph(subdata,config)
         subgraph.geo=graph.geo[component]; subgraph.origin=graph.origin
         subgraph.topology_reference=graph.topology_reference[component]
-        if config['init']['mode']=='skeleton' and config['skeleton']['enabled']:
+        if config['init']['mode']=='lp':
+            from .layout.lp import lp_layout
+            lp_positions,lp_routes=lp_layout(subgraph,config,log=progress)
+            sublayout=Layout(subgraph,lp_positions,lp_routes,anchor[component],targets[edge_ids],config)
+        elif config['init']['mode']=='skeleton' and config['skeleton']['enabled']:
             from .layout.skeleton import skeleton_layout
             def skeleton_cb(p, r, text, pct):
                 comp_callback(p, r, text, pct * 0.2)
@@ -96,7 +100,8 @@ def generate_layout(data,config=None,record_runtime=False,progress=None,live_cal
                 sublayout=optimize(subgraph,sublayout.positions,anchor[component],targets[edge_ids],config,initial_routes=sublayout.routes,alternate=geographic,callback=anneal_cb)
         else:
             sublayout=optimize(subgraph,positions[component],anchor[component],targets[edge_ids],config,callback=make_component_callback(component, edge_ids, number))
-        sublayout=refine(sublayout)
+        if config['init']['mode']!='lp': sublayout=refine(sublayout)
+        comp_callback(sublayout.positions,sublayout.routes,"Component done",1.0)
         positions[component]=sublayout.positions
         _,label_boxes,_=place_labels(subgraph,sublayout.positions,sublayout.routes,config)
         component_label_boxes.append(label_boxes)

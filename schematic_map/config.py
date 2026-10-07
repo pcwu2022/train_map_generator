@@ -22,8 +22,8 @@ def load_config(path=None, overrides=None):
     config = merge(config, overrides or {})
     if config['grid']['d_min'] <= 0 or config['grid']['pitch_fine'] <= 0:
         raise ValueError('Grid spacing and pitch must be positive')
-    if config['init']['mode'] not in ('geo', 'hint', 'skeleton'):
-        raise ValueError('init.mode must be geo, hint or skeleton')
+    if config['init']['mode'] not in ('geo', 'hint', 'skeleton', 'lp'):
+        raise ValueError('init.mode must be geo, hint, skeleton or lp')
     if config['anneal']['restarts'] < 1:
         raise ValueError('anneal.restarts must be positive')
     if config['transform']['optimize_transform']:
