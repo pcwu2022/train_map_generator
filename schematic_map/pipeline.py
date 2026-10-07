@@ -42,6 +42,15 @@ def generate_layout(data,config=None,record_runtime=False,progress=None,live_cal
     
     def make_component_callback(component, edge_ids, component_index):
         def callback(sub_positions, sub_routes, progress_text, component_percent=0.0):
+            overall_percent = (component_index + component_percent) / len(graph.components)
+            if progress:
+                bar_len = 30
+                filled_len = int(round(bar_len * overall_percent))
+                bar = '=' * filled_len + '-' * (bar_len - filled_len)
+                try:
+                    progress(f'\r[{bar}] {overall_percent*100:5.1f}% | C{component_index+1}/{len(graph.components)}: {progress_text}'.ljust(80), end='', flush=True)
+                except TypeError:
+                    progress(f'\r[{bar}] {overall_percent*100:5.1f}% | C{component_index+1}/{len(graph.components)}: {progress_text}'.ljust(80), end='')
             if not live_callback: return
             positions[component] = sub_positions
             for local, global_id in enumerate(edge_ids):
@@ -69,10 +78,13 @@ def generate_layout(data,config=None,record_runtime=False,progress=None,live_cal
             live_callback({'meta':meta, 'nodes':nodes, 'edges':edges, 'lines':graph.lines, 'render':deepcopy(config['render']), 'label_style':deepcopy(config['labels']), 'web':deepcopy(config['web'])})
         return callback
 
-    component_label_boxes=[]
-    # Optimize each component separately; neither obstacles nor annealing cross components.
+    # --- [PHASE 1: SPACE WARPING] ---
+    from .layout.space_warp import apply_space_warp
+    anchor = apply_space_warp(anchor, config)
+    positions = anchor.copy()
+    
+    component_label_boxes = [[] for _ in graph.components]
     for number,component in enumerate(graph.components):
-        if progress: progress(f'Layout component {number+1}/{len(graph.components)} ({len(component)} stations)')
         node_ids={graph.nodes[i]['id'] for i in component}
         edge_ids=[i for i,e in enumerate(graph.edges) if e['source'] in node_ids]
         
@@ -83,24 +95,37 @@ def generate_layout(data,config=None,record_runtime=False,progress=None,live_cal
         subgraph=build_graph(subdata,config)
         subgraph.geo=graph.geo[component]; subgraph.origin=graph.origin
         subgraph.topology_reference=graph.topology_reference[component]
-        if config['init']['mode']=='skeleton' and config['skeleton']['enabled']:
-            from .layout.skeleton import skeleton_layout
-            def skeleton_cb(p, r, text, pct):
-                comp_callback(p, r, text, pct * 0.2)
-            sublayout=skeleton_layout(subgraph,positions[component],anchor[component],targets[edge_ids],config,callback=skeleton_cb)
-            if config['anneal']['multistart']:
-                geographic_config=deepcopy(config);geographic_config['init']['mode']='geo'
-                geographic=initial_layout(subgraph,anchor[component],targets[edge_ids],geographic_config)
-                def anneal_cb(p, r, text, pct):
-                    comp_callback(p, r, text, 0.2 + pct * 0.8)
-                sublayout=optimize(subgraph,sublayout.positions,anchor[component],targets[edge_ids],config,initial_routes=sublayout.routes,alternate=geographic,callback=anneal_cb)
-        else:
-            sublayout=optimize(subgraph,positions[component],anchor[component],targets[edge_ids],config,callback=make_component_callback(component, edge_ids, number))
-        sublayout=refine(sublayout)
-        positions[component]=sublayout.positions
-        _,label_boxes,_=place_labels(subgraph,sublayout.positions,sublayout.routes,config)
-        component_label_boxes.append(label_boxes)
-        for local,global_id in enumerate(edge_ids): routes[global_id]=sublayout.routes[local]
+        
+        # --- [PHASE 2: MACRO LAYOUT (SKELETON)] ---
+        from .layout.skeleton import skeleton_layout
+        def skeleton_cb(p, r, text, pct):
+            comp_callback(p, r, text, pct)
+            
+        # Run our new geometric skeleton layout
+        sublayout = skeleton_layout(subgraph, positions[component], anchor[component], targets[edge_ids], config, callback=skeleton_cb)
+        
+        # --- [PHASE 3: MICRO REFINEMENT] ---
+        from .layout.refine_micro import optimize_micro
+        # --- [PHASE 4: STRAIGHTEN BRANCHES (Run BEFORE Micro-refinement!)] ---
+        from .layout.straighten_branches import apply_straightening
+        
+        if False:
+            comp_callback(sublayout.positions, sublayout.routes, "Straightening branches...", 0.35)
+            sub_p, sub_r = apply_straightening(subgraph, sublayout.positions, sublayout.routes, config)
+            sublayout.positions = sub_p
+            sublayout.routes = sub_r
+
+            # --- [PHASE 3: RESOLVE OVERLAPS & MICRO-REFINE] ---
+            def micro_cb(p, r, text, pct):
+                comp_callback(p, r, text, pct)
+            sublayout = optimize_micro(subgraph, sublayout.positions, sublayout.routes, anchor[component], targets[edge_ids], config, callback=micro_cb)
+        
+        positions[component] = sublayout.positions
+        
+        # Since we skip label placement for now, just use empty boxes
+        component_label_boxes.append([])
+        for local,global_id in enumerate(edge_ids): 
+            routes[global_id] = sublayout.routes[local]
     # Pack complete component extents, including bends and provisional labels.
     cursor=0.
     for component,label_boxes in zip(graph.components,component_label_boxes):
@@ -129,4 +154,5 @@ def generate_layout(data,config=None,record_runtime=False,progress=None,live_cal
         bounds=[min(bounds[0],box[0]),min(bounds[1],box[1]),max(bounds[2],box[2]),max(bounds[3],box[3])]
     metrics=measure(layout,label_overlaps); metrics['runtime_s']=time.perf_counter()-started if record_runtime else None
     meta={'version':'0.1','seed':config['seed'],'units':'grid_units','bounds':bounds,'y_axis':'up','feasible':metrics['hard_violations']==0}
+    if progress: progress() # Print a newline at the end of progress bar
     return {'meta':meta,'transform':transform,'nodes':nodes,'edges':edges,'lines':graph.lines,'metrics':metrics,'render':deepcopy(config['render']),'label_style':deepcopy(config['labels']),'web':deepcopy(config['web'])}

@@ -65,8 +65,8 @@ anneal:
 refine: {sweeps: 8, max_trials: null, step_scales: [1, 2, 4, 8], star_orders: true, smoothness: true, smooth_neighbors: 4}
 components: {margin: 3.0}
 labels:
-  font_size: 0.38
-  offset: 0.5
+  font_size: 0.25
+  offset: 0.3
   offset_scales: [1.0, 1.5, 2.0]
   distance_weight: 0.1
   padding: 0.06

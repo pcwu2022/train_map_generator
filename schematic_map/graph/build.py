@@ -32,8 +32,17 @@ def build_graph(data, config):
         sets = [set(edges[e]['lines']) for _, e in adjacency[i]]
         node['lines'] = sorted(set().union(*sets))
         node['degree'] = len(sets)
-        node['is_interchange'] = len(node['lines']) >= 2
-        node['kind'] = 'terminal' if len(sets) == 1 else ('through' if len(sets) == 2 and sets[0] == sets[1] else 'junction')
+        
+        # A station is a through station if it has exactly degree 2 and both edges carry the exact same lines.
+        if len(sets) == 2 and sets[0] == sets[1]:
+            node['kind'] = 'through'
+            node['is_interchange'] = False
+        else:
+            node['kind'] = 'terminal' if len(sets) == 1 else 'junction'
+            # It's considered an interchange if it's a junction (or if it just happens to have multiple lines, 
+            # though true interchanges usually have degree > 2 or changing line sets)
+            node['is_interchange'] = len(node['lines']) >= 2
+            
         node['marker'] = 'interchange' if node['is_interchange'] else 'dot'
     components, seen = [], set()
     for i in range(len(nodes)):

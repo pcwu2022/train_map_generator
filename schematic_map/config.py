@@ -16,9 +16,9 @@ def merge(base, update):
 
 
 def load_config(path=None, overrides=None):
-    config = yaml.safe_load((Path(__file__).parent / 'config/default.yaml').read_text())
+    config = yaml.safe_load((Path(__file__).parent / 'config/default.yaml').read_text(encoding='utf-8'))
     if path:
-        config = merge(config, yaml.safe_load(Path(path).read_text()) or {})
+        config = merge(config, yaml.safe_load(Path(path).read_text(encoding='utf-8')) or {})
     config = merge(config, overrides or {})
     if config['grid']['d_min'] <= 0 or config['grid']['pitch_fine'] <= 0:
         raise ValueError('Grid spacing and pitch must be positive')

@@ -48,14 +48,24 @@ def main(argv=None):
                 except Exception as e:
                     print(f"Live preview error: {e}")
 
+            import time
+            start_time_total = time.perf_counter()
             layout=generate_layout(load_graph(args.input),config,record_runtime=args.runtime,progress=print,live_callback=live_callback if args.live else None)
+            
         export_layout(layout,args.output_dir/'layout.json')
         from .render.svg import render_svg
         (args.output_dir/'map.svg').write_text(render_svg(layout),encoding='utf-8')
         if not args.no_png:
             from .render.png import render_png
             render_png(layout,args.output_dir/'map.png')
-        m=layout['metrics']; print(f'Wrote {args.output_dir}: {m["hard_violations"]} hard violations, {m["crossings"]} crossings, {m["label_overlaps"]} label overlaps')
+            
+        m=layout['metrics']
+        if args.render_only:
+            print(f'Wrote {args.output_dir}: {m["hard_violations"]} hard violations, {m["crossings"]} crossings, {m["label_overlaps"]} label overlaps')
+        else:
+            elapsed_total = time.perf_counter() - start_time_total
+            print(f'Wrote {args.output_dir}: {m["hard_violations"]} hard violations, {m["crossings"]} crossings, {m["label_overlaps"]} label overlaps. (Total time: {elapsed_total:.2f}s)')
+            
         if m['hard_violations'] and not args.allow_infeasible: return 2
         return 0
     except (ValueError, OSError, ValidationError) as error:

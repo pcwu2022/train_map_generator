@@ -77,4 +77,4 @@ def line_facts(graph,routes,config):
         fractions[walk[0]][0]+=sum(run['length'] for run in geometry['runs'] if run['stations']>=cfg['long_run_stations'])
         fractions[walk[0]][1]+=geometry['length']
     return {'turns_per_line':counts,'zigzag_count':int(zigzags),'runs':runs,
-            'long_run_fraction_per_line':{line:(length/total if total>EPS else None) for line,(length,total) in fractions.items()}}
+            'long_run_fraction_per_line':{line:(min(1.0, max(0.0, float(length/total))) if total>EPS else None) for line,(length,total) in fractions.items()}}

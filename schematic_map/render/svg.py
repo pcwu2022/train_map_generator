@@ -75,7 +75,7 @@ def render_svg(layout):
             commands=rounded_path(path,cfg['corner_radius']); color=line['color']
             contrast=(max(luminance(color),luminance(cfg['background']))+0.05)/(min(luminance(color),luminance(cfg['background']))+0.05)
             if cfg['outline_low_contrast'] and contrast<cfg['contrast_threshold']:
-                content.append(f'<path d="{commands}" stroke="#333333" stroke-width="{number(cfg["line_width"]*1.4)}"/>')
+                content.append(f'<path class="transit-line" data-line-id="{escape(line_id,quote=True)}" d="{commands}" stroke="#333333" stroke-width="{number(cfg["line_width"]*1.4)}"/>')
             content.append(f'<path class="transit-line" data-line-id="{escape(line_id,quote=True)}" d="{commands}" stroke="{color}" stroke-width="{number(cfg["line_width"])}"><title>{escape(line["name"])}</title></path>')
     content.append('</g><g class="stations">')
     for node in layout['nodes']:

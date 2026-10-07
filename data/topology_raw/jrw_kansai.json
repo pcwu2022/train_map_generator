@@ -557,6 +557,16 @@
           "id": "JRW_Kansai_O17",
           "name": "今宮",
           "km": 19.5
+        },
+        {
+          "id": "JRW_Kansai_Q13",
+          "name": "新今宮",
+          "km": 20.7
+        },
+        {
+          "id": "JRW_Kansai_O01",
+          "name": "天王寺",
+          "km": 21.7
         }
       ]
     },

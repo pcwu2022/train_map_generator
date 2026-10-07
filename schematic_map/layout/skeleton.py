@@ -23,66 +23,105 @@ def slice_polyline(path,start,end):
 
 
 def skeleton_layout(graph,initial,anchor,targets,config,callback=None):
-    from .anneal import optimize
-    keys=key_nodes(graph)
-    chains=[(nodes,edges) for nodes,edges in graph.chains if nodes[0]!=nodes[-1]]
-    keys=sorted(set(keys)|{node for nodes,_ in chains for node in (nodes[0],nodes[-1])})
-    lookup={node:i for i,node in enumerate(keys)}
-    positions=initial.copy();routes=[None]*len(graph.edges)
-    factor=config['skeleton']['spacing_factor'];minimum=config['grid']['d_min']
-    if chains:
-        edges=[]
-        for nodes,chain_edges in chains:
-            ids=graph.edges[chain_edges[0]]['lines']
-            edges.append({'source':graph.nodes[nodes[0]]['id'],'target':graph.nodes[nodes[-1]]['id'],
-                          'lines':ids,'distance':sum(graph.edges[e]['distance'] for e in chain_edges),
-                          'min_path_length':len(chain_edges)*minimum*factor})
-        coarse=build_graph({'nodes':[graph.nodes[node] for node in keys],'edges':edges,'lines':graph.lines},config)
-        coarse.skeleton=True;coarse.geo=graph.geo[keys];coarse.topology_reference=graph.topology_reference[keys] if graph.topology_reference is not None else anchor[keys]
-        # Preserve the original first/last incident-edge ordering, not skeleton chord order.
-        original_reference=graph.topology_reference if graph.topology_reference is not None else anchor
-        coarse.topology_orders=[]
-        for node in keys:
-            outgoing=[]
-            for edge,(nodes,chain_edges) in enumerate(chains):
-                if nodes[0]==node:outgoing.append((edge,bearing(original_reference[nodes[1]]-original_reference[node])))
-                if nodes[-1]==node:outgoing.append((edge,bearing(original_reference[nodes[-2]]-original_reference[node])))
-            coarse.topology_orders.append([edge for edge,angle in sorted(outgoing,key=lambda item:(item[1],item[0]))])
-        coarse_config=deepcopy(config)
-        coarse_config['routing']['passes']=config['skeleton']['routing_passes']
-        coarse_config['anneal']['max_sweeps'] = config['skeleton'].get('anneal_sweeps', min(3, config['anneal']['max_sweeps']))
-        coarse_config['anneal']['greedy_sweeps'] = config['skeleton'].get('greedy_sweeps', min(1, config['anneal']['greedy_sweeps']))
-        for name,term in coarse_config['terms'].items():term['enabled']=term['enabled'] and name in config['skeleton']['terms']
-        coarse_targets=np.array([max(sum(targets[chain_edges]),edge['min_path_length']) for (_,chain_edges),edge in zip(chains,edges)])
-        coarse_points=initial[keys].copy()
-        ratios=[edge['min_path_length']/max(float(np.linalg.norm(coarse_points[v]-coarse_points[u])),EPS) for edge,(u,v) in zip(edges,coarse.endpoints)]
-        scale=min(config['skeleton']['max_initial_scale'],max([1.]+ratios))
-        center=coarse_points.mean(axis=0);coarse_points=center+(coarse_points-center)*scale
-        def coarse_callback(p, r, text, percent):
-            if callback:
-                current_pos = initial.copy()
-                current_pos[keys] = p
-                callback(current_pos, None, f'Skeleton {text}', percent)
-        state=optimize(coarse,coarse_points,anchor[keys],coarse_targets,coarse_config,callback=coarse_callback if callback else None)
-        positions[keys]=state.positions
-        paths=state.routes
-    else:paths=[]
-    # Closed chains need a closed polygon rather than the zero chord of a self-loop.
-    for nodes,chain_edges in graph.chains:
-        if nodes[0]!=nodes[-1]:continue
-        perimeter=max(sum(targets[chain_edges]),len(chain_edges)*minimum*factor)
-        aspect=config['skeleton']['loop_aspect'];width=perimeter/(2*(1+aspect));height=width*aspect
-        origin=positions[nodes[0]]
-        paths.append(origin+np.array([[0,0],[width,0],[width,height],[0,height],[0,0]]))
-        chains.append((nodes,chain_edges))
-    for (nodes,chain_edges),path in zip(chains,paths):
-        length=path_length(path);distances=np.linspace(0,length,len(nodes))
-        stations=sample_polyline(path,distances)
+    from .reference import key_nodes, sample_polyline
+    from .octolinear import generate_octolinear_candidates, generate_ring_template
+    from .energy.base import Layout
+    
+    keys = key_nodes(graph)
+    chains = [(nodes, edges) for nodes, edges in graph.chains if nodes[0] != nodes[-1]]
+    keys = sorted(set(keys) | {node for nodes, _ in chains for node in (nodes[0], nodes[-1])})
+    
+    positions = initial.copy()
+    routes = [None] * len(graph.edges)
+    
+    # Phase 2: Macro-Layout (Routing the skeleton geometrically)
+    paths = []
+    
+    if callback:
+        callback(positions, routes, "Generating Macro-Layout...", 0.3)
+        
+    # --- [Make Primary Line Straight] ---
+    from .primary import primary_line
+    primary = primary_line(graph)
+    if primary:
+        primary_id = primary['id']
+        # Find all nodes belonging to the primary line
+        primary_nodes = set()
+        for i, edge in enumerate(graph.edges):
+            if primary_id in edge['lines']:
+                primary_nodes.update(graph.endpoints[i])
+                
+        if primary_nodes:
+            primary_nodes_list = list(primary_nodes)
+            p_coords = positions[primary_nodes_list]
+            
+            # Determine if it's more horizontal or vertical
+            dx = np.max(p_coords[:, 0]) - np.min(p_coords[:, 0])
+            dy = np.max(p_coords[:, 1]) - np.min(p_coords[:, 1])
+            
+            if dx > dy:
+                # Mostly horizontal, force all Y coordinates to the median Y
+                median_y = np.median(p_coords[:, 1])
+                positions[primary_nodes_list, 1] = median_y
+            else:
+                # Mostly vertical, force all X coordinates to the median X
+                median_x = np.median(p_coords[:, 0])
+                positions[primary_nodes_list, 0] = median_x
+    # ------------------------------------
+    
+    # Generate octolinear paths for chains between key nodes
+    for nodes, chain_edges in chains:
+        u, v = nodes[0], nodes[-1]
+        p1, p2 = positions[u], positions[v]
+        
+        candidates = generate_octolinear_candidates(p1, p2)
+        
+        # For now, pick Candidate 0 (Horizontal/Vertical first).
+        # In a full implementation with backtracking, we'd try Candidate 1 if 0 fails in Phase 3.
+        path = candidates[0]
+        paths.append(path)
+        
+    # Handle Circular lines (Rings)
+    for nodes, chain_edges in graph.chains:
+        if nodes[0] != nodes[-1]: continue
+        
+        # Approximate radius based on perimeter targets
+        minimum = config['grid']['d_min']
+        factor = config['skeleton']['spacing_factor']
+        perimeter = max(sum(targets[chain_edges]), len(chain_edges) * minimum * factor)
+        radius = perimeter / (2 * np.pi)
+        
+        center = positions[nodes[0]]
+        path = generate_ring_template(center, radius, len(nodes))
+        
+        paths.append(path)
+        chains.append((nodes, chain_edges))
+        
+    if callback:
+        callback(positions, routes, "Interpolating stations...", 0.6)
+        
+    # Interpolate through stations along the generated paths
+    for (nodes, chain_edges), path in zip(chains, paths):
+        length = path_length(path)
+        if length < EPS:
+            distances = np.zeros(len(nodes))
+        else:
+            distances = np.linspace(0, length, len(nodes))
+            
+        stations = sample_polyline(path, distances)
+        
         # Skeleton endpoints are shared exactly between incident chains.
-        stations[0]=positions[nodes[0]];stations[-1]=positions[nodes[-1]]
-        positions[nodes[1:-1]]=stations[1:-1]
-        for i,edge in enumerate(chain_edges):
-            route=slice_polyline(path,distances[i],distances[i+1])
-            route[0]=stations[i];route[-1]=stations[i+1]
-            routes[edge]=route if graph.endpoints[edge,0]==nodes[i] else route[::-1].copy()
-    return Layout(graph,positions,routes,anchor,targets,config)
+        stations[0] = positions[nodes[0]]
+        stations[-1] = positions[nodes[-1]]
+        positions[nodes[1:-1]] = stations[1:-1]
+        
+        for i, edge in enumerate(chain_edges):
+            route = slice_polyline(path, distances[i], distances[i+1])
+            route[0] = stations[i]
+            route[-1] = stations[i+1]
+            routes[edge] = route if graph.endpoints[edge, 0] == nodes[i] else route[::-1].copy()
+            
+    if callback:
+        callback(positions, routes, "Phase 2 Complete", 1.0)
+        
+    return Layout(graph, positions, routes, anchor, targets, config)
